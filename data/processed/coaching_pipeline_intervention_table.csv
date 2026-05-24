@@ -1,0 +1,213 @@
+sport,race_group,race_group_short,athlete_race_pct,assistant_pct,hc_pct,coach_athlete_rep_gap,promotion_gap,pipeline_strength_score,hiring_flag,flag_reason,significant_gap,is_focus_sport,coaching_cut,assistant_pct_display,hc_pct_display
+Women's Acrobat and Tumbling,Black or African American,Black,0.161,13.3,11.1,-0.036,0.022,0.833,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,All Genders,13.3%,11.1%
+Women's Acrobat and Tumbling,Unknown,Unknown,0.155,13.3,11.1,-0.03,0.022,0.833,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,All Genders,13.3%,11.1%
+Women's Acrobat and Tumbling,White,White,0.502,66.7,77.8,0.207,-0.111,1.167,🧱 Retention Strength,Strong representation across coaching levels,True,False,All Genders,66.7%,77.8%
+Women's Acrobat and Tumbling,Asian,Asian,0.028,6.7,,0.013,,,👀 Monitor,Mixed signals — no clear structural issue,False,False,All Genders,6.7%,nan%
+Women's Acrobat and Tumbling,Hispanic or Latino,Hispanic,0.073,0.0,,-0.073,,,👀 Monitor,Mixed signals — no clear structural issue,False,False,All Genders,0.0%,nan%
+Women's Acrobat and Tumbling,Two or More Races,Two+ Races,0.079,0.0,,-0.079,,,👀 Monitor,Mixed signals — no clear structural issue,False,False,All Genders,0.0%,nan%
+Women's Basketball,Black or African American,Black,0.393,46.1,32.9,0.041,0.133,0.713,🚧 Promotion Gap,Representation drops significantly at Head Coach level,True,True,All Genders,46.1%,32.9%
+Women's Basketball,Hispanic or Latino,Hispanic,0.034,2.7,0.8,-0.011,0.019,0.309,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,True,All Genders,2.7%,0.8%
+Women's Basketball,Asian,Asian,0.008,1.6,0.6,0.007,0.011,0.341,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,True,All Genders,1.6%,0.6%
+Women's Basketball,International,International,0.101,0.9,0.0,-0.094,0.009,0.0,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,True,All Genders,0.9%,0.0%
+Women's Basketball,Two or More Races,Two+ Races,0.11,2.8,1.9,-0.083,0.009,0.686,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,True,All Genders,2.8%,1.9%
+Women's Basketball,American Indian or Alaska Native,Am. Indian,0.004,0.4,0.3,-0.0,0.001,0.784,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,True,All Genders,0.4%,0.3%
+Women's Basketball,Unknown,Unknown,0.024,1.8,1.9,-0.005,-0.001,1.055,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,True,All Genders,1.8%,1.9%
+Women's Basketball,Native Hawaiian or Other Pacific Islander,NHPI,0.006,0.1,0.6,-0.004,-0.004,3.919,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,True,All Genders,0.1%,0.6%
+Women's Basketball,White,White,0.32,43.4,61.0,0.15,-0.176,1.405,🧱 Retention Strength,Strong representation across coaching levels,True,True,All Genders,43.4%,61.0%
+Women's Beach Volleyball,Hispanic or Latino,Hispanic,0.057,10.9,2.9,0.018,0.079,0.271,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,All Genders,10.9%,2.9%
+Women's Beach Volleyball,Native Hawaiian or Other Pacific Islander,NHPI,0.005,3.3,1.5,0.02,0.018,0.451,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,All Genders,3.3%,1.5%
+Women's Beach Volleyball,Two or More Races,Two+ Races,0.081,2.2,1.5,-0.062,0.007,0.676,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,All Genders,2.2%,1.5%
+Women's Beach Volleyball,White,White,0.705,78.3,77.9,0.076,0.003,0.996,🧱 Retention Strength,Strong representation across coaching levels,False,False,All Genders,78.3%,77.9%
+Women's Beach Volleyball,Unknown,Unknown,0.027,3.3,4.4,0.01,-0.012,1.353,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,All Genders,3.3%,4.4%
+Women's Beach Volleyball,Asian,Asian,0.015,2.2,4.4,0.016,-0.022,2.029,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,All Genders,2.2%,4.4%
+Women's Beach Volleyball,Black or African American,Black,0.03,0.0,2.9,-0.018,-0.029,,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,All Genders,0.0%,2.9%
+Women's Beach Volleyball,International,International,0.075,0.0,4.4,-0.056,-0.044,,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,All Genders,0.0%,4.4%
+Women's Beach Volleyball,American Indian or Alaska Native,Am. Indian,0.005,0.0,,-0.005,,,👀 Monitor,Mixed signals — no clear structural issue,False,False,All Genders,0.0%,nan%
+Women's Bowling,Hispanic or Latino,Hispanic,0.064,9.5,2.7,-0.012,0.068,0.284,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,All Genders,9.5%,2.7%
+Women's Bowling,International,International,0.042,4.8,0.0,-0.024,0.048,0.0,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,All Genders,4.8%,0.0%
+Women's Bowling,Black or African American,Black,0.181,33.3,32.4,0.147,0.009,0.973,🧱 Retention Strength,Strong representation across coaching levels,False,False,All Genders,33.3%,32.4%
+Women's Bowling,Asian,Asian,0.031,0.0,0.0,-0.031,0.0,,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,All Genders,0.0%,0.0%
+Women's Bowling,White,White,0.564,52.4,62.2,0.022,-0.098,1.187,🧱 Retention Strength,Strong representation across coaching levels,False,False,All Genders,52.4%,62.2%
+Women's Bowling,American Indian or Alaska Native,Am. Indian,0.006,0.0,,-0.006,,,👀 Monitor,Mixed signals — no clear structural issue,False,False,All Genders,0.0%,nan%
+Women's Bowling,Unknown,Unknown,0.019,0.0,,-0.019,,,👀 Monitor,Mixed signals — no clear structural issue,False,False,All Genders,0.0%,nan%
+Women's Bowling,Two or More Races,Two+ Races,0.094,,2.7,-0.077,,,👀 Monitor,Mixed signals — no clear structural issue,False,False,All Genders,nan%,2.7%
+Women's Cross Country,Unknown,Unknown,0.022,3.3,1.4,0.004,0.02,0.416,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,All Genders,3.3%,1.4%
+Women's Cross Country,Hispanic or Latino,Hispanic,0.07,3.9,1.9,-0.039,0.019,0.503,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,All Genders,3.9%,1.9%
+Women's Cross Country,White,White,0.693,70.6,68.8,0.006,0.018,0.975,🧱 Retention Strength,Strong representation across coaching levels,False,False,All Genders,70.6%,68.8%
+Women's Cross Country,International,International,0.066,1.8,1.1,-0.051,0.006,0.633,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,All Genders,1.8%,1.1%
+Women's Cross Country,American Indian or Alaska Native,Am. Indian,0.003,0.2,0.0,-0.001,0.002,0.0,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,All Genders,0.2%,0.0%
+Women's Cross Country,Native Hawaiian or Other Pacific Islander,NHPI,0.001,0.2,0.0,0.0,0.002,0.0,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,All Genders,0.2%,0.0%
+Women's Cross Country,Asian,Asian,0.012,0.2,1.1,-0.007,-0.009,6.329,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,All Genders,0.2%,1.1%
+Women's Cross Country,Two or More Races,Two+ Races,0.061,0.7,1.7,-0.05,-0.01,2.373,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,All Genders,0.7%,1.7%
+Women's Cross Country,Black or African American,Black,0.071,19.2,24.0,0.139,-0.048,1.248,👀 Monitor,Mixed signals — no clear structural issue,False,False,All Genders,19.2%,24.0%
+Women's Equestrian,White,White,0.87,97.1,89.5,0.074,0.077,0.921,🧱 Retention Strength,Strong representation across coaching levels,False,False,All Genders,97.1%,89.5%
+Women's Equestrian,Unknown,Unknown,0.017,0.0,0.0,-0.017,0.0,,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,All Genders,0.0%,0.0%
+Women's Equestrian,Black or African American,Black,0.009,0.0,5.3,0.009,-0.053,,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,All Genders,0.0%,5.3%
+Women's Equestrian,Hispanic or Latino,Hispanic,0.026,0.0,5.3,-0.008,-0.053,,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,All Genders,0.0%,5.3%
+Women's Equestrian,Asian,Asian,0.009,0.0,,-0.009,,,👀 Monitor,Mixed signals — no clear structural issue,False,False,All Genders,0.0%,nan%
+Women's Equestrian,International,International,0.015,0.0,,-0.015,,,👀 Monitor,Mixed signals — no clear structural issue,False,False,All Genders,0.0%,nan%
+Women's Equestrian,Two or More Races,Two+ Races,0.044,2.9,,-0.025,,,👀 Monitor,Mixed signals — no clear structural issue,False,False,All Genders,2.9%,nan%
+Women's Fencing,International,International,0.15,12.3,3.6,-0.056,0.087,0.291,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,All Genders,12.3%,3.6%
+Women's Fencing,Asian,Asian,0.293,7.0,3.6,-0.234,0.034,0.509,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,All Genders,7.0%,3.6%
+Women's Fencing,Hispanic or Latino,Hispanic,0.055,7.0,3.6,0.004,0.034,0.509,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,All Genders,7.0%,3.6%
+Women's Fencing,Two or More Races,Two+ Races,0.065,7.0,3.6,-0.007,0.034,0.509,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,All Genders,7.0%,3.6%
+Women's Fencing,Black or African American,Black,0.046,3.5,7.1,0.001,-0.036,2.036,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,All Genders,3.5%,7.1%
+Women's Fencing,Unknown,Unknown,0.059,0.0,7.1,-0.036,-0.071,,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,All Genders,0.0%,7.1%
+Women's Fencing,White,White,0.329,63.2,71.4,0.33,-0.083,1.131,🧱 Retention Strength,Strong representation across coaching levels,False,False,All Genders,63.2%,71.4%
+Women's Fencing,Native Hawaiian or Other Pacific Islander,NHPI,0.0,0.0,,0.0,,,👀 Monitor,Mixed signals — no clear structural issue,False,False,All Genders,0.0%,nan%
+Women's Field Hockey,Unknown,Unknown,0.035,5.9,1.2,0.008,0.047,0.211,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,All Genders,5.9%,1.2%
+Women's Field Hockey,International,International,0.171,7.9,3.8,-0.106,0.041,0.475,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,All Genders,7.9%,3.8%
+Women's Field Hockey,Two or More Races,Two+ Races,0.042,0.7,0.0,-0.037,0.007,0.0,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,All Genders,0.7%,0.0%
+Women's Field Hockey,Asian,Asian,0.018,1.3,1.2,-0.005,0.001,0.95,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,All Genders,1.3%,1.2%
+Women's Field Hockey,American Indian or Alaska Native,Am. Indian,0.002,0.0,0.0,-0.002,0.0,,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,All Genders,0.0%,0.0%
+Women's Field Hockey,Hispanic or Latino,Hispanic,0.039,2.0,2.5,-0.018,-0.005,1.267,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,All Genders,2.0%,2.5%
+Women's Field Hockey,Black or African American,Black,0.011,0.7,1.2,-0.003,-0.006,1.9,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,All Genders,0.7%,1.2%
+Women's Field Hockey,White,White,0.682,81.6,90.0,0.163,-0.084,1.103,🧱 Retention Strength,Strong representation across coaching levels,False,False,All Genders,81.6%,90.0%
+Women's Field Hockey,Native Hawaiian or Other Pacific Islander,NHPI,0.001,,0.0,-0.001,,,👀 Monitor,Mixed signals — no clear structural issue,False,False,All Genders,nan%,0.0%
+Women's Golf,Asian,Asian,0.144,7.9,3.3,-0.089,0.046,0.42,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,All Genders,7.9%,3.3%
+Women's Golf,Unknown,Unknown,0.025,5.0,0.4,0.001,0.046,0.074,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,All Genders,5.0%,0.4%
+Women's Golf,International,International,0.231,4.1,1.1,-0.205,0.03,0.266,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,All Genders,4.1%,1.1%
+Women's Golf,Hispanic or Latino,Hispanic,0.056,2.1,1.8,-0.036,0.002,0.886,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,All Genders,2.1%,1.8%
+Women's Golf,American Indian or Alaska Native,Am. Indian,0.001,0.0,0.0,-0.001,0.0,,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,All Genders,0.0%,0.0%
+Women's Golf,Native Hawaiian or Other Pacific Islander,NHPI,0.004,0.4,0.7,0.002,-0.003,1.772,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,All Genders,0.4%,0.7%
+Women's Golf,Two or More Races,Two+ Races,0.052,0.8,1.5,-0.04,-0.006,1.772,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,All Genders,0.8%,1.5%
+Women's Golf,Black or African American,Black,0.026,3.3,4.4,0.013,-0.011,1.329,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,All Genders,3.3%,4.4%
+Women's Golf,White,White,0.462,76.3,86.8,0.356,-0.104,1.136,🧱 Retention Strength,Strong representation across coaching levels,True,False,All Genders,76.3%,86.8%
+Women's Gymnastics,Hispanic or Latino,Hispanic,0.058,4.8,0.0,-0.024,0.048,0.0,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,All Genders,4.8%,0.0%
+Women's Gymnastics,Two or More Races,Two+ Races,0.114,4.1,0.0,-0.085,0.041,0.0,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,All Genders,4.1%,0.0%
+Women's Gymnastics,Unknown,Unknown,0.016,4.1,0.0,0.013,0.041,0.0,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,All Genders,4.1%,0.0%
+Women's Gymnastics,American Indian or Alaska Native,Am. Indian,0.002,0.7,0.0,0.002,0.007,0.0,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,All Genders,0.7%,0.0%
+Women's Gymnastics,Black or African American,Black,0.091,6.8,7.8,-0.019,-0.01,1.141,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,All Genders,6.8%,7.8%
+Women's Gymnastics,Asian,Asian,0.081,0.0,3.1,-0.072,-0.031,,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,All Genders,0.0%,3.1%
+Women's Gymnastics,White,White,0.608,78.8,89.1,0.211,-0.103,1.131,🧱 Retention Strength,Strong representation across coaching levels,True,False,All Genders,78.8%,89.1%
+Women's Gymnastics,International,International,0.026,0.0,,-0.026,,,👀 Monitor,Mixed signals — no clear structural issue,False,False,All Genders,0.0%,nan%
+Women's Gymnastics,Native Hawaiian or Other Pacific Islander,NHPI,0.004,0.7,,0.001,,,👀 Monitor,Mixed signals — no clear structural issue,False,False,All Genders,0.7%,nan%
+Women's Ice Hockey,International,International,0.281,1.4,0.0,-0.271,0.014,0.0,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,All Genders,1.4%,0.0%
+Women's Ice Hockey,Unknown,Unknown,0.064,4.3,3.8,-0.023,0.004,0.897,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,All Genders,4.3%,3.8%
+Women's Ice Hockey,Asian,Asian,0.011,0.0,0.0,-0.011,0.0,,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,All Genders,0.0%,0.0%
+Women's Ice Hockey,White,White,0.604,91.4,96.2,0.323,-0.047,1.052,🧱 Retention Strength,Strong representation across coaching levels,False,False,All Genders,91.4%,96.2%
+Women's Ice Hockey,American Indian or Alaska Native,Am. Indian,0.0,0.0,,0.0,,,👀 Monitor,Mixed signals — no clear structural issue,False,False,All Genders,0.0%,nan%
+Women's Ice Hockey,Black or African American,Black,0.005,0.0,,-0.005,,,👀 Monitor,Mixed signals — no clear structural issue,False,False,All Genders,0.0%,nan%
+Women's Ice Hockey,Hispanic or Latino,Hispanic,0.018,1.4,,-0.008,,,👀 Monitor,Mixed signals — no clear structural issue,False,False,All Genders,1.4%,nan%
+Women's Ice Hockey,Native Hawaiian or Other Pacific Islander,NHPI,0.0,1.4,,0.01,,,👀 Monitor,Mixed signals — no clear structural issue,False,False,All Genders,1.4%,nan%
+Women's Ice Hockey,Two or More Races,Two+ Races,0.017,0.0,,-0.017,,,👀 Monitor,Mixed signals — no clear structural issue,False,False,All Genders,0.0%,nan%
+Women's Indoor Track,Hispanic or Latino,Hispanic,0.053,3.0,0.6,-0.028,0.025,0.191,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,All Genders,3.0%,0.6%
+Women's Indoor Track,Unknown,Unknown,0.019,2.9,2.0,0.008,0.009,0.702,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,All Genders,2.9%,2.0%
+Women's Indoor Track,Asian,Asian,0.012,0.9,0.3,-0.004,0.006,0.326,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,All Genders,0.9%,0.3%
+Women's Indoor Track,International,International,0.07,1.9,1.5,-0.052,0.004,0.782,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,All Genders,1.9%,1.5%
+Women's Indoor Track,American Indian or Alaska Native,Am. Indian,0.002,0.3,0.3,0.001,0.0,0.977,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,All Genders,0.3%,0.3%
+Women's Indoor Track,Black or African American,Black,0.239,28.9,29.1,0.05,-0.001,1.005,👀 Monitor,Mixed signals — no clear structural issue,False,False,All Genders,28.9%,29.1%
+Women's Indoor Track,Two or More Races,Two+ Races,0.078,1.5,1.7,-0.063,-0.003,1.173,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,All Genders,1.5%,1.7%
+Women's Indoor Track,White,White,0.525,60.4,64.5,0.087,-0.042,1.069,🧱 Retention Strength,Strong representation across coaching levels,False,False,All Genders,60.4%,64.5%
+Women's Indoor Track,Native Hawaiian or Other Pacific Islander,NHPI,0.002,0.2,,0.0,,,👀 Monitor,Mixed signals — no clear structural issue,False,False,All Genders,0.2%,nan%
+Women's Lacrosse,Unknown,Unknown,0.033,6.1,1.6,0.014,0.045,0.261,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,All Genders,6.1%,1.6%
+Women's Lacrosse,Black or African American,Black,0.031,3.6,3.2,0.004,0.004,0.886,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,All Genders,3.6%,3.2%
+Women's Lacrosse,Asian,Asian,0.015,1.1,0.8,-0.005,0.003,0.738,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,All Genders,1.1%,0.8%
+Women's Lacrosse,American Indian or Alaska Native,Am. Indian,0.004,0.7,0.8,0.004,-0.001,1.107,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,All Genders,0.7%,0.8%
+Women's Lacrosse,Two or More Races,Two+ Races,0.052,1.4,1.6,-0.037,-0.002,1.107,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,All Genders,1.4%,1.6%
+Women's Lacrosse,Hispanic or Latino,Hispanic,0.031,0.4,0.8,-0.026,-0.004,2.214,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,All Genders,0.4%,0.8%
+Women's Lacrosse,International,International,0.012,0.4,1.6,-0.005,-0.012,4.429,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,All Genders,0.4%,1.6%
+Women's Lacrosse,White,White,0.821,86.0,89.7,0.05,-0.037,1.043,🧱 Retention Strength,Strong representation across coaching levels,False,False,All Genders,86.0%,89.7%
+Women's Lacrosse,Native Hawaiian or Other Pacific Islander,NHPI,0.002,0.4,,0.0,,,👀 Monitor,Mixed signals — no clear structural issue,False,False,All Genders,0.4%,nan%
+Women's Outdoor Track,Hispanic or Latino,Hispanic,0.055,3.0,0.9,-0.029,0.021,0.29,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,All Genders,3.0%,0.9%
+Women's Outdoor Track,Unknown,Unknown,0.019,3.0,1.7,0.009,0.013,0.566,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,All Genders,3.0%,1.7%
+Women's Outdoor Track,Asian,Asian,0.012,1.0,0.3,-0.003,0.007,0.297,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,All Genders,1.0%,0.3%
+Women's Outdoor Track,International,International,0.071,1.9,1.4,-0.053,0.004,0.773,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,All Genders,1.9%,1.4%
+Women's Outdoor Track,American Indian or Alaska Native,Am. Indian,0.002,0.3,0.3,0.001,0.0,0.966,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,All Genders,0.3%,0.3%
+Women's Outdoor Track,Black or African American,Black,0.236,28.7,29.0,0.052,-0.003,1.011,👀 Monitor,Mixed signals — no clear structural issue,False,False,All Genders,28.7%,29.0%
+Women's Outdoor Track,Two or More Races,Two+ Races,0.077,1.4,2.0,-0.062,-0.006,1.424,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,All Genders,1.4%,2.0%
+Women's Outdoor Track,White,White,0.527,60.6,64.4,0.087,-0.038,1.062,🧱 Retention Strength,Strong representation across coaching levels,False,False,All Genders,60.6%,64.4%
+Women's Outdoor Track,Native Hawaiian or Other Pacific Islander,NHPI,0.002,0.1,,-0.0,,,👀 Monitor,Mixed signals — no clear structural issue,False,False,All Genders,0.1%,nan%
+Women's Rifle,White,White,0.682,100.0,85.7,0.227,0.143,0.857,🚧 Promotion Gap,Representation drops significantly at Head Coach level,True,False,All Genders,100.0%,85.7%
+Women's Rifle,Asian,Asian,0.106,0.0,,-0.106,,,👀 Monitor,Mixed signals — no clear structural issue,False,False,All Genders,0.0%,nan%
+Women's Rifle,Hispanic or Latino,Hispanic,0.076,0.0,,-0.076,,,👀 Monitor,Mixed signals — no clear structural issue,False,False,All Genders,0.0%,nan%
+Women's Rifle,International,International,0.015,,14.3,0.076,,,👀 Monitor,Mixed signals — no clear structural issue,False,False,All Genders,nan%,14.3%
+Women's Rowing,White,White,0.726,88.3,82.6,0.142,0.057,0.936,🧱 Retention Strength,Strong representation across coaching levels,False,False,All Genders,88.3%,82.6%
+Women's Rowing,Hispanic or Latino,Hispanic,0.05,1.9,0.0,-0.036,0.019,0.0,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,All Genders,1.9%,0.0%
+Women's Rowing,Unknown,Unknown,0.034,6.8,5.4,0.03,0.014,0.8,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,All Genders,6.8%,5.4%
+Women's Rowing,Asian,Asian,0.032,0.4,1.1,-0.026,-0.007,2.88,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,All Genders,0.4%,1.1%
+Women's Rowing,Black or African American,Black,0.021,1.5,2.2,-0.004,-0.007,1.44,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,All Genders,1.5%,2.2%
+Women's Rowing,International,International,0.065,0.8,2.2,-0.054,-0.014,2.88,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,All Genders,0.8%,2.2%
+Women's Rowing,Two or More Races,Two+ Races,0.068,0.4,6.5,-0.048,-0.061,17.283,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,All Genders,0.4%,6.5%
+Women's Rowing,American Indian or Alaska Native,Am. Indian,0.003,0.0,,-0.003,,,👀 Monitor,Mixed signals — no clear structural issue,False,False,All Genders,0.0%,nan%
+Women's Rowing,Native Hawaiian or Other Pacific Islander,NHPI,0.001,0.0,,-0.001,,,👀 Monitor,Mixed signals — no clear structural issue,False,False,All Genders,0.0%,nan%
+Women's Rugby,Black or African American,Black,0.072,12.5,0.0,0.002,0.125,0.0,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,True,False,All Genders,12.5%,0.0%
+Women's Rugby,Native Hawaiian or Other Pacific Islander,NHPI,0.018,12.5,0.0,0.056,0.125,0.0,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,True,False,All Genders,12.5%,0.0%
+Women's Rugby,Two or More Races,Two+ Races,0.152,6.2,0.0,-0.115,0.062,0.0,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,All Genders,6.2%,0.0%
+Women's Rugby,Hispanic or Latino,Hispanic,0.069,6.2,9.1,0.005,-0.028,1.455,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,All Genders,6.2%,9.1%
+Women's Rugby,White,White,0.501,62.5,81.8,0.202,-0.193,1.309,🧱 Retention Strength,Strong representation across coaching levels,True,False,All Genders,62.5%,81.8%
+Women's Rugby,International,International,0.023,0.0,,-0.023,,,👀 Monitor,Mixed signals — no clear structural issue,False,False,All Genders,0.0%,nan%
+Women's Rugby,Unknown,Unknown,0.129,0.0,,-0.129,,,👀 Monitor,Mixed signals — no clear structural issue,False,False,All Genders,0.0%,nan%
+Women's Rugby,Asian,Asian,0.031,,9.1,0.006,,,👀 Monitor,Mixed signals — no clear structural issue,False,False,All Genders,nan%,9.1%
+Women's Skiing,Two or More Races,Two+ Races,0.019,4.8,0.0,0.01,0.048,0.0,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,All Genders,4.8%,0.0%
+Women's Skiing,Unknown,Unknown,0.019,0.0,0.0,-0.019,0.0,,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,All Genders,0.0%,0.0%
+Women's Skiing,International,International,0.208,4.8,7.1,-0.15,-0.024,1.5,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,All Genders,4.8%,7.1%
+Women's Skiing,White,White,0.736,90.5,92.9,0.178,-0.024,1.026,🧱 Retention Strength,Strong representation across coaching levels,False,False,All Genders,90.5%,92.9%
+Women's Skiing,American Indian or Alaska Native,Am. Indian,0.0,0.0,,0.0,,,👀 Monitor,Mixed signals — no clear structural issue,False,False,All Genders,0.0%,nan%
+Women's Soccer,Hispanic or Latino,Hispanic,0.076,6.2,4.7,-0.019,0.015,0.762,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,All Genders,6.2%,4.7%
+Women's Soccer,Two or More Races,Two+ Races,0.101,3.2,1.8,-0.074,0.015,0.548,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,All Genders,3.2%,1.8%
+Women's Soccer,Black or African American,Black,0.069,6.4,5.0,-0.009,0.014,0.776,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,All Genders,6.4%,5.0%
+Women's Soccer,Unknown,Unknown,0.02,3.2,2.1,0.009,0.012,0.639,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,All Genders,3.2%,2.1%
+Women's Soccer,Asian,Asian,0.019,1.3,1.2,-0.006,0.002,0.876,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,All Genders,1.3%,1.2%
+Women's Soccer,American Indian or Alaska Native,Am. Indian,0.002,0.0,0.0,-0.002,0.0,,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,All Genders,0.0%,0.0%
+Women's Soccer,International,International,0.068,4.7,5.0,-0.021,-0.003,1.064,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,All Genders,4.7%,5.0%
+Women's Soccer,Native Hawaiian or Other Pacific Islander,NHPI,0.005,0.3,0.6,-0.001,-0.003,2.191,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,All Genders,0.3%,0.6%
+Women's Soccer,White,White,0.64,74.7,79.8,0.123,-0.051,1.068,🧱 Retention Strength,Strong representation across coaching levels,False,False,All Genders,74.7%,79.8%
+Women's Softball,Hispanic or Latino,Hispanic,0.11,8.0,5.2,-0.038,0.028,0.654,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,True,All Genders,8.0%,5.2%
+Women's Softball,Two or More Races,Two+ Races,0.114,3.4,2.0,-0.085,0.014,0.578,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,True,All Genders,3.4%,2.0%
+Women's Softball,International,International,0.006,0.8,0.0,0.0,0.008,0.0,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,True,All Genders,0.8%,0.0%
+Women's Softball,Asian,Asian,0.012,1.2,0.7,-0.001,0.006,0.536,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,True,All Genders,1.2%,0.7%
+Women's Softball,Unknown,Unknown,0.014,2.6,2.0,0.01,0.006,0.761,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,True,All Genders,2.6%,2.0%
+Women's Softball,Native Hawaiian or Other Pacific Islander,NHPI,0.008,1.0,0.7,0.001,0.003,0.689,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,True,All Genders,1.0%,0.7%
+Women's Softball,American Indian or Alaska Native,Am. Indian,0.006,0.4,0.3,-0.003,0.001,0.803,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,True,All Genders,0.4%,0.3%
+Women's Softball,Black or African American,Black,0.084,7.3,8.9,-0.006,-0.015,1.205,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,True,All Genders,7.3%,8.9%
+Women's Softball,White,White,0.646,75.2,80.3,0.121,-0.051,1.068,🧱 Retention Strength,Strong representation across coaching levels,False,True,All Genders,75.2%,80.3%
+Women's Stunt,White,White,0.704,71.4,83.3,0.065,-0.119,1.167,🧱 Retention Strength,Strong representation across coaching levels,True,False,All Genders,71.4%,83.3%
+Women's Stunt,Black or African American,Black,0.074,0.0,16.7,0.003,-0.167,,👀 Monitor,Mixed signals — no clear structural issue,True,False,All Genders,0.0%,16.7%
+Women's Stunt,American Indian or Alaska Native,Am. Indian,0.0,14.3,,0.077,,,👀 Monitor,Mixed signals — no clear structural issue,False,False,All Genders,14.3%,nan%
+Women's Stunt,Asian,Asian,0.034,14.3,,0.042,,,👀 Monitor,Mixed signals — no clear structural issue,False,False,All Genders,14.3%,nan%
+Women's Stunt,Native Hawaiian or Other Pacific Islander,NHPI,,0.0,,,,,👀 Monitor,Mixed signals — no clear structural issue,False,False,All Genders,0.0%,nan%
+Women's Swimming,Hispanic or Latino,Hispanic,0.042,4.8,1.9,-0.001,0.029,0.402,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,All Genders,4.8%,1.9%
+Women's Swimming,Two or More Races,Two+ Races,0.063,2.2,1.0,-0.044,0.013,0.433,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,All Genders,2.2%,1.0%
+Women's Swimming,International,International,0.087,1.5,1.4,-0.072,0.001,0.939,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,All Genders,1.5%,1.4%
+Women's Swimming,Unknown,Unknown,0.02,2.6,2.9,0.006,-0.003,1.127,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,All Genders,2.6%,2.9%
+Women's Swimming,Asian,Asian,0.042,3.4,3.9,-0.007,-0.004,1.127,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,All Genders,3.4%,3.9%
+Women's Swimming,Black or African American,Black,0.013,1.7,2.4,0.006,-0.007,1.408,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,All Genders,1.7%,2.4%
+Women's Swimming,White,White,0.728,83.2,86.5,0.113,-0.033,1.039,🧱 Retention Strength,Strong representation across coaching levels,False,False,All Genders,83.2%,86.5%
+Women's Swimming,American Indian or Alaska Native,Am. Indian,0.002,0.3,,0.0,,,👀 Monitor,Mixed signals — no clear structural issue,False,False,All Genders,0.3%,nan%
+Women's Swimming,Native Hawaiian or Other Pacific Islander,NHPI,0.002,0.2,,-0.0,,,👀 Monitor,Mixed signals — no clear structural issue,False,False,All Genders,0.2%,nan%
+Women's Tennis,International,International,0.342,20.9,8.5,-0.192,0.124,0.406,🚧 Promotion Gap,Representation drops significantly at Head Coach level,True,False,All Genders,20.9%,8.5%
+Women's Tennis,Hispanic or Latino,Hispanic,0.062,6.2,5.2,-0.005,0.01,0.844,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,All Genders,6.2%,5.2%
+Women's Tennis,Unknown,Unknown,0.037,4.1,3.3,-0.0,0.009,0.791,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,All Genders,4.1%,3.3%
+Women's Tennis,Two or More Races,Two+ Races,0.056,2.4,2.0,-0.035,0.004,0.831,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,All Genders,2.4%,2.0%
+Women's Tennis,American Indian or Alaska Native,Am. Indian,0.003,0.3,0.0,-0.001,0.003,0.0,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,All Genders,0.3%,0.0%
+Women's Tennis,Asian,Asian,0.082,5.0,4.9,-0.032,0.001,0.977,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,All Genders,5.0%,4.9%
+Women's Tennis,Native Hawaiian or Other Pacific Islander,NHPI,0.002,0.0,0.0,-0.002,0.0,,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,All Genders,0.0%,0.0%
+Women's Tennis,Black or African American,Black,0.048,5.0,6.5,0.009,-0.015,1.303,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,All Genders,5.0%,6.5%
+Women's Tennis,White,White,0.368,56.2,69.7,0.257,-0.135,1.241,🧱 Retention Strength,Strong representation across coaching levels,True,False,All Genders,56.2%,69.7%
+Women's Triathlon,International,International,0.082,0.0,0.0,-0.082,0.0,,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,All Genders,0.0%,0.0%
+Women's Triathlon,White,White,0.671,90.0,93.3,0.249,-0.033,1.037,🧱 Retention Strength,Strong representation across coaching levels,False,False,All Genders,90.0%,93.3%
+Women's Triathlon,Black or African American,Black,0.062,0.0,6.7,-0.022,-0.067,,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,All Genders,0.0%,6.7%
+Women's Triathlon,Hispanic or Latino,Hispanic,0.103,10.0,,-0.063,,,👀 Monitor,Mixed signals — no clear structural issue,False,False,All Genders,10.0%,nan%
+Women's Volleyball,Hispanic or Latino,Hispanic,0.058,6.5,4.7,0.001,0.018,0.719,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,True,All Genders,6.5%,4.7%
+Women's Volleyball,Asian,Asian,0.015,3.4,2.0,0.014,0.013,0.605,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,True,All Genders,3.4%,2.0%
+Women's Volleyball,Black or African American,Black,0.156,9.4,8.2,-0.066,0.012,0.873,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,True,All Genders,9.4%,8.2%
+Women's Volleyball,Unknown,Unknown,0.021,3.1,2.0,0.007,0.011,0.655,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,True,All Genders,3.1%,2.0%
+Women's Volleyball,Native Hawaiian or Other Pacific Islander,NHPI,0.011,2.3,2.0,0.011,0.003,0.873,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,True,All Genders,2.3%,2.0%
+Women's Volleyball,American Indian or Alaska Native,Am. Indian,0.003,0.4,0.3,0.001,0.001,0.749,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,True,All Genders,0.4%,0.3%
+Women's Volleyball,International,International,0.052,1.3,1.8,-0.038,-0.005,1.347,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,True,All Genders,1.3%,1.8%
+Women's Volleyball,Two or More Races,Two+ Races,0.094,2.7,4.7,-0.061,-0.019,1.711,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,True,All Genders,2.7%,4.7%
+Women's Volleyball,White,White,0.588,70.8,74.3,0.131,-0.034,1.049,🧱 Retention Strength,Strong representation across coaching levels,False,True,All Genders,70.8%,74.3%
+Women's Water Polo,Two or More Races,Two+ Races,0.107,5.3,0.0,-0.075,0.053,0.0,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,All Genders,5.3%,0.0%
+Women's Water Polo,White,White,0.608,82.5,77.8,0.198,0.047,0.943,🧱 Retention Strength,Strong representation across coaching levels,False,False,All Genders,82.5%,77.8%
+Women's Water Polo,International,International,0.103,1.8,0.0,-0.092,0.018,0.0,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,All Genders,1.8%,0.0%
+Women's Water Polo,Asian,Asian,0.013,3.5,2.8,0.019,0.007,0.792,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,All Genders,3.5%,2.8%
+Women's Water Polo,Hispanic or Latino,Hispanic,0.115,3.5,5.6,-0.072,-0.02,1.583,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,All Genders,3.5%,5.6%
+Women's Water Polo,Native Hawaiian or Other Pacific Islander,NHPI,0.006,0.0,2.8,0.005,-0.028,,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,All Genders,0.0%,2.8%
+Women's Water Polo,Black or African American,Black,0.016,1.8,5.6,0.016,-0.038,3.167,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,All Genders,1.8%,5.6%
+Women's Water Polo,Unknown,Unknown,0.029,1.8,5.6,0.003,-0.038,3.167,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,All Genders,1.8%,5.6%
+Women's Wrestling,White,White,0.495,33.3,66.7,0.005,-0.333,2.0,🧱 Retention Strength,Strong representation across coaching levels,True,False,All Genders,33.3%,66.7%
+Women's Wrestling,Black or African American,Black,0.033,33.3,,0.134,,,👀 Monitor,Mixed signals — no clear structural issue,False,False,All Genders,33.3%,nan%
+Women's Wrestling,International,International,0.011,33.3,,0.156,,,👀 Monitor,Mixed signals — no clear structural issue,False,False,All Genders,33.3%,nan%
+Women's Wrestling,Unknown,Unknown,0.044,0.0,,-0.044,,,👀 Monitor,Mixed signals — no clear structural issue,False,False,All Genders,0.0%,nan%
+Women's Wrestling,Asian,Asian,0.055,,33.3,0.112,,,👀 Monitor,Mixed signals — no clear structural issue,False,False,All Genders,nan%,33.3%

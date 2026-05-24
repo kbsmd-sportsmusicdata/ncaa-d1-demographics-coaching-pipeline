@@ -1,0 +1,379 @@
+sport,race_group,race_group_short,year,athlete_race_pct,assistant_pct,hc_pct,promotion_gap,promo_gap_yoy,asst_pct_yoy,hc_pct_yoy,pipeline_strength_score,coach_athlete_rep_gap,hiring_flag,flag_reason,significant_gap,flag_changed_yoy,is_focus_sport
+Women's Basketball,American Indian or Alaska Native,Am. Indian,2012,0.4,0.0,0.3,-0.003,,,,,-0.4,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Basketball,American Indian or Alaska Native,Am. Indian,2013,0.5,0.0,0.3,-0.003,0.0,0.0,0.0,,-0.4,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Basketball,American Indian or Alaska Native,Am. Indian,2014,0.5,0.0,0.3,-0.003,0.0,0.0,0.0,,-0.5,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Basketball,American Indian or Alaska Native,Am. Indian,2015,0.4,0.0,0.0,0.0,0.003,0.0,-0.3,,-0.4,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Basketball,American Indian or Alaska Native,Am. Indian,2016,0.4,0.1,0.0,0.001,0.001,0.1,0.0,0.0,-0.4,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Basketball,American Indian or Alaska Native,Am. Indian,2017,0.4,0.1,0.0,0.001,0.0,0.0,0.0,0.0,-0.3,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Basketball,American Indian or Alaska Native,Am. Indian,2018,0.4,0.1,0.0,0.001,0.0,0.0,0.0,0.0,-0.3,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Basketball,American Indian or Alaska Native,Am. Indian,2019,0.4,0.1,0.3,-0.002,-0.003,0.0,0.3,3.065,-0.3,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Basketball,American Indian or Alaska Native,Am. Indian,2020,0.4,0.2,0.3,-0.001,0.001,0.1,0.0,1.517,-0.2,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Basketball,American Indian or Alaska Native,Am. Indian,2021,0.5,0.2,0.0,0.002,0.003,0.0,-0.3,0.0,-0.4,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Basketball,American Indian or Alaska Native,Am. Indian,2022,0.3,0.2,0.3,-0.001,-0.003,0.0,0.3,1.493,-0.1,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Basketball,American Indian or Alaska Native,Am. Indian,2023,0.3,0.3,0.3,-0.0,0.001,0.1,0.0,1.039,-0.1,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Basketball,American Indian or Alaska Native,Am. Indian,2024,0.3,0.2,0.3,-0.001,-0.001,-0.1,0.0,1.878,-0.2,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Basketball,American Indian or Alaska Native,Am. Indian,2025,0.4,0.4,0.3,0.001,0.002,0.2,0.0,0.784,-0.0,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Basketball,Asian,Asian,2012,0.6,1.2,0.3,0.009,,,,0.234,0.4,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Basketball,Asian,Asian,2013,0.5,1.0,0.0,0.01,0.001,-0.2,-0.3,0.0,0.2,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Basketball,Asian,Asian,2014,0.6,0.9,0.0,0.009,-0.001,-0.1,0.0,0.0,0.1,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Basketball,Asian,Asian,2015,0.4,0.8,0.0,0.008,-0.001,-0.1,0.0,0.0,0.2,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Basketball,Asian,Asian,2016,0.3,0.8,0.3,0.005,-0.003,0.0,0.3,0.373,0.3,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Basketball,Asian,Asian,2017,1.0,0.7,0.3,0.004,-0.001,-0.1,0.0,0.435,-0.5,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Basketball,Asian,Asian,2018,0.5,1.0,0.6,0.005,0.001,0.3,0.3,0.547,0.4,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Basketball,Asian,Asian,2019,0.7,1.1,0.6,0.005,0.0,0.1,0.0,0.511,0.3,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Basketball,Asian,Asian,2020,0.6,0.8,0.6,0.002,-0.003,-0.3,0.0,0.759,0.1,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Basketball,Asian,Asian,2021,0.6,1.1,0.6,0.006,0.004,0.3,0.0,0.498,0.4,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Basketball,Asian,Asian,2022,0.7,1.1,0.6,0.006,0.0,0.0,0.0,0.498,0.3,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Basketball,Asian,Asian,2023,0.7,0.9,0.6,0.003,-0.003,-0.2,0.0,0.624,0.1,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Basketball,Asian,Asian,2024,1.0,1.5,0.3,0.012,0.009,0.6,-0.3,0.188,0.3,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Basketball,Asian,Asian,2025,0.8,1.6,0.6,0.011,-0.001,0.1,0.3,0.341,0.7,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Basketball,Black or African American,Black,2012,51.4,38.9,20.5,0.184,,,,0.528,-17.1,🚧 Promotion Gap,Representation drops significantly at Head Coach level,True,False,True
+Women's Basketball,Black or African American,Black,2013,51.4,40.2,20.6,0.196,0.012,1.3,0.1,0.512,-16.1,🚧 Promotion Gap,Representation drops significantly at Head Coach level,True,False,True
+Women's Basketball,Black or African American,Black,2014,50.5,40.8,19.8,0.21,0.014,0.6,-0.8,0.486,-15.0,🚧 Promotion Gap,Representation drops significantly at Head Coach level,True,False,True
+Women's Basketball,Black or African American,Black,2015,50.8,42.2,20.8,0.214,0.004,1.4,1.0,0.493,-13.9,🚧 Promotion Gap,Representation drops significantly at Head Coach level,True,False,True
+Women's Basketball,Black or African American,Black,2016,48.9,42.3,22.9,0.194,-0.02,0.1,2.1,0.542,-11.4,🚧 Promotion Gap,Representation drops significantly at Head Coach level,True,False,True
+Women's Basketball,Black or African American,Black,2017,46.4,43.6,21.9,0.217,0.023,1.3,-1.0,0.502,-8.1,🚧 Promotion Gap,Representation drops significantly at Head Coach level,True,False,True
+Women's Basketball,Black or African American,Black,2018,46.7,44.4,22.8,0.216,-0.001,0.8,0.9,0.513,-7.7,🚧 Promotion Gap,Representation drops significantly at Head Coach level,True,False,True
+Women's Basketball,Black or African American,Black,2019,45.5,45.6,24.6,0.209,-0.007,1.2,1.8,0.541,-5.1,🚧 Promotion Gap,Representation drops significantly at Head Coach level,True,False,True
+Women's Basketball,Black or African American,Black,2020,45.6,45.5,24.3,0.212,0.003,-0.1,-0.3,0.534,-5.3,🚧 Promotion Gap,Representation drops significantly at Head Coach level,True,False,True
+Women's Basketball,Black or African American,Black,2021,44.1,46.7,27.8,0.189,-0.023,1.2,3.5,0.596,-2.2,🚧 Promotion Gap,Representation drops significantly at Head Coach level,True,False,True
+Women's Basketball,Black or African American,Black,2022,43.7,46.5,28.4,0.181,-0.008,-0.2,0.6,0.611,-1.8,🚧 Promotion Gap,Representation drops significantly at Head Coach level,True,False,True
+Women's Basketball,Black or African American,Black,2023,42.1,48.9,29.0,0.199,0.018,2.4,0.6,0.594,1.9,🚧 Promotion Gap,Representation drops significantly at Head Coach level,True,False,True
+Women's Basketball,Black or African American,Black,2024,41.1,46.6,31.4,0.152,-0.047,-2.3,2.4,0.675,2.3,🚧 Promotion Gap,Representation drops significantly at Head Coach level,True,False,True
+Women's Basketball,Black or African American,Black,2025,39.3,46.1,32.9,0.133,-0.019,-0.5,1.5,0.713,4.1,🚧 Promotion Gap,Representation drops significantly at Head Coach level,True,False,True
+Women's Basketball,Hispanic or Latino,Hispanic,2012,1.9,1.3,0.9,0.005,,,,0.652,-0.7,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Basketball,Hispanic or Latino,Hispanic,2013,2.0,1.7,0.6,0.011,0.006,0.4,-0.3,0.337,-0.6,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Basketball,Hispanic or Latino,Hispanic,2014,2.2,1.3,0.8,0.005,-0.006,-0.4,0.2,0.642,-0.9,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Basketball,Hispanic or Latino,Hispanic,2015,2.2,1.6,0.9,0.007,0.002,0.3,0.1,0.533,-0.8,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Basketball,Hispanic or Latino,Hispanic,2016,2.6,1.7,0.8,0.009,0.002,0.1,-0.1,0.498,-1.1,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Basketball,Hispanic or Latino,Hispanic,2017,2.5,1.8,0.9,0.009,0.0,0.1,0.1,0.48,-1.0,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Basketball,Hispanic or Latino,Hispanic,2018,2.6,1.6,1.1,0.005,-0.004,-0.2,0.2,0.708,-1.1,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Basketball,Hispanic or Latino,Hispanic,2019,2.8,1.8,1.1,0.006,0.001,0.2,0.0,0.645,-1.2,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Basketball,Hispanic or Latino,Hispanic,2020,2.5,1.9,0.9,0.01,0.004,0.1,-0.2,0.455,-0.8,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Basketball,Hispanic or Latino,Hispanic,2021,2.9,1.6,0.6,0.01,0.0,-0.3,-0.3,0.351,-1.5,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Basketball,Hispanic or Latino,Hispanic,2022,2.8,1.9,0.9,0.011,0.001,0.3,0.3,0.448,-1.2,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Basketball,Hispanic or Latino,Hispanic,2023,2.7,1.4,0.8,0.006,-0.005,-0.5,-0.1,0.585,-1.4,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Basketball,Hispanic or Latino,Hispanic,2024,2.8,2.0,0.8,0.011,0.005,0.6,0.0,0.433,-1.1,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Basketball,Hispanic or Latino,Hispanic,2025,3.4,2.7,0.8,0.019,0.008,0.7,0.0,0.309,-1.1,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Basketball,International,International,2012,3.9,0.6,0.0,0.006,,,,0.0,-3.5,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Basketball,International,International,2013,3.9,0.8,0.0,0.008,0.002,0.2,0.0,0.0,-3.4,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Basketball,International,International,2014,4.3,0.9,0.3,0.006,-0.002,0.1,0.3,0.333,-3.6,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Basketball,International,International,2015,4.8,0.9,0.3,0.007,0.001,0.0,0.0,0.302,-4.0,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Basketball,International,International,2016,5.9,1.0,0.6,0.005,-0.002,0.1,0.3,0.543,-5.0,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Basketball,International,International,2017,7.1,1.0,0.3,0.007,0.002,0.0,-0.3,0.277,-6.3,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Basketball,International,International,2018,7.7,1.4,0.3,0.011,0.004,0.4,0.0,0.201,-6.6,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Basketball,International,International,2019,8.7,0.9,0.0,0.009,-0.002,-0.5,-0.3,0.0,-8.0,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Basketball,International,International,2020,9.0,1.1,0.0,0.011,0.002,0.2,0.0,0.0,-8.2,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Basketball,International,International,2021,9.3,1.2,0.0,0.012,0.001,0.1,0.0,0.0,-8.4,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Basketball,International,International,2022,9.3,0.9,0.3,0.006,-0.006,-0.3,0.3,0.332,-8.6,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Basketball,International,International,2023,10.2,1.1,0.3,0.008,0.002,0.2,0.0,0.26,-9.3,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Basketball,International,International,2024,9.8,0.8,0.0,0.008,0.0,-0.3,-0.3,0.0,-9.1,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Basketball,International,International,2025,10.1,0.9,0.0,0.009,0.001,0.1,0.0,0.0,-9.4,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Basketball,Native Hawaiian or Other Pacific Islander,NHPI,2012,0.4,0.0,0.0,0.0,,,,,-0.4,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Basketball,Native Hawaiian or Other Pacific Islander,NHPI,2013,0.3,0.0,0.0,0.0,0.0,0.0,0.0,,-0.3,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Basketball,Native Hawaiian or Other Pacific Islander,NHPI,2014,0.4,0.1,0.0,0.001,0.001,0.1,0.0,0.0,-0.3,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Basketball,Native Hawaiian or Other Pacific Islander,NHPI,2015,0.6,0.1,0.0,0.001,0.0,0.0,0.0,0.0,-0.5,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Basketball,Native Hawaiian or Other Pacific Islander,NHPI,2016,0.4,0.1,0.0,0.001,0.0,0.0,0.0,0.0,-0.3,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Basketball,Native Hawaiian or Other Pacific Islander,NHPI,2017,0.4,0.1,0.0,0.001,0.0,0.0,0.0,0.0,-0.3,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Basketball,Native Hawaiian or Other Pacific Islander,NHPI,2018,0.5,0.1,0.0,0.001,0.0,0.0,0.0,0.0,-0.4,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Basketball,Native Hawaiian or Other Pacific Islander,NHPI,2019,0.3,0.1,0.0,0.001,0.0,0.0,0.0,0.0,-0.2,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Basketball,Native Hawaiian or Other Pacific Islander,NHPI,2020,0.3,0.0,0.0,0.0,-0.001,-0.1,0.0,,-0.3,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Basketball,Native Hawaiian or Other Pacific Islander,NHPI,2021,0.6,0.1,0.0,0.001,0.001,0.1,0.0,0.0,-0.5,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Basketball,Native Hawaiian or Other Pacific Islander,NHPI,2022,0.5,0.1,0.0,0.001,0.0,0.0,0.0,0.0,-0.4,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Basketball,Native Hawaiian or Other Pacific Islander,NHPI,2023,0.6,0.0,0.0,0.0,-0.001,-0.1,0.0,,-0.6,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Basketball,Native Hawaiian or Other Pacific Islander,NHPI,2024,0.6,0.0,0.6,-0.006,-0.006,0.0,0.6,,-0.5,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Basketball,Native Hawaiian or Other Pacific Islander,NHPI,2025,0.6,0.1,0.6,-0.004,0.002,0.1,0.0,3.919,-0.4,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Basketball,Two or More Races,Two+ Races,2012,3.0,0.6,0.9,-0.003,,,,1.52,-2.3,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Basketball,Two or More Races,Two+ Races,2013,3.7,0.9,0.9,0.001,0.004,0.3,0.0,0.909,-2.8,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Basketball,Two or More Races,Two+ Races,2014,4.7,1.1,0.8,0.003,0.002,0.2,-0.1,0.749,-3.6,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Basketball,Two or More Races,Two+ Races,2015,5.7,0.9,0.3,0.007,0.004,-0.2,-0.5,0.302,-4.9,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Basketball,Two or More Races,Two+ Races,2016,6.1,1.5,0.6,0.01,0.003,0.6,0.3,0.373,-4.8,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Basketball,Two or More Races,Two+ Races,2017,6.2,1.7,0.3,0.014,0.004,0.2,-0.3,0.169,-4.9,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Basketball,Two or More Races,Two+ Races,2018,6.7,1.7,0.3,0.014,0.0,0.0,0.0,0.167,-5.3,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Basketball,Two or More Races,Two+ Races,2019,7.3,1.6,0.3,0.013,-0.001,-0.1,0.0,0.18,-6.0,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Basketball,Two or More Races,Two+ Races,2020,7.4,1.4,0.6,0.008,-0.005,-0.2,0.3,0.405,-6.2,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Basketball,Two or More Races,Two+ Races,2021,8.2,2.2,0.3,0.019,0.011,0.8,-0.3,0.13,-6.5,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Basketball,Two or More Races,Two+ Races,2022,9.1,2.7,0.9,0.018,-0.001,0.5,0.6,0.32,-6.9,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Basketball,Two or More Races,Two+ Races,2023,9.1,3.0,1.1,0.019,0.001,0.3,0.2,0.378,-6.6,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Basketball,Two or More Races,Two+ Races,2024,10.0,3.0,1.1,0.019,0.0,0.0,0.0,0.376,-7.4,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Basketball,Two or More Races,Two+ Races,2025,11.0,2.8,1.9,0.009,-0.01,-0.2,0.8,0.686,-8.3,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Basketball,Unknown,Unknown,2012,2.9,0.6,0.3,0.003,,,,0.507,-2.4,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Basketball,Unknown,Unknown,2013,3.2,1.0,0.6,0.005,0.002,0.4,0.3,0.551,-2.3,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Basketball,Unknown,Unknown,2014,2.8,0.7,0.6,0.001,-0.004,-0.3,0.0,0.856,-2.2,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Basketball,Unknown,Unknown,2015,2.8,0.4,0.3,0.001,0.0,-0.3,-0.3,0.756,-2.4,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Basketball,Unknown,Unknown,2016,2.8,1.2,1.1,0.001,0.0,0.8,0.8,0.919,-1.6,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Basketball,Unknown,Unknown,2017,3.1,1.2,0.9,0.004,0.003,0.0,-0.2,0.702,-1.9,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Basketball,Unknown,Unknown,2018,3.3,1.6,0.6,0.01,0.006,0.4,-0.3,0.354,-2.0,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Basketball,Unknown,Unknown,2019,2.6,1.5,0.6,0.009,-0.001,-0.1,0.0,0.383,-1.4,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Basketball,Unknown,Unknown,2020,3.2,1.6,0.6,0.01,0.001,0.1,0.0,0.357,-1.8,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Basketball,Unknown,Unknown,2021,2.3,1.8,0.6,0.012,0.002,0.2,0.0,0.314,-0.8,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Basketball,Unknown,Unknown,2022,2.2,1.8,0.9,0.01,-0.002,0.0,0.3,0.471,-0.6,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Basketball,Unknown,Unknown,2023,2.0,1.9,0.6,0.013,0.003,0.1,-0.3,0.297,-0.4,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Basketball,Unknown,Unknown,2024,2.4,1.7,1.4,0.003,-0.01,-0.2,0.8,0.817,-0.8,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Basketball,Unknown,Unknown,2025,2.4,1.8,1.9,-0.001,-0.004,0.1,0.5,1.055,-0.5,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Basketball,White,White,2012,35.5,56.8,76.9,-0.2,,,,1.352,26.3,🧱 Retention Strength,Strong representation across coaching levels,True,False,True
+Women's Basketball,White,White,2013,34.3,54.3,77.1,-0.228,-0.028,-2.5,0.2,1.42,25.7,🧱 Retention Strength,Strong representation across coaching levels,True,False,True
+Women's Basketball,White,White,2014,34.1,54.2,77.3,-0.232,-0.004,-0.1,0.2,1.428,25.9,🧱 Retention Strength,Strong representation across coaching levels,True,False,True
+Women's Basketball,White,White,2015,32.4,53.1,77.5,-0.244,-0.012,-1.1,0.2,1.46,26.7,🧱 Retention Strength,Strong representation across coaching levels,True,False,True
+Women's Basketball,White,White,2016,32.5,51.2,73.7,-0.224,0.02,-1.9,-3.8,1.438,24.3,🧱 Retention Strength,Strong representation across coaching levels,True,False,True
+Women's Basketball,White,White,2017,32.9,49.9,75.6,-0.257,-0.033,-1.3,1.9,1.516,23.3,🧱 Retention Strength,Strong representation across coaching levels,True,False,True
+Women's Basketball,White,White,2018,31.6,48.0,74.4,-0.263,-0.006,-1.9,-1.2,1.549,23.0,🧱 Retention Strength,Strong representation across coaching levels,True,False,True
+Women's Basketball,White,White,2019,31.8,47.4,72.5,-0.251,0.012,-0.6,-1.9,1.53,21.8,🧱 Retention Strength,Strong representation across coaching levels,True,False,True
+Women's Basketball,White,White,2020,31.0,47.6,72.9,-0.253,-0.002,0.2,0.4,1.532,22.8,🧱 Retention Strength,Strong representation across coaching levels,True,False,True
+Women's Basketball,White,White,2021,31.6,45.0,70.2,-0.252,0.001,-2.6,-2.7,1.559,19.7,🧱 Retention Strength,Strong representation across coaching levels,True,False,True
+Women's Basketball,White,White,2022,31.2,44.8,67.9,-0.231,0.021,-0.2,-2.3,1.515,19.4,🧱 Retention Strength,Strong representation across coaching levels,True,False,True
+Women's Basketball,White,White,2023,32.2,42.5,67.3,-0.248,-0.017,-2.3,-0.6,1.582,16.4,🧱 Retention Strength,Strong representation across coaching levels,True,False,True
+Women's Basketball,White,White,2024,31.9,44.2,64.0,-0.198,0.05,1.7,-3.3,1.449,16.4,🧱 Retention Strength,Strong representation across coaching levels,True,False,True
+Women's Basketball,White,White,2025,32.0,43.4,61.0,-0.176,0.022,-0.8,-3.0,1.405,15.0,🧱 Retention Strength,Strong representation across coaching levels,True,False,True
+Women's Softball,American Indian or Alaska Native,Am. Indian,2012,0.8,0.2,0.3,-0.002,,,,1.993,-0.6,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Softball,American Indian or Alaska Native,Am. Indian,2013,0.7,0.3,0.7,-0.003,-0.001,0.1,0.4,1.96,-0.3,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Softball,American Indian or Alaska Native,Am. Indian,2014,0.7,0.5,0.7,-0.002,0.001,0.2,0.0,1.38,-0.2,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Softball,American Indian or Alaska Native,Am. Indian,2015,0.7,0.5,1.0,-0.005,-0.003,0.0,0.3,2.013,-0.0,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Softball,American Indian or Alaska Native,Am. Indian,2016,0.8,0.2,0.7,-0.005,0.0,-0.3,-0.3,4.066,-0.4,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Softball,American Indian or Alaska Native,Am. Indian,2017,0.6,0.0,1.0,-0.01,-0.005,-0.2,0.3,,-0.3,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Softball,American Indian or Alaska Native,Am. Indian,2018,0.8,0.0,1.0,-0.01,0.0,0.0,0.0,,-0.4,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Softball,American Indian or Alaska Native,Am. Indian,2019,0.7,0.2,1.0,-0.008,0.002,0.2,0.0,6.321,-0.3,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Softball,American Indian or Alaska Native,Am. Indian,2020,0.8,0.2,0.7,-0.005,0.003,0.0,-0.3,3.927,-0.5,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Softball,American Indian or Alaska Native,Am. Indian,2021,0.7,0.3,0.3,-0.0,0.005,0.1,-0.4,1.003,-0.4,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Softball,American Indian or Alaska Native,Am. Indian,2022,0.7,0.5,0.7,-0.001,-0.001,0.2,0.4,1.273,-0.2,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Softball,American Indian or Alaska Native,Am. Indian,2023,0.8,0.9,0.0,0.009,0.01,0.4,-0.7,0.0,-0.3,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Softball,American Indian or Alaska Native,Am. Indian,2024,0.6,0.7,0.3,0.004,-0.005,-0.2,0.3,0.465,0.0,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Softball,American Indian or Alaska Native,Am. Indian,2025,0.6,0.4,0.3,0.001,-0.003,-0.3,0.0,0.803,-0.3,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Softball,Asian,Asian,2012,1.8,1.4,0.7,0.007,,,,0.498,-0.7,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Softball,Asian,Asian,2013,1.5,1.4,1.0,0.004,-0.003,0.0,0.3,0.735,-0.3,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Softball,Asian,Asian,2014,1.5,1.6,0.7,0.01,0.006,0.2,-0.3,0.414,-0.2,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Softball,Asian,Asian,2015,1.5,1.0,0.7,0.003,-0.007,-0.6,0.0,0.671,-0.6,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Softball,Asian,Asian,2016,1.3,0.8,0.3,0.005,0.002,-0.2,-0.4,0.407,-0.6,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Softball,Asian,Asian,2017,1.5,0.9,1.3,-0.004,-0.009,0.1,1.0,1.424,-0.4,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Softball,Asian,Asian,2018,1.4,1.0,1.0,-0.0,0.004,0.1,-0.3,1.047,-0.4,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Softball,Asian,Asian,2019,1.3,0.5,1.0,-0.005,-0.005,-0.5,0.0,2.107,-0.6,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Softball,Asian,Asian,2020,1.2,1.2,0.7,0.005,0.01,0.7,-0.3,0.561,-0.2,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Softball,Asian,Asian,2021,1.2,0.8,0.7,0.002,-0.003,-0.4,0.0,0.803,-0.4,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Softball,Asian,Asian,2022,1.4,1.1,1.3,-0.003,-0.005,0.3,0.6,1.273,-0.2,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Softball,Asian,Asian,2023,1.5,1.2,1.0,0.002,0.005,0.1,-0.3,0.84,-0.3,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Softball,Asian,Asian,2024,1.5,1.4,1.3,0.001,-0.001,0.2,0.3,0.93,-0.1,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Softball,Asian,Asian,2025,1.2,1.2,0.7,0.006,0.005,-0.2,-0.6,0.536,-0.1,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Softball,Black or African American,Black,2012,8.4,4.6,7.5,-0.029,,,,1.624,-2.8,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Softball,Black or African American,Black,2013,7.6,5.1,7.0,-0.019,0.01,0.5,-0.5,1.372,-1.8,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Softball,Black or African American,Black,2014,7.1,5.0,6.1,-0.01,0.009,-0.1,-0.9,1.202,-1.7,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Softball,Black or African American,Black,2015,7.4,4.6,5.3,-0.007,0.003,-0.4,-0.8,1.15,-2.6,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Softball,Black or African American,Black,2016,6.9,6.2,5.3,0.009,0.016,1.6,0.0,0.856,-1.0,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Softball,Black or African American,Black,2017,7.1,5.1,5.6,-0.005,-0.014,-1.1,0.3,1.1,-1.8,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Softball,Black or African American,Black,2018,7.6,5.2,6.3,-0.011,-0.006,0.1,0.7,1.205,-2.0,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Softball,Black or African American,Black,2019,7.6,5.2,6.7,-0.015,-0.004,0.0,0.4,1.277,-1.9,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Softball,Black or African American,Black,2020,7.8,6.1,5.7,0.004,0.019,0.9,-1.0,0.927,-1.8,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Softball,Black or African American,Black,2021,8.0,6.4,5.4,0.01,0.006,0.3,-0.3,0.845,-1.9,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Softball,Black or African American,Black,2022,8.8,6.5,6.7,-0.002,-0.012,0.1,1.3,1.032,-2.2,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Softball,Black or African American,Black,2023,9.1,6.0,6.4,-0.004,-0.002,-0.5,-0.3,1.064,-2.9,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Softball,Black or African American,Black,2024,9.0,6.9,8.7,-0.018,-0.014,0.9,2.3,1.259,-1.5,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Softball,Black or African American,Black,2025,8.4,7.3,8.9,-0.015,0.003,0.4,0.2,1.205,-0.6,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Softball,Hispanic or Latino,Hispanic,2012,7.9,3.6,3.4,0.002,,,,0.949,-4.4,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Softball,Hispanic or Latino,Hispanic,2013,8.8,4.3,2.7,0.016,0.014,0.7,-0.7,0.627,-5.1,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Softball,Hispanic or Latino,Hispanic,2014,9.1,3.7,2.0,0.017,0.001,-0.6,-0.7,0.54,-5.9,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Softball,Hispanic or Latino,Hispanic,2015,9.8,3.5,2.0,0.015,-0.002,-0.2,0.0,0.575,-6.9,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Softball,Hispanic or Latino,Hispanic,2016,9.6,4.2,2.7,0.016,0.001,0.7,0.7,0.626,-5.9,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Softball,Hispanic or Latino,Hispanic,2017,9.4,4.8,2.3,0.025,0.009,0.6,-0.4,0.482,-5.4,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Softball,Hispanic or Latino,Hispanic,2018,10.1,5.6,1.7,0.039,0.014,0.8,-0.6,0.299,-5.8,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Softball,Hispanic or Latino,Hispanic,2019,10.0,6.8,3.0,0.038,-0.001,1.2,1.3,0.441,-4.4,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Softball,Hispanic or Latino,Hispanic,2020,11.3,6.1,4.0,0.021,-0.017,-0.7,1.0,0.654,-5.9,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Softball,Hispanic or Latino,Hispanic,2021,11.9,5.7,3.4,0.023,0.002,-0.4,-0.6,0.59,-6.9,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Softball,Hispanic or Latino,Hispanic,2022,11.8,6.5,4.0,0.025,0.002,0.8,0.6,0.619,-6.1,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Softball,Hispanic or Latino,Hispanic,2023,12.1,7.4,4.0,0.033,0.008,0.9,0.0,0.547,-5.9,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Softball,Hispanic or Latino,Hispanic,2024,11.2,6.9,2.7,0.042,0.009,-0.5,-1.3,0.387,-5.6,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Softball,Hispanic or Latino,Hispanic,2025,11.0,8.0,5.2,0.028,-0.014,1.1,2.5,0.654,-3.8,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Softball,International,International,2012,0.9,0.9,0.0,0.009,,,,0.0,-0.3,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Softball,International,International,2013,0.9,1.0,0.0,0.01,0.001,0.1,0.0,0.0,-0.2,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Softball,International,International,2014,0.9,1.0,0.0,0.01,0.0,0.0,0.0,0.0,-0.2,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Softball,International,International,2015,1.1,0.3,0.0,0.003,-0.007,-0.7,0.0,0.0,-0.8,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Softball,International,International,2016,0.7,0.5,0.3,0.002,-0.001,0.2,0.3,0.678,-0.2,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Softball,International,International,2017,0.6,0.6,0.3,0.003,0.001,0.1,0.0,0.534,-0.0,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Softball,International,International,2018,0.5,1.1,0.0,0.011,0.008,0.5,-0.3,0.0,0.3,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Softball,International,International,2019,0.5,0.6,0.0,0.006,-0.005,-0.5,0.0,0.0,-0.1,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Softball,International,International,2020,0.6,0.2,0.0,0.002,-0.004,-0.4,0.0,0.0,-0.5,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Softball,International,International,2021,0.6,0.5,0.0,0.005,0.003,0.3,0.0,0.0,-0.3,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Softball,International,International,2022,0.8,0.4,0.0,0.004,-0.001,-0.1,0.0,0.0,-0.6,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Softball,International,International,2023,0.8,0.3,0.0,0.003,-0.001,-0.1,0.0,0.0,-0.5,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Softball,International,International,2024,0.8,0.6,0.3,0.002,-0.001,0.3,0.3,0.581,-0.3,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Softball,International,International,2025,0.6,0.8,0.0,0.008,0.006,0.2,-0.3,0.0,0.0,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Softball,Native Hawaiian or Other Pacific Islander,NHPI,2012,0.8,1.7,0.0,0.017,,,,0.0,0.3,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Softball,Native Hawaiian or Other Pacific Islander,NHPI,2013,0.9,0.7,0.3,0.003,-0.014,-1.0,0.3,0.49,-0.3,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Softball,Native Hawaiian or Other Pacific Islander,NHPI,2014,0.9,1.1,0.3,0.008,0.005,0.4,0.0,0.296,0.0,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Softball,Native Hawaiian or Other Pacific Islander,NHPI,2015,1.0,1.0,0.0,0.01,0.002,-0.1,-0.3,0.0,-0.3,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Softball,Native Hawaiian or Other Pacific Islander,NHPI,2016,0.9,0.5,1.0,-0.005,-0.015,-0.5,1.0,2.033,-0.3,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Softball,Native Hawaiian or Other Pacific Islander,NHPI,2017,0.8,0.6,0.7,-0.0,0.005,0.1,-0.3,1.068,-0.2,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Softball,Native Hawaiian or Other Pacific Islander,NHPI,2018,0.9,0.6,1.3,-0.007,-0.007,0.0,0.6,2.093,-0.0,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Softball,Native Hawaiian or Other Pacific Islander,NHPI,2019,0.9,1.3,1.0,0.003,0.01,0.7,-0.3,0.79,0.3,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Softball,Native Hawaiian or Other Pacific Islander,NHPI,2020,0.9,0.8,1.0,-0.002,-0.005,-0.5,0.0,1.178,0.0,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Softball,Native Hawaiian or Other Pacific Islander,NHPI,2021,0.9,0.8,1.4,-0.005,-0.003,0.0,0.4,1.605,0.1,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Softball,Native Hawaiian or Other Pacific Islander,NHPI,2022,0.7,0.7,0.7,0.0,0.005,-0.1,-0.7,0.955,-0.1,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Softball,Native Hawaiian or Other Pacific Islander,NHPI,2023,0.7,1.0,1.0,0.0,0.0,0.3,0.3,0.98,0.3,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Softball,Native Hawaiian or Other Pacific Islander,NHPI,2024,0.7,0.6,0.7,-0.001,-0.001,-0.4,-0.3,1.162,-0.1,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Softball,Native Hawaiian or Other Pacific Islander,NHPI,2025,0.8,1.0,0.7,0.003,0.004,0.4,0.0,0.689,0.1,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Softball,Two or More Races,Two+ Races,2012,2.5,0.9,0.0,0.009,,,,0.0,-1.9,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Softball,Two or More Races,Two+ Races,2013,3.4,1.2,0.3,0.009,0.0,0.3,0.3,0.28,-2.5,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Softball,Two or More Races,Two+ Races,2014,3.9,1.6,0.7,0.01,0.001,0.4,0.4,0.414,-2.6,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Softball,Two or More Races,Two+ Races,2015,4.7,1.0,0.7,0.003,-0.007,-0.6,0.0,0.671,-3.8,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Softball,Two or More Races,Two+ Races,2016,5.7,1.5,1.0,0.005,0.002,0.5,0.3,0.678,-4.3,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Softball,Two or More Races,Two+ Races,2017,6.5,1.6,0.7,0.009,0.004,0.1,-0.3,0.427,-5.2,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Softball,Two or More Races,Two+ Races,2018,7.3,1.9,0.3,0.016,0.007,0.3,-0.4,0.174,-5.9,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Softball,Two or More Races,Two+ Races,2019,7.5,2.4,0.0,0.024,0.008,0.5,-0.3,0.0,-5.9,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Softball,Two or More Races,Two+ Races,2020,7.3,1.5,0.3,0.012,-0.012,-0.9,0.3,0.218,-6.2,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Softball,Two or More Races,Two+ Races,2021,7.6,2.5,0.7,0.018,0.006,1.0,0.4,0.268,-5.7,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Softball,Two or More Races,Two+ Races,2022,8.2,2.6,1.3,0.013,-0.005,0.1,0.6,0.509,-6.0,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Softball,Two or More Races,Two+ Races,2023,8.1,3.1,1.7,0.014,0.001,0.5,0.4,0.544,-5.5,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Softball,Two or More Races,Two+ Races,2024,9.1,2.4,1.7,0.008,-0.006,-0.7,0.0,0.684,-6.9,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Softball,Two or More Races,Two+ Races,2025,11.4,3.4,2.0,0.014,0.006,1.0,0.3,0.578,-8.5,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Softball,Unknown,Unknown,2012,2.1,0.2,0.3,-0.002,,,,1.993,-1.9,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Softball,Unknown,Unknown,2013,1.9,0.9,1.0,-0.002,0.0,0.7,0.7,1.176,-1.0,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Softball,Unknown,Unknown,2014,2.3,1.1,0.7,0.005,0.007,0.2,-0.3,0.592,-1.3,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Softball,Unknown,Unknown,2015,2.3,2.1,0.7,0.015,0.01,1.0,0.0,0.31,-0.7,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Softball,Unknown,Unknown,2016,2.7,2.6,2.0,0.006,-0.009,0.5,1.3,0.762,-0.3,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Softball,Unknown,Unknown,2017,3.0,2.0,0.3,0.017,0.011,-0.6,-1.7,0.164,-1.5,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Softball,Unknown,Unknown,2018,2.2,2.1,0.7,0.014,-0.003,0.1,0.4,0.322,-0.6,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Softball,Unknown,Unknown,2019,2.7,3.0,1.0,0.02,0.006,0.9,0.3,0.333,-0.4,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Softball,Unknown,Unknown,2020,2.5,3.2,0.7,0.026,0.006,0.2,-0.3,0.207,-0.1,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Softball,Unknown,Unknown,2021,1.8,2.4,1.4,0.01,-0.016,-0.8,0.7,0.573,0.2,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Softball,Unknown,Unknown,2022,1.9,2.5,0.7,0.018,0.008,0.1,-0.7,0.273,-0.0,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Softball,Unknown,Unknown,2023,1.7,2.6,0.7,0.019,0.001,0.1,0.0,0.261,0.3,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Softball,Unknown,Unknown,2024,2.1,3.2,1.3,0.018,-0.001,0.6,0.6,0.423,0.5,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Softball,Unknown,Unknown,2025,1.4,2.6,2.0,0.006,-0.012,-0.6,0.7,0.761,1.0,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Softball,White,White,2012,74.8,86.7,87.8,-0.011,,,,1.012,12.3,🧱 Retention Strength,Strong representation across coaching levels,False,False,True
+Women's Softball,White,White,2013,74.3,85.2,87.0,-0.018,-0.007,-1.5,-0.8,1.021,11.4,🧱 Retention Strength,Strong representation across coaching levels,False,False,True
+Women's Softball,White,White,2014,73.6,84.2,88.9,-0.047,-0.029,-1.0,1.9,1.055,12.2,🧱 Retention Strength,Strong representation across coaching levels,False,False,True
+Women's Softball,White,White,2015,71.6,86.0,89.7,-0.037,0.01,1.8,0.8,1.043,15.7,🧱 Retention Strength,Strong representation across coaching levels,False,False,True
+Women's Softball,White,White,2016,71.5,83.5,86.7,-0.032,0.005,-2.5,-3.0,1.038,13.1,🧱 Retention Strength,Strong representation across coaching levels,False,False,True
+Women's Softball,White,White,2017,70.5,84.3,87.7,-0.034,-0.002,0.8,1.0,1.041,14.9,🧱 Retention Strength,Strong representation across coaching levels,False,False,True
+Women's Softball,White,White,2018,69.4,82.5,87.7,-0.052,-0.018,-1.8,0.0,1.063,14.8,🧱 Retention Strength,Strong representation across coaching levels,False,False,True
+Women's Softball,White,White,2019,68.7,80.0,86.3,-0.063,-0.011,-2.5,-1.4,1.079,13.4,🧱 Retention Strength,Strong representation across coaching levels,False,False,True
+Women's Softball,White,White,2020,67.6,80.6,87.0,-0.064,-0.001,0.6,0.7,1.079,15.2,🧱 Retention Strength,Strong representation across coaching levels,False,False,True
+Women's Softball,White,White,2021,67.3,80.5,86.8,-0.064,0.0,-0.1,-0.2,1.079,15.3,🧱 Retention Strength,Strong representation across coaching levels,False,False,True
+Women's Softball,White,White,2022,65.6,79.2,84.5,-0.053,0.011,-1.3,-2.3,1.067,15.4,🧱 Retention Strength,Strong representation across coaching levels,False,False,True
+Women's Softball,White,White,2023,65.2,77.5,85.2,-0.077,-0.024,-1.7,0.7,1.099,14.9,🧱 Retention Strength,Strong representation across coaching levels,False,False,True
+Women's Softball,White,White,2024,65.0,77.3,82.9,-0.057,0.02,-0.2,-2.3,1.073,14.0,🧱 Retention Strength,Strong representation across coaching levels,False,False,True
+Women's Softball,White,White,2025,64.6,75.2,80.3,-0.051,0.006,-2.1,-2.6,1.068,12.1,🧱 Retention Strength,Strong representation across coaching levels,False,False,True
+Women's Volleyball,American Indian or Alaska Native,Am. Indian,2012,0.3,0.0,0.0,0.0,,,,,-0.3,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Volleyball,American Indian or Alaska Native,Am. Indian,2013,0.3,0.2,0.0,0.002,0.002,0.2,0.0,0.0,-0.2,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Volleyball,American Indian or Alaska Native,Am. Indian,2014,0.3,0.2,0.0,0.002,0.0,0.0,0.0,0.0,-0.2,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Volleyball,American Indian or Alaska Native,Am. Indian,2015,0.4,0.1,0.0,0.001,-0.001,-0.1,0.0,0.0,-0.3,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Volleyball,American Indian or Alaska Native,Am. Indian,2016,0.4,0.3,0.0,0.003,0.002,0.2,0.0,0.0,-0.2,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Volleyball,American Indian or Alaska Native,Am. Indian,2017,0.3,0.3,0.0,0.003,0.0,0.0,0.0,0.0,-0.1,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Volleyball,American Indian or Alaska Native,Am. Indian,2018,0.4,0.4,0.3,0.001,-0.002,0.1,0.3,0.672,0.0,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Volleyball,American Indian or Alaska Native,Am. Indian,2019,0.3,0.1,0.0,0.001,0.0,-0.3,-0.3,0.0,-0.2,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Volleyball,American Indian or Alaska Native,Am. Indian,2020,0.2,0.3,0.0,0.003,0.002,0.2,0.0,0.0,0.0,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Volleyball,American Indian or Alaska Native,Am. Indian,2021,0.2,0.2,0.0,0.002,-0.001,-0.1,0.0,0.0,-0.1,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Volleyball,American Indian or Alaska Native,Am. Indian,2022,0.3,0.0,0.0,0.0,-0.002,-0.2,0.0,,-0.3,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Volleyball,American Indian or Alaska Native,Am. Indian,2023,0.2,0.0,0.3,-0.003,-0.003,0.0,0.3,,-0.1,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Volleyball,American Indian or Alaska Native,Am. Indian,2024,0.2,0.3,0.9,-0.006,-0.003,0.3,0.6,3.312,0.3,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Volleyball,American Indian or Alaska Native,Am. Indian,2025,0.3,0.4,0.3,0.001,0.007,0.1,-0.6,0.749,0.1,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Volleyball,Asian,Asian,2012,1.2,5.3,2.4,0.028,,,,0.461,3.1,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Volleyball,Asian,Asian,2013,1.1,3.4,1.2,0.022,-0.006,-1.9,-1.2,0.352,1.5,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Volleyball,Asian,Asian,2014,0.8,3.9,2.4,0.016,-0.006,0.5,1.2,0.603,2.6,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Volleyball,Asian,Asian,2015,1.0,3.3,1.8,0.015,-0.001,-0.6,-0.6,0.54,1.8,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Volleyball,Asian,Asian,2016,1.1,3.1,2.1,0.01,-0.005,-0.2,0.3,0.669,1.7,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Volleyball,Asian,Asian,2017,1.3,3.5,2.1,0.014,0.004,0.4,0.0,0.589,1.7,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Volleyball,Asian,Asian,2018,1.1,3.4,2.1,0.013,-0.001,-0.1,0.0,0.613,1.8,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Volleyball,Asian,Asian,2019,1.2,2.8,2.9,-0.001,-0.014,-0.6,0.8,1.045,1.6,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Volleyball,Asian,Asian,2020,1.6,3.5,2.6,0.009,0.01,0.7,-0.3,0.756,1.6,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Volleyball,Asian,Asian,2021,1.3,3.5,2.9,0.006,-0.003,0.0,0.3,0.838,1.9,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Volleyball,Asian,Asian,2022,1.6,3.5,3.0,0.006,0.0,0.0,0.1,0.842,1.7,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Volleyball,Asian,Asian,2023,1.5,2.9,2.0,0.008,0.002,-0.6,-1.0,0.71,1.1,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Volleyball,Asian,Asian,2024,1.5,3.0,2.4,0.006,-0.002,0.1,0.4,0.803,1.3,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Volleyball,Asian,Asian,2025,1.5,3.4,2.0,0.013,0.007,0.4,-0.4,0.605,1.4,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Volleyball,Black or African American,Black,2012,12.3,8.3,10.0,-0.017,,,,1.198,-3.4,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Volleyball,Black or African American,Black,2013,12.4,6.7,9.8,-0.03,-0.013,-1.6,-0.2,1.451,-4.6,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Volleyball,Black or African American,Black,2014,12.5,7.1,9.7,-0.027,0.003,0.4,-0.1,1.375,-4.5,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Volleyball,Black or African American,Black,2015,13.7,8.2,8.5,-0.004,0.023,1.1,-1.2,1.044,-5.4,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Volleyball,Black or African American,Black,2016,14.6,8.9,8.5,0.004,0.008,0.7,0.0,0.954,-5.8,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Volleyball,Black or African American,Black,2017,15.2,7.8,9.5,-0.017,-0.021,-1.1,1.0,1.218,-6.8,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Volleyball,Black or African American,Black,2018,14.8,7.9,8.2,-0.004,0.013,0.1,-1.3,1.045,-6.8,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Volleyball,Black or African American,Black,2019,15.1,7.8,7.6,0.002,0.006,-0.1,-0.6,0.974,-7.4,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Volleyball,Black or African American,Black,2020,15.5,8.1,9.4,-0.013,-0.015,0.3,1.8,1.159,-6.9,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Volleyball,Black or African American,Black,2021,15.4,8.0,10.2,-0.021,-0.008,-0.1,0.8,1.265,-6.6,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Volleyball,Black or African American,Black,2022,15.6,11.0,10.4,0.007,0.028,3.0,0.2,0.939,-4.8,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Volleyball,Black or African American,Black,2023,15.7,10.4,9.1,0.014,0.007,-0.6,-1.3,0.87,-5.7,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Volleyball,Black or African American,Black,2024,15.7,9.8,10.7,-0.009,-0.023,-0.6,1.6,1.089,-5.6,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Volleyball,Black or African American,Black,2025,15.6,9.4,8.2,0.012,0.021,-0.4,-2.5,0.873,-6.6,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Volleyball,Hispanic or Latino,Hispanic,2012,4.0,2.8,3.0,-0.002,,,,1.089,-1.1,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Volleyball,Hispanic or Latino,Hispanic,2013,4.2,4.1,2.7,0.015,0.017,1.3,-0.3,0.645,-0.6,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Volleyball,Hispanic or Latino,Hispanic,2014,4.2,2.1,3.2,-0.011,-0.026,-2.0,0.5,1.539,-1.7,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Volleyball,Hispanic or Latino,Hispanic,2015,3.9,3.3,3.5,-0.003,0.008,1.2,0.3,1.08,-0.5,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Volleyball,Hispanic or Latino,Hispanic,2016,4.2,3.5,3.2,0.003,0.006,0.2,-0.3,0.919,-0.7,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Volleyball,Hispanic or Latino,Hispanic,2017,4.3,4.5,4.4,0.001,-0.002,1.0,1.2,0.976,0.3,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Volleyball,Hispanic or Latino,Hispanic,2018,4.5,4.1,3.8,0.003,0.002,-0.4,-0.6,0.935,-0.5,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Volleyball,Hispanic or Latino,Hispanic,2019,4.8,4.6,5.2,-0.007,-0.01,0.5,1.4,1.153,-0.0,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Volleyball,Hispanic or Latino,Hispanic,2020,4.9,5.3,3.8,0.014,0.021,0.7,-1.4,0.728,-0.1,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Volleyball,Hispanic or Latino,Hispanic,2021,5.1,5.7,3.8,0.019,0.005,0.4,0.0,0.666,-0.1,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Volleyball,Hispanic or Latino,Hispanic,2022,5.2,4.6,4.1,0.005,-0.014,-1.1,0.3,0.894,-0.7,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Volleyball,Hispanic or Latino,Hispanic,2023,5.4,5.9,5.0,0.01,0.005,1.3,0.9,0.838,0.2,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Volleyball,Hispanic or Latino,Hispanic,2024,5.9,5.2,4.2,0.011,0.001,-0.7,-0.8,0.793,-1.0,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Volleyball,Hispanic or Latino,Hispanic,2025,5.8,6.5,4.7,0.018,0.007,1.3,0.5,0.719,0.1,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Volleyball,International,International,2012,4.1,2.8,2.4,0.004,,,,0.871,-1.4,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Volleyball,International,International,2013,3.6,3.7,2.1,0.016,0.012,0.9,-0.3,0.564,-0.5,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Volleyball,International,International,2014,4.4,2.3,2.1,0.002,-0.014,-1.4,0.0,0.914,-2.2,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Volleyball,International,International,2015,4.5,1.6,2.4,-0.007,-0.009,-0.7,0.3,1.44,-2.6,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Volleyball,International,International,2016,5.2,2.9,1.5,0.015,0.022,1.3,-0.9,0.501,-2.8,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Volleyball,International,International,2017,5.0,2.9,1.5,0.015,0.0,0.0,0.0,0.504,-2.6,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Volleyball,International,International,2018,5.1,3.4,1.8,0.016,0.001,0.5,0.3,0.526,-2.2,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Volleyball,International,International,2019,5.5,1.9,1.5,0.005,-0.011,-1.5,-0.3,0.764,-3.8,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Volleyball,International,International,2020,5.1,1.9,0.6,0.013,0.008,0.0,-0.9,0.308,-3.7,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Volleyball,International,International,2021,5.7,1.4,0.6,0.008,-0.005,-0.5,0.0,0.41,-4.6,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Volleyball,International,International,2022,5.3,1.0,1.8,-0.008,-0.016,-0.4,1.2,1.852,-4.1,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Volleyball,International,International,2023,6.0,1.0,1.8,-0.008,0.0,0.0,0.0,1.825,-4.7,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Volleyball,International,International,2024,5.3,1.9,1.2,0.007,0.015,0.9,-0.6,0.631,-3.7,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Volleyball,International,International,2025,5.2,1.3,1.8,-0.005,-0.012,-0.6,0.6,1.347,-3.8,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Volleyball,Native Hawaiian or Other Pacific Islander,NHPI,2012,1.2,2.0,0.9,0.011,,,,0.452,0.5,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Volleyball,Native Hawaiian or Other Pacific Islander,NHPI,2013,1.2,2.0,0.9,0.011,0.0,0.0,0.0,0.446,0.4,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Volleyball,Native Hawaiian or Other Pacific Islander,NHPI,2014,1.3,1.8,2.4,-0.006,-0.017,-0.2,1.5,1.306,0.7,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Volleyball,Native Hawaiian or Other Pacific Islander,NHPI,2015,1.2,1.8,2.1,-0.003,0.003,0.0,-0.3,1.155,0.7,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Volleyball,Native Hawaiian or Other Pacific Islander,NHPI,2016,1.1,2.3,1.8,0.006,0.009,0.5,-0.3,0.752,1.1,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Volleyball,Native Hawaiian or Other Pacific Islander,NHPI,2017,0.8,2.1,1.8,0.003,-0.003,-0.2,0.0,0.865,1.2,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Volleyball,Native Hawaiian or Other Pacific Islander,NHPI,2018,0.9,1.8,1.5,0.003,0.0,-0.3,-0.3,0.839,0.8,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Volleyball,Native Hawaiian or Other Pacific Islander,NHPI,2019,1.0,1.9,1.7,0.002,-0.001,0.1,0.2,0.916,0.8,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Volleyball,Native Hawaiian or Other Pacific Islander,NHPI,2020,1.1,1.9,2.4,-0.004,-0.006,0.0,0.7,1.231,1.0,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Volleyball,Native Hawaiian or Other Pacific Islander,NHPI,2021,1.2,1.6,2.3,-0.007,-0.003,-0.3,-0.1,1.474,0.6,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Volleyball,Native Hawaiian or Other Pacific Islander,NHPI,2022,1.0,1.4,1.2,0.003,0.01,-0.2,-1.1,0.823,0.3,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Volleyball,Native Hawaiian or Other Pacific Islander,NHPI,2023,1.0,2.2,2.3,-0.001,-0.004,0.8,1.1,1.043,1.3,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Volleyball,Native Hawaiian or Other Pacific Islander,NHPI,2024,1.1,2.2,1.8,0.004,0.005,0.0,-0.5,0.828,0.9,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Volleyball,Native Hawaiian or Other Pacific Islander,NHPI,2025,1.1,2.3,2.0,0.003,-0.001,0.1,0.2,0.873,1.1,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Volleyball,Two or More Races,Two+ Races,2012,2.8,1.2,1.2,0.0,,,,0.98,-1.5,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Volleyball,Two or More Races,Two+ Races,2013,3.0,0.9,1.8,-0.009,-0.009,-0.3,0.6,1.935,-1.8,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Volleyball,Two or More Races,Two+ Races,2014,3.9,2.0,0.3,0.017,0.026,1.1,-1.5,0.151,-2.5,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Volleyball,Two or More Races,Two+ Races,2015,5.0,2.2,0.3,0.019,0.002,0.2,0.0,0.132,-3.5,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Volleyball,Two or More Races,Two+ Races,2016,5.3,2.6,0.6,0.021,0.002,0.4,0.3,0.223,-3.4,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Volleyball,Two or More Races,Two+ Races,2017,5.6,2.1,0.6,0.015,-0.006,-0.5,0.0,0.288,-4.1,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Volleyball,Two or More Races,Two+ Races,2018,5.9,2.2,0.3,0.019,0.004,0.1,-0.3,0.134,-4.3,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Volleyball,Two or More Races,Two+ Races,2019,6.5,2.9,1.5,0.015,-0.004,0.7,1.2,0.496,-4.1,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Volleyball,Two or More Races,Two+ Races,2020,7.2,3.3,2.6,0.007,-0.008,0.4,1.1,0.792,-4.1,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Volleyball,Two or More Races,Two+ Races,2021,7.4,3.6,2.0,0.016,0.009,0.3,-0.6,0.561,-4.3,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Volleyball,Two or More Races,Two+ Races,2022,8.3,3.7,3.3,0.004,-0.012,0.1,1.3,0.886,-4.7,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Volleyball,Two or More Races,Two+ Races,2023,8.2,3.4,5.3,-0.019,-0.023,-0.3,2.0,1.564,-4.1,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Volleyball,Two or More Races,Two+ Races,2024,9.0,3.0,3.6,-0.006,0.013,-0.4,-1.7,1.204,-5.9,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Volleyball,Two or More Races,Two+ Races,2025,9.4,2.7,4.7,-0.019,-0.013,-0.3,1.1,1.711,-6.1,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Volleyball,Unknown,Unknown,2012,2.2,1.9,0.6,0.012,,,,0.327,-0.8,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Volleyball,Unknown,Unknown,2013,2.6,1.8,0.9,0.01,-0.002,-0.1,0.3,0.484,-1.1,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Volleyball,Unknown,Unknown,2014,3.0,2.1,1.2,0.009,-0.001,0.3,0.3,0.56,-1.2,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Volleyball,Unknown,Unknown,2015,2.6,2.2,0.6,0.016,0.007,0.1,-0.6,0.264,-0.9,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Volleyball,Unknown,Unknown,2016,2.6,3.1,2.1,0.01,-0.006,0.9,1.5,0.669,0.2,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Volleyball,Unknown,Unknown,2017,2.5,1.5,0.6,0.009,-0.001,-1.6,-1.5,0.404,-1.3,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Volleyball,Unknown,Unknown,2018,2.8,2.3,0.9,0.015,0.006,0.8,0.3,0.378,-0.9,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Volleyball,Unknown,Unknown,2019,2.7,3.8,1.2,0.027,0.012,1.5,0.3,0.305,0.3,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Volleyball,Unknown,Unknown,2020,2.9,3.5,2.1,0.014,-0.013,-0.3,0.9,0.588,0.1,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Volleyball,Unknown,Unknown,2021,1.9,3.6,1.5,0.022,0.008,0.1,-0.6,0.401,0.9,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Volleyball,Unknown,Unknown,2022,2.3,3.2,2.7,0.005,-0.017,-0.4,1.2,0.833,0.7,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Volleyball,Unknown,Unknown,2023,2.3,2.1,2.3,-0.003,-0.008,-1.1,-0.4,1.123,-0.1,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Volleyball,Unknown,Unknown,2024,2.5,3.0,3.0,-0.0,0.003,0.9,0.7,1.004,0.5,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Volleyball,Unknown,Unknown,2025,2.1,3.1,2.0,0.011,0.011,0.1,-1.0,0.655,0.7,⚠️ Pipeline Risk,Low assistant representation limits future HC pipeline,False,False,True
+Women's Volleyball,White,White,2012,72.0,75.7,79.4,-0.037,,,,1.048,5.0,🧱 Retention Strength,Strong representation across coaching levels,False,False,True
+Women's Volleyball,White,White,2013,71.4,77.1,80.7,-0.036,0.001,1.4,1.3,1.046,6.9,🧱 Retention Strength,Strong representation across coaching levels,False,False,True
+Women's Volleyball,White,White,2014,69.6,78.6,78.8,-0.001,0.035,1.5,-1.9,1.002,9.0,🧱 Retention Strength,Strong representation across coaching levels,False,False,True
+Women's Volleyball,White,White,2015,67.7,77.3,80.9,-0.036,-0.035,-1.3,2.1,1.047,10.8,🧱 Retention Strength,Strong representation across coaching levels,False,False,True
+Women's Volleyball,White,White,2016,65.6,73.2,80.3,-0.071,-0.035,-4.1,-0.6,1.097,10.0,🧱 Retention Strength,Strong representation across coaching levels,False,False,True
+Women's Volleyball,White,White,2017,65.0,75.4,79.6,-0.042,0.029,2.2,-0.7,1.056,11.7,🧱 Retention Strength,Strong representation across coaching levels,False,False,True
+Women's Volleyball,White,White,2018,64.6,74.6,81.2,-0.066,-0.024,-0.8,1.6,1.088,12.2,🧱 Retention Strength,Strong representation across coaching levels,False,False,True
+Women's Volleyball,White,White,2019,62.7,74.2,78.4,-0.043,0.023,-0.4,-2.8,1.058,12.8,🧱 Retention Strength,Strong representation across coaching levels,False,False,True
+Women's Volleyball,White,White,2020,61.5,72.1,76.5,-0.043,0.0,-2.1,-1.9,1.06,12.2,🧱 Retention Strength,Strong representation across coaching levels,False,False,True
+Women's Volleyball,White,White,2021,61.6,72.4,76.7,-0.043,0.0,0.3,0.2,1.06,12.3,🧱 Retention Strength,Strong representation across coaching levels,False,False,True
+Women's Volleyball,White,White,2022,60.5,71.6,73.7,-0.021,0.022,-0.8,-3.0,1.029,11.8,🧱 Retention Strength,Strong representation across coaching levels,False,False,True
+Women's Volleyball,White,White,2023,59.9,72.1,71.9,0.002,0.023,0.5,-1.8,0.997,12.2,🧱 Retention Strength,Strong representation across coaching levels,False,False,True
+Women's Volleyball,White,White,2024,58.8,71.8,72.4,-0.006,-0.008,-0.3,0.5,1.009,13.2,🧱 Retention Strength,Strong representation across coaching levels,False,False,True
+Women's Volleyball,White,White,2025,58.8,70.8,74.3,-0.034,-0.028,-1.0,1.9,1.049,13.1,🧱 Retention Strength,Strong representation across coaching levels,False,False,True

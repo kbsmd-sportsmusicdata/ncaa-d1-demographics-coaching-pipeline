@@ -1,15 +1,15 @@
 project:
-  title: "Project Title"
-  slug: "project-slug"
-  subtitle: "Short project subtitle"
-  description: "One-paragraph project description."
-  status: "draft"
-  sport: "Women's Basketball"
-  league: "WNBA"
-  season: "2026"
+  title: "NCAA D1 Coaching Pipeline"
+  slug: "ncaa-d1-coaching-pipeline"
+  subtitle: "A four-sport leadership notebook tracking athlete diversification, promotion gaps, and who reaches Division I women's head-coaching roles from 2012 through 2025."
+  description: "This project packages a notebook-style leadership brief on the NCAA Division I women's coaching pipeline across women's basketball, softball, volleyball, and soccer. It combines multi-year representation trends, focus-sport comparisons, intervention framing, and women's basketball context to show where athlete diversification outpaced leadership change and where head-coaching access remains structurally constrained."
+  status: "in-progress"
+  sport: "Women's Basketball and peer NCAA sports"
+  league: "NCAA Division I"
+  season: "2012-2025"
   author: "Krystal Beasley"
-  created_date: "YYYY-MM-DD"
-  last_updated: "YYYY-MM-DD"
+  created_date: "2026-05-24"
+  last_updated: "2026-05-24"
 
 links:
   github_repo: ""
@@ -25,29 +25,47 @@ outputs:
   report_path: "docs/executive_summary.md"
 
 project_context:
-  problem_statement: "Add project problem statement."
+  problem_statement: "Athlete diversification in NCAA Division I women's sports accelerated over the last decade, but leadership diversification did not keep pace. This project separates athlete representation, assistant-coach representation, and head-coach access so reviewers can see where the promotion bottleneck is most persistent and which sports show the widest leadership gaps."
   audience:
+    - "athletic department leaders"
+    - "coaching staff and operations leaders"
     - "sports analytics portfolio reviewers"
-    - "front office decision-makers"
-    - "coaching staff"
   use_cases:
-    - "player evaluation"
-    - "roster analysis"
-    - "data storytelling"
+    - "leadership diversity review"
+    - "hiring and promotion context"
+    - "staff-brief storytelling"
   key_questions:
-    - "What question does this project answer?"
-    - "What decision does this analysis support?"
+    - "Where did athlete diversification outpace leadership diversification from 2012 through 2025?"
+    - "Which sports show the largest gap between assistant-coach representation and head-coach representation?"
+    - "How different does the coaching pipeline look when women's basketball is viewed alongside softball, volleyball, and soccer?"
 
 methodology:
   data_sources:
-    - name: "Source Name"
+    - name: "NCAA D-I coaching pipeline multiyear panel"
       url: ""
-      notes: ""
+      notes: "Longitudinal table used to track athlete, assistant, and head-coach representation by race group, sport, and year."
+    - name: "Focus-sport trend table"
+      url: ""
+      notes: "Filtered multi-year view used for the primary four-sport trend framing inside the notebook."
+    - name: "Intervention summary table"
+      url: ""
+      notes: "Compact summary table used to flag the strongest promotion-gap pressure points by sport and race group."
+    - name: "Focus-sport comparison table"
+      url: ""
+      notes: "Comparison table that contrasts all-coach and women-only contexts across the four focus sports."
+    - name: "Women's basketball trend table"
+      url: ""
+      notes: "WBB-specific slice retained so the project can keep a direct basketball lens alongside the four-sport framing."
   cleaning_steps:
-    - "Describe cleaning step."
+    - "Kept the public repo scoped to the notebook-facing evidence tables rather than the full workspace pipeline and raw source files."
+    - "Preserved the 2012-2025 year range and four focus sports used by the published notebook."
+    - "Separated the compact intervention and comparison tables from the longer multi-year panel so the repository stays reviewable."
+    - "Retained a women's basketball-specific trend extract so basketball readers can move from the broad four-sport story into a closer WBB lens."
   feature_engineering:
-    - "Describe derived metric or feature."
-  modeling_approach: "Describe model or write 'Not applicable'."
+    - "Tracked athlete, assistant-coach, and head-coach representation percentages by year, sport, and race group."
+    - "Used promotion-gap and coach-athlete representation gap fields to quantify where leadership access lags the athlete pipeline."
+    - "Included pipeline-strength and hiring-flag fields to support decision-oriented framing rather than descriptive counts alone."
+  modeling_approach: "Not applicable. This project is a descriptive leadership and representation analysis, not a predictive model."
   validation_checks:
     - "Row count check"
     - "Missing value check"
@@ -56,25 +74,52 @@ methodology:
 
 metrics:
   primary_metrics:
-    - name: "Metric Name"
-      definition: "Metric definition."
-      interpretation: "How to interpret this metric."
+    - name: "Athlete Representation Percentage"
+      definition: "Share of athletes in a given sport-year-race grouping."
+      interpretation: "Higher values indicate stronger athlete presence in the talent pool."
+    - name: "Assistant Coach Representation Percentage"
+      definition: "Share of assistant coaches in a given sport-year-race grouping."
+      interpretation: "Higher values indicate stronger representation in the assistant-coach layer."
+    - name: "Head Coach Representation Percentage"
+      definition: "Share of head coaches in a given sport-year-race grouping."
+      interpretation: "Higher values indicate stronger representation in the top decision-making role."
+    - name: "Promotion Gap"
+      definition: "Difference between assistant-coach representation and head-coach representation."
+      interpretation: "Larger gaps indicate a steeper bottleneck between assistant roles and head-coach roles."
   derived_metrics:
-    - name: "Derived Metric Name"
-      formula: "Formula or calculation logic."
-      interpretation: "How to interpret this metric."
+    - name: "Coach-Athlete Representation Gap"
+      formula: "Athlete representation percentage minus coach representation percentage for the relevant layer."
+      interpretation: "Larger positive values indicate leadership representation is lagging the athlete pipeline."
+    - name: "Pipeline Strength Score"
+      formula: "Project-specific score built from athlete, assistant, and head-coach representation plus gap signals."
+      interpretation: "Higher values indicate a comparatively healthier leadership pipeline."
+    - name: "Hiring Flag"
+      formula: "Project-level categorical flag based on the observed gap profile."
+      interpretation: "Flags the cases where hiring or promotion dynamics warrant closer review."
 
 data:
   raw_data_dir: "data/raw"
   processed_data_dir: "data/processed"
   expected_files:
-    - path: "data/processed/example.csv"
-      required: false
-      description: "Example processed dataset."
+    - path: "data/processed/coaching_pipeline_multiyear.csv"
+      required: true
+      description: "Primary 2012-2025 multi-year representation panel."
+    - path: "data/processed/coaching_pipeline_focus_trends.csv"
+      required: true
+      description: "Four-sport trend table used for the main notebook framing."
+    - path: "data/processed/coaching_pipeline_intervention_table.csv"
+      required: true
+      description: "Compact intervention table for the most decision-relevant gap cases."
+    - path: "data/processed/coaching_pipeline_comparison_focus_sports.csv"
+      required: true
+      description: "Focus-sport comparison table contrasting broader and women-only contexts."
+    - path: "data/processed/coaching_pipeline_wbb_trends.csv"
+      required: true
+      description: "Women's basketball-specific trend table retained for basketball-first review."
   required_columns: []
 
 validation:
-  fail_on_missing_required_files: false
+  fail_on_missing_required_files: true
   fail_on_duplicate_rows: false
   fail_on_missing_values: false
   max_missing_pct_warning: 20
@@ -88,6 +133,10 @@ publishing:
 
 notes:
   limitations:
-    - "List known limitation."
+    - "This repo ships reviewable evidence tables, not the full coaching-workspace build chain or raw NCAA source archive."
+    - "The notebook centers four focus sports, so readers should not treat it as a complete census of every NCAA Division I women's sport."
+    - "Pipeline and hiring flags are decision-support framing tools, not causal estimates of why a leadership gap exists."
   next_steps:
-    - "List next step."
+    - "Publish the notebook through GitHub Pages and backfill the live URL into this config."
+    - "Decide whether the public repo should remain notebook-first or add a lighter dashboard companion later."
+    - "Reuse the same project structure for another leadership or representation brief once this repo is live."

@@ -1,4 +1,4 @@
-# Publishing Checklist: Project Title
+# Publishing Checklist: NCAA D1 Coaching Pipeline
 
 ## Pre-Publish Checks
 

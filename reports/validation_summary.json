@@ -1,17 +1,97 @@
 {
-  "project_title": "Project Title",
-  "run_at": "2026-05-23T18:27:46.100157+00:00",
+  "project_title": "NCAA D1 Coaching Pipeline",
+  "run_at": "2026-05-24T19:01:19.895167+00:00",
   "status": "warning",
   "files": [
     {
-      "path": "data/processed/example.csv",
-      "required": false,
-      "description": "Example processed dataset.",
-      "status": "missing"
+      "path": "data/processed/coaching_pipeline_multiyear.csv",
+      "required": true,
+      "description": "Primary 2012-2025 multi-year representation panel.",
+      "status": "validated",
+      "row_count": 2968,
+      "column_count": 18,
+      "duplicate_rows": 0,
+      "missing_columns": [],
+      "missing_pct_by_column": {
+        "athlete_race_pct": 5.96,
+        "assistant_pct": 8.15,
+        "hc_pct": 19.74,
+        "promotion_gap": 21.97,
+        "promo_gap_yoy": 27.73,
+        "asst_pct_yoy": 15.13,
+        "hc_pct_yoy": 25.67,
+        "pipeline_strength_score": 33.49,
+        "coach_athlete_rep_gap": 5.96
+      }
+    },
+    {
+      "path": "data/processed/coaching_pipeline_focus_trends.csv",
+      "required": true,
+      "description": "Four-sport trend table used for the main notebook framing.",
+      "status": "validated",
+      "row_count": 378,
+      "column_count": 18,
+      "duplicate_rows": 0,
+      "missing_columns": [],
+      "missing_pct_by_column": {
+        "promo_gap_yoy": 7.14,
+        "asst_pct_yoy": 7.14,
+        "hc_pct_yoy": 7.14,
+        "pipeline_strength_score": 3.7
+      }
+    },
+    {
+      "path": "data/processed/coaching_pipeline_intervention_table.csv",
+      "required": true,
+      "description": "Compact intervention table for the most decision-relevant gap cases.",
+      "status": "validated",
+      "row_count": 212,
+      "column_count": 16,
+      "duplicate_rows": 0,
+      "missing_columns": [],
+      "missing_pct_by_column": {
+        "athlete_race_pct": 0.47,
+        "assistant_pct": 2.36,
+        "hc_pct": 16.98,
+        "coach_athlete_rep_gap": 0.47,
+        "promotion_gap": 19.34,
+        "pipeline_strength_score": 27.83
+      }
+    },
+    {
+      "path": "data/processed/coaching_pipeline_comparison_focus_sports.csv",
+      "required": true,
+      "description": "Focus-sport comparison table contrasting broader and women-only contexts.",
+      "status": "validated",
+      "row_count": 27,
+      "column_count": 20,
+      "duplicate_rows": 0,
+      "missing_columns": [],
+      "missing_pct_by_column": {}
+    },
+    {
+      "path": "data/processed/coaching_pipeline_wbb_trends.csv",
+      "required": true,
+      "description": "Women's basketball-specific trend table retained for basketball-first review.",
+      "status": "validated",
+      "row_count": 126,
+      "column_count": 18,
+      "duplicate_rows": 0,
+      "missing_columns": [],
+      "missing_pct_by_column": {
+        "promo_gap_yoy": 7.14,
+        "asst_pct_yoy": 7.14,
+        "hc_pct_yoy": 7.14,
+        "pipeline_strength_score": 7.14
+      }
     }
   ],
   "warnings": [
-    "data/processed/example.csv is missing"
+    "data/processed/coaching_pipeline_multiyear.csv has 22.0% missing values in column 'promotion_gap'",
+    "data/processed/coaching_pipeline_multiyear.csv has 27.7% missing values in column 'promo_gap_yoy'",
+    "data/processed/coaching_pipeline_multiyear.csv has 25.7% missing values in column 'hc_pct_yoy'",
+    "data/processed/coaching_pipeline_multiyear.csv has 33.5% missing values in column 'pipeline_strength_score'",
+    "data/processed/coaching_pipeline_intervention_table.csv has 27.8% missing values in column 'pipeline_strength_score'"
   ],
   "errors": []
 }

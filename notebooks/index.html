@@ -1,29 +1,1742 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sports Analytics Project</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NCAA D1 Women&#x27;s Coaching Four-Sport Notebook v2.1 | Notebook HTML</title>
   <style>
-    body {
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      max-width: 900px;
-      margin: 48px auto;
-      padding: 0 24px;
-      line-height: 1.6;
-    }
-    .card {
-      border: 1px solid #ddd;
-      border-radius: 16px;
-      padding: 24px;
-      background: #fafafa;
-    }
-  </style>
+:root {
+  --navy: #16354C;
+  --navy-2: #1B3A52;
+  --gold: #C88F5A;
+  --sand: #B8956A;
+  --teal: #7A9B9E;
+  --mist: #F4F0EA;
+  --paper: #FFFDF8;
+  --line: #D9D0C4;
+  --text: #17354B;
+  --muted: #5F7484;
+  --green: #4A7A5A;
+  --red: #9E4A3A;
+  --shadow: 0 14px 40px rgba(27, 58, 82, 0.10);
+  --nav-h: 56px;
+  --sec-h: 42px;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  color: var(--text);
+  background:
+    radial-gradient(circle at top left, rgba(200,143,90,.10), transparent 25%),
+    radial-gradient(circle at top right, rgba(122,155,158,.10), transparent 22%),
+    linear-gradient(180deg, #F8F3EB 0%, #F4EFE7 100%);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.62;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background:
+    linear-gradient(90deg, rgba(255,255,255,.06) 1px, transparent 1px) 0 0 / 28px 28px,
+    linear-gradient(rgba(255,255,255,.04) 1px, transparent 1px) 0 0 / 28px 28px;
+  mask-image: linear-gradient(180deg, rgba(0,0,0,.16), transparent 65%);
+}
+
+a { color: inherit; }
+img { max-width: 100%; display: block; }
+
+.nb-nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  height: var(--nav-h);
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 0 20px;
+  background: rgba(22, 53, 76, 0.96);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid rgba(255,255,255,.12);
+  box-shadow: 0 8px 22px rgba(22,53,76,.18);
+}
+.nav-brand {
+  flex-shrink: 0;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: #F5E6D6;
+}
+.nav-links {
+  flex: 1 1 auto;
+  min-width: 0;
+  display: flex;
+  gap: 8px;
+  white-space: nowrap;
+  overflow-x: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  -webkit-overflow-scrolling: touch;
+}
+.nav-links::-webkit-scrollbar { display: none; }
+.nav-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  white-space: nowrap;
+  text-decoration: none;
+  color: rgba(255,255,255,.60);
+  border: 1px solid rgba(255,255,255,.14);
+  background: rgba(255,255,255,.05);
+  padding: 7px 10px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 700;
+  transition: transform .18s ease, background .18s ease, color .18s ease, border-color .18s ease;
+}
+.nav-link:hover { color: #fff; background: rgba(255,255,255,.10); transform: translateY(-1px); }
+.nav-link.active {
+  color: var(--navy);
+  background: var(--gold);
+  border-color: var(--gold);
+}
+.nav-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: currentColor;
+  opacity: .85;
+}
+
+.notebook {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 22px 64px;
+}
+
+.nb-header {
+  position: relative;
+  overflow: hidden;
+  margin: 20px 0 28px;
+  padding: 34px 34px 30px;
+  border-radius: 26px;
+  background:
+    linear-gradient(135deg, rgba(22,53,76,.98) 0%, rgba(27,58,82,.95) 52%, rgba(200,143,90,.92) 100%);
+  color: #fff;
+  box-shadow: var(--shadow);
+}
+.nb-header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 12% 22%, rgba(255,255,255,.10), transparent 18%),
+    radial-gradient(circle at 88% 18%, rgba(255,255,255,.10), transparent 14%),
+    radial-gradient(circle at 64% 82%, rgba(255,255,255,.06), transparent 18%);
+  pointer-events: none;
+}
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,.88);
+  background: rgba(255,255,255,.10);
+  border: 1px solid rgba(255,255,255,.18);
+  border-radius: 999px;
+  padding: 6px 12px;
+}
+.nb-header h1 {
+  position: relative;
+  margin: 16px 0 12px;
+  font-size: clamp(2rem, 3vw, 3.4rem);
+  line-height: 1.04;
+  letter-spacing: -0.04em;
+  max-width: 14ch;
+}
+.subtitle {
+  position: relative;
+  max-width: 900px;
+  font-size: 15px;
+  color: rgba(255,255,255,.82);
+  margin: 0 0 22px;
+}
+.hero-grid {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 10px;
+}
+.hero-card {
+  background: rgba(255,255,255,.08);
+  border: 1px solid rgba(255,255,255,.14);
+  border-radius: 18px;
+  padding: 14px 14px 13px;
+  min-height: 92px;
+  backdrop-filter: blur(8px);
+}
+.hero-card .value {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 900;
+  line-height: 1.0;
+  margin-bottom: 5px;
+  color: #FFF5E9;
+}
+.hero-card .label {
+  display: block;
+  font-size: 11.5px;
+  line-height: 1.45;
+  color: rgba(255,255,255,.78);
+}
+.hero-card.thesis {
+  grid-column: span 2;
+  background: rgba(255,255,255,.12);
+}
+.hero-card.thesis .value { font-size: 1.1rem; letter-spacing: .04em; text-transform: uppercase; }
+.hero-card.thesis .label { font-size: 13px; color: rgba(255,255,255,.90); }
+
+section[id] { scroll-margin-top: calc(var(--nav-h) + 14px); }
+.nb-section { margin-bottom: 20px; }
+.section-header {
+  position: sticky;
+  top: var(--nav-h);
+  z-index: 12;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  height: var(--sec-h);
+  padding: 0 16px;
+  margin-bottom: 14px;
+  background: rgba(244,240,234,.96);
+  backdrop-filter: blur(8px);
+  border-top: 1px solid rgba(22,53,76,.10);
+  border-bottom: 1px solid rgba(22,53,76,.12);
+  box-shadow: 0 4px 12px rgba(27,58,82,.08);
+  border-radius: 14px;
+}
+.sh-badge {
+  flex-shrink: 0;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 9.5px;
+  font-weight: 900;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+}
+.label-sec { background: rgba(22,53,76,.12); color: var(--navy); }
+.label-story { background: rgba(200,143,90,.15); color: #8A5A24; }
+.label-dev { background: rgba(74,122,90,.14); color: var(--green); }
+.label-trans { background: rgba(158,74,58,.14); color: var(--red); }
+.sh-title {
+  min-width: 0;
+  font-size: 13px;
+  font-weight: 800;
+  color: var(--navy);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.sh-progress {
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  height: 2px;
+  width: 0%;
+  background: linear-gradient(90deg, var(--gold), #E3BC8E);
+  border-radius: 999px;
+}
+
+.cell {
+  display: flex;
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 0 2px 16px rgba(27,58,82,.08);
+  margin-bottom: 16px;
+}
+.cell-gutter {
+  width: 58px;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: flex-end;
+  padding: 16px 10px 0 0;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: .08em;
+  color: var(--sand);
+  background: linear-gradient(180deg, rgba(255,255,255,.95), rgba(248,242,235,.95));
+  border-right: 1px solid rgba(22,53,76,.08);
+}
+.cell-body {
+  min-width: 0;
+  flex: 1;
+  padding: 20px 22px;
+  background: rgba(255,255,255,.94);
+}
+
+.md-cell .cell-body { padding: 20px 22px 18px; }
+.md-cell h2 {
+  margin: 4px 0 10px;
+  font-size: 1.22rem;
+  line-height: 1.18;
+  letter-spacing: -0.02em;
+  color: var(--navy);
+}
+.md-cell h3 {
+  margin: 18px 0 8px;
+  font-size: 1.02rem;
+  color: var(--navy);
+}
+.md-cell p { margin: 0 0 10px; }
+.md-cell ul { margin: 10px 0 12px; padding-left: 19px; }
+.md-cell li { margin-bottom: 6px; }
+.section-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 10px;
+  padding: 4px 11px;
+  border-radius: 999px;
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+}
+
+.stat-row {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin: 14px 0 4px;
+}
+.stat-box {
+  flex: 1 1 180px;
+  min-width: 180px;
+  padding: 14px 15px 13px;
+  border-radius: 18px;
+  background: linear-gradient(180deg, #FFF, #FAF7F2);
+  border: 1px solid rgba(22,53,76,.08);
+  border-left: 5px solid var(--gold);
+}
+.stat-box.navy { border-left-color: var(--navy); }
+.stat-box.gold { border-left-color: var(--gold); }
+.stat-box.teal { border-left-color: var(--teal); }
+.stat-box.green { border-left-color: var(--green); }
+.stat-box.red { border-left-color: var(--red); }
+.stat-box.lead {
+  border-left-width: 7px;
+  background: linear-gradient(180deg, #FFF8F4, #FBF3EC);
+  box-shadow: inset 0 0 0 1px rgba(158,74,58,.08);
+}
+.stat-box.lead .stat-value {
+  font-size: 1.95rem;
+  color: var(--red);
+}
+.stat-box.lead .stat-label strong {
+  display: block;
+  color: var(--red);
+  margin-bottom: 4px;
+}
+.stat-value {
+  font-size: 1.6rem;
+  line-height: 1;
+  font-weight: 900;
+  color: var(--navy);
+  margin-bottom: 6px;
+}
+.stat-label {
+  font-size: 11.5px;
+  line-height: 1.45;
+  color: var(--muted);
+}
+
+.insight {
+  margin: 14px 0 0;
+  padding: 14px 16px;
+  border-radius: 16px;
+  background: linear-gradient(180deg, rgba(22,53,76,.08), rgba(22,53,76,.04));
+  border: 1px solid rgba(22,53,76,.10);
+  border-left: 5px solid var(--navy);
+  color: var(--navy);
+}
+.insight strong { color: var(--navy); }
+.insight.red {
+  background: linear-gradient(180deg, rgba(158,74,58,.10), rgba(158,74,58,.04));
+  border-left-color: var(--red);
+}
+.insight.gold {
+  background: linear-gradient(180deg, rgba(200,143,90,.12), rgba(200,143,90,.05));
+  border-left-color: var(--gold);
+}
+
+.display-headline {
+  margin: 2px 0 10px;
+  font-size: clamp(2rem, 4vw, 3.35rem);
+  line-height: 1.02;
+  letter-spacing: -0.045em;
+  color: var(--navy);
+  max-width: 15ch;
+}
+.display-headline.full {
+  max-width: none;
+}
+.display-subhead {
+  margin: 0 0 12px;
+  font-size: 1.02rem;
+  font-weight: 800;
+  color: var(--navy);
+}
+.close-display {
+  margin: 32px auto 16px;
+  max-width: 16ch;
+  text-align: center;
+  font-size: clamp(40px, 5vw, 48px);
+  font-weight: 700;
+}
+.close-subhead {
+  margin: 0 auto 24px;
+  max-width: 44ch;
+  text-align: center;
+  font-size: clamp(18px, 2.2vw, 20px);
+  font-weight: 600;
+}
+.pull-quote {
+  margin: 16px 0 0;
+  padding: 18px 20px;
+  border-radius: 18px;
+  background: linear-gradient(135deg, rgba(22,53,76,.98), rgba(27,58,82,.94));
+  color: #fff;
+  font-size: clamp(1.1rem, 2.4vw, 1.42rem);
+  line-height: 1.34;
+  font-weight: 800;
+  box-shadow: 0 10px 28px rgba(27,58,82,.18);
+}
+.legend-note,
+.appendix-summary {
+  margin: 0 0 12px;
+  font-size: 12.5px;
+  color: var(--muted);
+}
+.kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 10px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: rgba(22,53,76,.08);
+  color: var(--navy);
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+}
+
+.accordion {
+  margin-top: 14px;
+  border: 1px solid rgba(22,53,76,.10);
+  border-radius: 18px;
+  background: rgba(255,255,255,.82);
+  overflow: hidden;
+}
+.accordion summary {
+  list-style: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 12.5px;
+  font-weight: 800;
+  color: var(--navy);
+  background: linear-gradient(180deg, rgba(22,53,76,.05), rgba(22,53,76,.03));
+}
+.accordion summary::-webkit-details-marker { display: none; }
+.accordion .accordion-body {
+  padding: 16px;
+  border-top: 1px solid rgba(22,53,76,.08);
+}
+
+.chart-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+.chart-card {
+  background: var(--paper);
+  border: 1px solid rgba(22,53,76,.10);
+  border-radius: 20px;
+  padding: 18px 18px 16px;
+  box-shadow: 0 8px 24px rgba(27,58,82,.08);
+}
+.chart-card.full { grid-column: 1 / -1; }
+.chart-title {
+  margin: 0 0 3px;
+  font-size: 1.02rem;
+  font-weight: 900;
+  color: var(--navy);
+}
+.chart-subtitle {
+  margin: 0 0 12px;
+  font-size: 12px;
+  color: var(--muted);
+}
+.chart-note {
+  margin-top: 10px;
+  font-size: 12px;
+  color: var(--muted);
+}
+.inline-svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.bar-list { display: grid; gap: 11px; }
+.bar-row {
+  display: grid;
+  grid-template-columns: 132px minmax(0, 1fr) 132px;
+  gap: 12px;
+  align-items: center;
+}
+.bar-row.compact { grid-template-columns: 120px minmax(0, 1fr); }
+.bar-label {
+  font-size: 12px;
+  font-weight: 800;
+  color: var(--navy);
+}
+.bar-track {
+  position: relative;
+  height: 16px;
+  border-radius: 999px;
+  background: linear-gradient(180deg, rgba(22,53,76,.10), rgba(22,53,76,.06));
+  overflow: hidden;
+}
+.bar-fill {
+  position: absolute;
+  inset: 0 auto 0 0;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--gold), #E3BC8E);
+}
+.bar-fill.teal { background: linear-gradient(90deg, var(--teal), #9FC0C3); }
+.bar-fill.green { background: linear-gradient(90deg, var(--green), #8CB39A); }
+.bar-fill.red { background: linear-gradient(90deg, var(--red), #D07D70); }
+.bar-fill.navy { background: linear-gradient(90deg, var(--navy), #56748A); }
+.bar-value {
+  font-size: 12px;
+  font-weight: 800;
+  color: var(--muted);
+  text-align: right;
+}
+
+.table-wrap {
+  overflow-x: auto;
+  border: 1px solid rgba(22,53,76,.10);
+  border-radius: 18px;
+  background: #fff;
+}
+table.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12.5px;
+}
+.data-table thead th {
+  position: sticky;
+  top: 0;
+  background: #F6F2EC;
+  color: var(--navy);
+  text-align: left;
+  font-size: 11px;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  padding: 12px 12px;
+  border-bottom: 1px solid rgba(22,53,76,.10);
+}
+.data-table tbody td {
+  padding: 11px 12px;
+  border-bottom: 1px solid rgba(22,53,76,.08);
+  vertical-align: top;
+}
+.data-table tbody tr:nth-child(even) td { background: rgba(244,240,234,.55); }
+.data-table tbody tr:last-child td { border-bottom: 0; }
+.data-table .num { white-space: nowrap; text-align: right; font-variant-numeric: tabular-nums; }
+.pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 9px;
+  border-radius: 999px;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+  background: rgba(22,53,76,.08);
+  color: var(--navy);
+}
+.pill.gold { background: rgba(200,143,90,.15); color: #8A5A24; }
+.pill.green { background: rgba(74,122,90,.15); color: var(--green); }
+.pill.red { background: rgba(158,74,58,.15); color: var(--red); }
+.pill.teal { background: rgba(122,155,158,.16); color: var(--teal); }
+
+.split {
+  display: grid;
+  grid-template-columns: 1.15fr .85fr;
+  gap: 14px;
+}
+.list-card {
+  border: 1px solid rgba(22,53,76,.10);
+  border-radius: 18px;
+  background: #fff;
+  padding: 16px 16px 14px;
+}
+.list-card h4 {
+  margin: 0 0 10px;
+  font-size: 1rem;
+  color: var(--navy);
+}
+.list-card ul { margin: 0; padding-left: 18px; }
+.list-card li { margin-bottom: 8px; }
+
+.mini-callout {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin: 12px 0 0;
+}
+.mini-callout .mini {
+  border-radius: 16px;
+  background: rgba(22,53,76,.06);
+  border: 1px solid rgba(22,53,76,.08);
+  padding: 12px 12px 11px;
+}
+.mini .mini-value {
+  font-size: 1.2rem;
+  font-weight: 900;
+  color: var(--navy);
+  margin-bottom: 4px;
+}
+.mini .mini-label { font-size: 11.5px; color: var(--muted); line-height: 1.4; }
+
+.dumbbell-list {
+  display: grid;
+  gap: 12px;
+}
+.dumbbell-row {
+  display: grid;
+  grid-template-columns: 132px minmax(0, 1fr) 132px;
+  gap: 12px;
+  align-items: center;
+}
+.dumbbell-track {
+  position: relative;
+  height: 28px;
+  border-radius: 999px;
+  background:
+    linear-gradient(90deg, transparent 0 4.5%, rgba(22,53,76,.14) 4.5% 4.9%, transparent 4.9% 32.3%, rgba(22,53,76,.14) 32.3% 32.7%, transparent 32.7% 100%),
+    linear-gradient(180deg, rgba(22,53,76,.08), rgba(22,53,76,.04));
+  overflow: hidden;
+}
+.dumbbell-line {
+  position: absolute;
+  top: 50%;
+  height: 4px;
+  border-radius: 999px;
+  transform: translateY(-50%);
+  background: linear-gradient(90deg, var(--gold), #E3BC8E);
+}
+.dumbbell-dot {
+  position: absolute;
+  top: 50%;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  border: 2px solid var(--navy);
+  background: #fff;
+  box-shadow: 0 0 0 4px rgba(200,143,90,.18);
+}
+.dumbbell-dot.end { background: var(--gold); border-color: var(--gold); }
+.dumbbell-dot.pending {
+  border-style: dashed;
+  background: rgba(22,53,76,.05);
+  box-shadow: none;
+}
+.dumbbell-axis {
+  position: absolute;
+  top: -18px;
+  font-size: 10px;
+  color: var(--muted);
+}
+.dumbbell-axis.left { left: 0; }
+.dumbbell-axis.right { right: 0; }
+
+.footer {
+  margin: 26px 0 0;
+  padding: 20px 22px;
+  border-radius: 20px;
+  background: linear-gradient(135deg, rgba(22,53,76,.98), rgba(27,58,82,.94));
+  color: #fff;
+  box-shadow: var(--shadow);
+}
+.footer .author {
+  font-size: 13px;
+  font-weight: 800;
+  color: rgba(255,255,255,.82);
+  margin-bottom: 6px;
+}
+.footer .source {
+  font-size: 12px;
+  color: rgba(255,255,255,.72);
+  line-height: 1.55;
+}
+
+.nb-divider {
+  margin: 18px 0;
+  border: 0;
+  border-top: 1px solid rgba(22,53,76,.12);
+}
+
+@media (max-width: 1080px) {
+  .hero-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .hero-card.thesis { grid-column: span 3; }
+  .chart-grid, .split { grid-template-columns: 1fr; }
+}
+.force-mobile .chart-grid,
+.force-mobile .split { grid-template-columns: 1fr; }
+@media (max-width: 720px) {
+  .nb-nav { padding: 0 12px; gap: 10px; }
+  .nav-brand { font-size: 10px; }
+  .nav-link { padding: 6px 10px; font-size: 10.5px; }
+  .notebook { padding: 0 12px 44px; }
+  .nb-header { padding: 24px 18px 18px; border-radius: 22px; }
+  .hero-grid { grid-template-columns: 1fr 1fr; }
+  .hero-card.thesis { grid-column: span 2; }
+  .hero-card { min-height: auto; }
+  .hero-card .value { font-size: 1.35rem; }
+  .cell { flex-direction: column; }
+  .cell-gutter {
+    width: 100%;
+    justify-content: flex-start;
+    padding: 10px 12px 0;
+    border-right: 0;
+    border-bottom: 1px solid rgba(22,53,76,.08);
+  }
+  .cell-body { padding: 16px 16px 15px; }
+  .bar-row, .dumbbell-row { grid-template-columns: 1fr; }
+  .bar-value { text-align: left; }
+  .mini-callout { grid-template-columns: 1fr; }
+}
+.force-mobile .nb-nav { padding: 0 12px; gap: 10px; }
+.force-mobile .nav-brand { font-size: 10px; }
+.force-mobile .nav-link { padding: 6px 10px; font-size: 10.5px; }
+.force-mobile .notebook { padding: 0 12px 44px; }
+.force-mobile .nb-header { padding: 24px 18px 18px; border-radius: 22px; }
+.force-mobile .hero-grid { grid-template-columns: 1fr 1fr; }
+.force-mobile .hero-card.thesis { grid-column: span 2; }
+.force-mobile .hero-card { min-height: auto; }
+.force-mobile .hero-card .value { font-size: 1.35rem; }
+.force-mobile .cell { flex-direction: column; }
+.force-mobile .cell-gutter {
+  width: 100%;
+  justify-content: flex-start;
+  padding: 10px 12px 0;
+  border-right: 0;
+  border-bottom: 1px solid rgba(22,53,76,.08);
+}
+.force-mobile .cell-body { padding: 16px 16px 15px; }
+.force-mobile .bar-row,
+.force-mobile .dumbbell-row { grid-template-columns: 1fr; }
+.force-mobile .bar-value { text-align: left; }
+.force-mobile .mini-callout { grid-template-columns: 1fr; }
+</style>
 </head>
 <body>
-  <div class="card">
-    <h1>Sports Analytics Project</h1>
-    <p>This is a placeholder HTML notebook. Replace this file with the final project notebook or dashboard.</p>
-  </div>
+  <nav class="nb-nav" aria-label="Notebook sections">
+    <div class="nav-brand">NCAA Coaching Notebook</div>
+    <div class="nav-links">
+      <a class="nav-link" href="#sec-opening" data-sec="sec-opening"><span class="nav-dot"></span>Opening</a>
+<a class="nav-link" href="#sec-diversity" data-sec="sec-diversity"><span class="nav-dot"></span>Diversity</a>
+<a class="nav-link" href="#sec-staffing" data-sec="sec-staffing"><span class="nav-dot"></span>Staffing</a>
+<a class="nav-link" href="#sec-women" data-sec="sec-women"><span class="nav-dot"></span>Women Coaches</a>
+<a class="nav-link" href="#sec-woc" data-sec="sec-woc"><span class="nav-dot"></span>Women Of Color</a>
+<a class="nav-link" href="#sec-promotion" data-sec="sec-promotion"><span class="nav-dot"></span>Promotion</a>
+<a class="nav-link" href="#sec-soccer" data-sec="sec-soccer"><span class="nav-dot"></span>Soccer</a>
+<a class="nav-link" href="#sec-wbb" data-sec="sec-wbb"><span class="nav-dot"></span>WBB</a>
+<a class="nav-link" href="#sec-close" data-sec="sec-close"><span class="nav-dot"></span>Close</a>
+<a class="nav-link" href="#sec-methods" data-sec="sec-methods"><span class="nav-dot"></span>Methods</a>
+    </div>
+  </nav>
+
+  <main class="notebook">
+    <header class="nb-header">
+      Leadership Pipeline Refresh
+      <h1>NCAA Division I Women's Coaching<br/>Four-Sport Leadership Notebook</h1>
+      <p class="subtitle">A documentary-style Version 2 rebuild for athletic leaders. The data stays fixed, but the narrative now moves from athlete diversification to the leadership bottlenecks that still define who gets the top job.</p>
+      <div class="hero-grid">
+        <div class="hero-card"><span class="value">41.3%</span><span class="label">Women coaches in soccer, the lowest overall women-coach share in the set.</span></div>
+<div class="hero-card"><span class="value">29,465</span><span class="label">Latest-year athletes across the four focus sports.</span></div>
+<div class="hero-card"><span class="value">5,004</span><span class="label">Latest-year coaching roles across assistant and head coach seats.</span></div>
+<div class="hero-card"><span class="value">2012-2025</span><span class="label">Balanced 14-season panel built from the filtered NCAA demographics source table.</span></div>
+<div class="hero-card"><span class="value">4 Sports</span><span class="label">Basketball, soccer, softball, and volleyball are treated as one four-sport leadership brief.</span></div>
+<div class="hero-card thesis"><span class="value">Version 2 thesis</span><span class="label">The athlete pipeline diversified faster than leadership did. Soccer changes the women-in-coaching headline, while WBB still carries the sharpest Black promotion gap at -13.3 pp.</span></div>
+      </div>
+    </header>
+
+    <section id="sec-opening" class="nb-section">
+<div class="section-header">
+<span class="sh-badge label-story">Opening</span>
+<span class="sh-title">Four-Sport Leadership Snapshot</span>
+<div class="sh-progress"></div>
+</div>
+<div class="cell md-cell"><div class="cell-gutter">In [1]</div><div class="cell-body"><span class="section-label label-story">Opening</span><h2 class="display-headline full">In 2025, nearly 30,000 women competed across four NCAA Division I sports. But look up from the court, the pitch, or the pool deck — and the people making decisions look very different from the people playing the game.</h2><p class="display-subhead">The athlete pipeline diversified faster than leadership did.</p><p>This is a four-sport leadership brief built from a clean 2012–2025 NCAA demographics panel. The same data that documents remarkable athlete diversification also reveals that coaching leadership — particularly at the head coach level — has not kept pace. And when soccer enters the picture as an equal peer sport, the women-in-coaching story becomes significantly more complicated.</p><div class="stat-row">
+            <div class="stat-box red lead">
+              <div class="stat-value">41.3%</div>
+              <div class="stat-label"><strong>Lowest in the set</strong>Women coaches in soccer, the lowest overall women-coach share in the set.</div>
+            </div>
+            
+            <div class="stat-box navy">
+              <div class="stat-value">29,465</div>
+              <div class="stat-label">Latest-year athletes across the four focus sports.</div>
+            </div>
+            
+            <div class="stat-box gold">
+              <div class="stat-value">5,004</div>
+              <div class="stat-label">Latest-year coaching roles across assistant and head coach seats.</div>
+            </div>
+            </div><div class="insight"><strong>Read this as a leadership file:</strong> WBB still owns the sharpest Black promotion gap (-13.3 pp). Soccer is the sport that most changes what women-in-coaching leadership looks like across the full four-sport set. Neither story can be told without the other.</div></div></div>
+<div class="cell out-cell"><div class="cell-gutter">Out [1]</div><div class="cell-body">
+                        <div class="chart-grid">
+                          <div class="chart-card full">
+                            <h3 class="chart-title">Who Plays vs. Who Coaches — 2025</h3>
+                            <p class="chart-subtitle">The gap between athlete scale and coaching scale varies sharply by sport. Soccer's enormous athlete base is coached by the smallest proportional staff in the set.</p>
+                            
+    <svg viewBox="0 0 760 500" class="inline-svg" role="img" aria-label="Athletes and coaches by sport in 2025">
+      <rect x="0" y="0" width="760" height="500" rx="18" fill="#FFFDF8"></rect>
+      <text x="290.0" y="30" text-anchor="middle" font-size="11" fill="#5F7484" font-weight="800">Athletes</text><text x="580.0" y="30" text-anchor="middle" font-size="11" fill="#5F7484" font-weight="800">Coaches</text>
+      <text x="36" y="94.0" font-size="11" fill="#17354B" font-weight="800">WBB</text><line x1="110" y1="88.0" x2="680.0" y2="88.0" stroke="#D9D0C4" stroke-width=".8" opacity=".45"></line><circle cx="290.0" cy="88.0" r="37.1" fill="#16354C" fill-opacity=".20" stroke="#16354C" stroke-width="2.5"></circle><text x="290.0" y="92.0" text-anchor="middle" font-size="11" fill="#16354C" font-weight="800">5,153</text><circle cx="580.0" cy="88.0" r="21.7" fill="#16354C" fill-opacity=".16" stroke="#16354C" stroke-width="2.5"></circle><text x="580.0" y="92.0" text-anchor="middle" font-size="11" fill="#16354C" font-weight="800">1,766</text><text x="36" y="196.0" font-size="11" fill="#17354B" font-weight="800">Soccer</text><line x1="110" y1="190.0" x2="680.0" y2="190.0" stroke="#D9D0C4" stroke-width=".8" opacity=".45"></line><circle cx="290.0" cy="190.0" r="54.0" fill="#9E4A3A" fill-opacity=".20" stroke="#9E4A3A" stroke-width="2.5"></circle><text x="290.0" y="194.0" text-anchor="middle" font-size="11" fill="#9E4A3A" font-weight="800">10,902</text><circle cx="580.0" cy="190.0" r="17.1" fill="#9E4A3A" fill-opacity=".16" stroke="#9E4A3A" stroke-width="2.5"></circle><text x="580.0" y="194.0" text-anchor="middle" font-size="11" fill="#9E4A3A" font-weight="800">1,088</text><text x="36" y="298.0" font-size="11" fill="#17354B" font-weight="800">Softball</text><line x1="110" y1="292.0" x2="680.0" y2="292.0" stroke="#D9D0C4" stroke-width=".8" opacity=".45"></line><circle cx="290.0" cy="292.0" r="43.1" fill="#4A7A5A" fill-opacity=".20" stroke="#4A7A5A" stroke-width="2.5"></circle><text x="290.0" y="296.0" text-anchor="middle" font-size="11" fill="#4A7A5A" font-weight="800">6,956</text><circle cx="580.0" cy="292.0" r="16.7" fill="#4A7A5A" fill-opacity=".16" stroke="#4A7A5A" stroke-width="2.5"></circle><text x="580.0" y="296.0" text-anchor="middle" font-size="11" fill="#4A7A5A" font-weight="800">1,040</text><text x="36" y="400.0" font-size="11" fill="#17354B" font-weight="800">Volleyball</text><line x1="110" y1="394.0" x2="680.0" y2="394.0" stroke="#D9D0C4" stroke-width=".8" opacity=".45"></line><circle cx="290.0" cy="394.0" r="41.5" fill="#7A9B9E" fill-opacity=".20" stroke="#7A9B9E" stroke-width="2.5"></circle><text x="290.0" y="398.0" text-anchor="middle" font-size="11" fill="#7A9B9E" font-weight="800">6,454</text><circle cx="580.0" cy="394.0" r="17.2" fill="#7A9B9E" fill-opacity=".16" stroke="#7A9B9E" stroke-width="2.5"></circle><text x="580.0" y="398.0" text-anchor="middle" font-size="11" fill="#7A9B9E" font-weight="800">1,110</text>
+    </svg>
+    
+                          </div>
+                          <div class="chart-card full">
+                            <h3 class="chart-title">Latest-Year Comparison Table</h3>
+                            <p class="chart-subtitle">The operating context stays visible before the notebook narrows into race, gender, and promotion pressure points.</p>
+                            
+    <div class="table-wrap">
+      <table class="data-table">
+        <thead>
+          <tr><th>Sport</th><th>Athletes</th><th>Coaches</th><th>Assistant:Head</th><th>Women Coaches</th><th>SDI</th></tr>
+        </thead>
+        <tbody>
+          
+            <tr>
+              <td>WBB</td>
+              <td class="num">5,153</td>
+              <td class="num">1,766</td>
+              <td class="num">3.92x</td>
+              <td class="num">65.4%</td>
+              <td class="num">0.719</td>
+            </tr>
+            
+            <tr>
+              <td>Soccer</td>
+              <td class="num">10,902</td>
+              <td class="num">1,088</td>
+              <td class="num">2.19x</td>
+              <td class="num">41.3%</td>
+              <td class="num">0.564</td>
+            </tr>
+            
+            <tr>
+              <td>Softball</td>
+              <td class="num">6,956</td>
+              <td class="num">1,040</td>
+              <td class="num">2.41x</td>
+              <td class="num">73.5%</td>
+              <td class="num">0.550</td>
+            </tr>
+            
+            <tr>
+              <td>Volleyball</td>
+              <td class="num">6,454</td>
+              <td class="num">1,110</td>
+              <td class="num">2.25x</td>
+              <td class="num">53.2%</td>
+              <td class="num">0.614</td>
+            </tr>
+            
+        </tbody>
+      </table>
+    </div>
+    
+                          </div>
+                        </div>
+                        </div></div>
+</section>
+<hr class="nb-divider">
+<section id="sec-diversity" class="nb-section">
+<div class="section-header">
+<span class="sh-badge label-sec">Diversity</span>
+<span class="sh-title">Athlete Diversity Growth</span>
+<div class="sh-progress"></div>
+</div>
+<div class="cell md-cell"><div class="cell-gutter">In [2]</div><div class="cell-body"><span class="section-label label-sec">Diversity</span><h2>The talent diversified. Every sport. Every year.</h2><p>Before examining who leads these sports, it's essential to understand who plays them. Across all four focus sports, athlete diversity increased meaningfully between 2012 and 2025. The talent pool that should be feeding the coaching pipeline is more diverse than it has ever been. That makes what follows — the leadership gap — a story about systems, not a story about supply.</p><div class="stat-row">
+            <div class="stat-box navy">
+              <div class="stat-value">0.719</div>
+              <div class="stat-label">WBB latest-year SDI, highest diversity mark in the set.</div>
+            </div>
+            
+            <div class="stat-box gold">
+              <div class="stat-value">0.152</div>
+              <div class="stat-label">Volleyball absolute SDI increase, strongest long-run rise.</div>
+            </div>
+            
+            <div class="stat-box teal">
+              <div class="stat-value">35.2%</div>
+              <div class="stat-label">Soccer posted the fastest relative SDI growth.</div>
+            </div>
+            </div></div></div>
+<div class="cell out-cell"><div class="cell-gutter">Out [2]</div><div class="cell-body">
+                        <div class="chart-grid">
+                          <div class="chart-card">
+                            <h3 class="chart-title">Every Sport Diversified Its Athlete Pipeline — 2012 to 2025</h3>
+                            <p class="chart-subtitle">WBB enters the window already the most diverse and extends that lead. Volleyball and soccer show the steepest relative growth.</p>
+                            <div class="dumbbell-list">
+    <div class="legend-note"><strong>2012 SDI</strong> to <strong>2025 SDI</strong></div>
+    
+            <div class="dumbbell-row">
+              <div class="bar-label">WBB</div>
+              <div class="dumbbell-track">
+                <span class="dumbbell-axis left">0.0</span><span class="dumbbell-axis right">1.0</span>
+                <div class="dumbbell-line" style="left:60.6%; width:11.3%; background:#C88F5A;"></div>
+                <div class="dumbbell-dot" style="left:60.6%; border-color:#16354C;"></div>
+                <div class="dumbbell-dot end" style="left:71.9%; background:#C88F5A; border-color:#C88F5A;"></div>
+              </div>
+              <div class="bar-value">0.606 → 0.719 (+0.113)</div>
+            </div>
+            
+            <div class="dumbbell-row">
+              <div class="bar-label">Soccer</div>
+              <div class="dumbbell-track">
+                
+                <div class="dumbbell-line" style="left:41.7%; width:14.7%; background:#C88F5A;"></div>
+                <div class="dumbbell-dot" style="left:41.7%; border-color:#16354C;"></div>
+                <div class="dumbbell-dot end" style="left:56.4%; background:#C88F5A; border-color:#C88F5A;"></div>
+              </div>
+              <div class="bar-value">0.417 → 0.564 (+0.147)</div>
+            </div>
+            
+            <div class="dumbbell-row">
+              <div class="bar-label">Softball</div>
+              <div class="dumbbell-track">
+                
+                <div class="dumbbell-line" style="left:42.5%; width:12.5%; background:#C88F5A;"></div>
+                <div class="dumbbell-dot" style="left:42.5%; border-color:#16354C;"></div>
+                <div class="dumbbell-dot end" style="left:55.0%; background:#C88F5A; border-color:#C88F5A;"></div>
+              </div>
+              <div class="bar-value">0.425 → 0.550 (+0.125)</div>
+            </div>
+            
+            <div class="dumbbell-row">
+              <div class="bar-label">Volleyball</div>
+              <div class="dumbbell-track">
+                
+                <div class="dumbbell-line" style="left:46.2%; width:15.2%; background:#C88F5A;"></div>
+                <div class="dumbbell-dot" style="left:46.2%; border-color:#16354C;"></div>
+                <div class="dumbbell-dot end" style="left:61.4%; background:#C88F5A; border-color:#C88F5A;"></div>
+              </div>
+              <div class="bar-value">0.462 → 0.614 (+0.152)</div>
+            </div>
+            </div>
+                          </div>
+                          <div class="chart-card">
+                            <h3 class="chart-title">SDI Change Table</h3>
+                            <p class="chart-subtitle">The reference table stays intact so the story can be audited sport by sport.</p>
+                            
+    <div class="table-wrap">
+      <table class="data-table">
+        <thead>
+          <tr><th>Sport</th><th>SDI 2012</th><th>SDI 2025</th><th>Absolute Change</th><th>Relative Change</th></tr>
+        </thead>
+        <tbody>
+          
+            <tr>
+              <td>WBB</td>
+              <td class="num">0.606</td>
+              <td class="num">0.719</td>
+              <td class="num">0.113</td>
+              <td class="num">18.6%</td>
+            </tr>
+            
+            <tr>
+              <td>Soccer</td>
+              <td class="num">0.417</td>
+              <td class="num">0.564</td>
+              <td class="num">0.147</td>
+              <td class="num">35.2%</td>
+            </tr>
+            
+            <tr>
+              <td>Softball</td>
+              <td class="num">0.425</td>
+              <td class="num">0.550</td>
+              <td class="num">0.125</td>
+              <td class="num">29.3%</td>
+            </tr>
+            
+            <tr>
+              <td>Volleyball</td>
+              <td class="num">0.462</td>
+              <td class="num">0.614</td>
+              <td class="num">0.152</td>
+              <td class="num">32.9%</td>
+            </tr>
+            
+        </tbody>
+      </table>
+    </div>
+    
+                          </div>
+                        </div>
+                        </div></div>
+</section>
+<hr class="nb-divider">
+<section id="sec-staffing" class="nb-section">
+<div class="section-header">
+<span class="sh-badge label-sec">Structure</span>
+<span class="sh-title">The Assistant Layer: Pipeline Width Or Pipeline Trap?</span>
+<div class="sh-progress"></div>
+</div>
+<div class="cell md-cell"><div class="cell-gutter">In [3]</div><div class="cell-body"><span class="section-label label-sec">Structure</span><h2>The Assistant Layer: Pipeline Width Or Pipeline Trap?</h2><p>The assistant coaching layer is not just a staffing metric — it is the talent development pipeline. A sport with a thicker assistant bench has more people positioned to be considered for the head job. That is why WBB's 3.92x assistant-to-head ratio is both its greatest structural asset and, as the next two sections will reveal, its sharpest irony.</p><div class="mini-callout">
+            <div class="mini">
+              <div class="mini-value">3.92x</div>
+              <div class="mini-label">WBB assistants per head coach in 2025</div>
+            </div>
+            
+            <div class="mini">
+              <div class="mini-value">2.19x</div>
+              <div class="mini-label">Soccer assistants per head coach in 2025</div>
+            </div>
+            
+            <div class="mini">
+              <div class="mini-value">10.0%</div>
+              <div class="mini-label">Soccer coaches per athlete, the leanest latest-year staffing ratio</div>
+            </div>
+            </div></div></div>
+<div class="cell out-cell"><div class="cell-gutter">Out [3]</div><div class="cell-body">
+                        <div class="chart-grid">
+                          <div class="chart-card full">
+                            <h3 class="chart-title">How Wide The Assistant Layer Became</h3>
+                            <p class="chart-subtitle">The width of the assistant layer differs materially by sport and is strongest in WBB by the end of the window.</p>
+                            
+    <svg viewBox="0 0 760 280" class="inline-svg" role="img">
+      <rect x="0" y="0" width="760" height="280" rx="18" fill="#FFFDF8"></rect>
+      <line x1="52" y1="232.0" x2="740" y2="232.0" stroke="#D9D0C4" stroke-width="1"></line><text x="44" y="236.0" text-anchor="end" font-size="10" fill="#5F7484">0.0x</text><line x1="52" y1="127.0" x2="740" y2="127.0" stroke="#D9D0C4" stroke-width="1"></line><text x="44" y="131.0" text-anchor="end" font-size="10" fill="#5F7484">2.0x</text><line x1="52" y1="22.0" x2="740" y2="22.0" stroke="#D9D0C4" stroke-width="1"></line><text x="44" y="26.0" text-anchor="end" font-size="10" fill="#5F7484">3.9x</text>
+      <rect x="44.9" y="69.1" width="9.8" height="162.9" rx="8" fill="#16354C"></rect><text x="49.8" y="63.1" text-anchor="middle" font-size="10" fill="#5F7484">3.04x</text><rect x="62.7" y="127.2" width="9.8" height="104.8" rx="8" fill="#9E4A3A"></rect><text x="67.7" y="121.2" text-anchor="middle" font-size="10" fill="#5F7484">1.96x</text><rect x="80.6" y="125.2" width="9.8" height="106.8" rx="8" fill="#4A7A5A"></rect><text x="85.5" y="119.2" text-anchor="middle" font-size="10" fill="#5F7484">1.99x</text><rect x="98.4" y="126.9" width="9.8" height="105.1" rx="8" fill="#7A9B9E"></rect><text x="103.3" y="120.9" text-anchor="middle" font-size="10" fill="#5F7484">1.96x</text><rect x="94.1" y="69.7" width="9.8" height="162.3" rx="8" fill="#16354C"></rect><text x="99.0" y="63.7" text-anchor="middle" font-size="10" fill="#5F7484">3.03x</text><rect x="111.9" y="125.5" width="9.8" height="106.5" rx="8" fill="#9E4A3A"></rect><text x="116.8" y="119.5" text-anchor="middle" font-size="10" fill="#5F7484">1.99x</text><rect x="129.7" y="127.0" width="9.8" height="105.0" rx="8" fill="#4A7A5A"></rect><text x="134.6" y="121.0" text-anchor="middle" font-size="10" fill="#5F7484">1.96x</text><rect x="147.5" y="128.3" width="9.8" height="103.7" rx="8" fill="#7A9B9E"></rect><text x="152.5" y="122.3" text-anchor="middle" font-size="10" fill="#5F7484">1.93x</text><rect x="143.2" y="71.4" width="9.8" height="160.6" rx="8" fill="#16354C"></rect><text x="148.1" y="65.4" text-anchor="middle" font-size="10" fill="#5F7484">3.00x</text><rect x="161.0" y="128.0" width="9.8" height="104.0" rx="8" fill="#9E4A3A"></rect><text x="165.9" y="122.0" text-anchor="middle" font-size="10" fill="#5F7484">1.94x</text><rect x="178.9" y="121.0" width="9.8" height="111.0" rx="8" fill="#4A7A5A"></rect><text x="183.8" y="115.0" text-anchor="middle" font-size="10" fill="#5F7484">2.07x</text><rect x="196.7" y="127.0" width="9.8" height="105.0" rx="8" fill="#7A9B9E"></rect><text x="201.6" y="121.0" text-anchor="middle" font-size="10" fill="#5F7484">1.96x</text><rect x="192.3" y="70.0" width="9.8" height="162.0" rx="8" fill="#16354C"></rect><text x="197.3" y="64.0" text-anchor="middle" font-size="10" fill="#5F7484">3.02x</text><rect x="210.2" y="124.7" width="9.8" height="107.3" rx="8" fill="#9E4A3A"></rect><text x="215.1" y="118.7" text-anchor="middle" font-size="10" fill="#5F7484">2.00x</text><rect x="228.0" y="124.1" width="9.8" height="107.9" rx="8" fill="#4A7A5A"></rect><text x="232.9" y="118.1" text-anchor="middle" font-size="10" fill="#5F7484">2.01x</text><rect x="245.8" y="125.9" width="9.8" height="106.1" rx="8" fill="#7A9B9E"></rect><text x="250.7" y="119.9" text-anchor="middle" font-size="10" fill="#5F7484">1.98x</text><rect x="241.5" y="72.0" width="9.8" height="160.0" rx="8" fill="#16354C"></rect><text x="246.4" y="66.0" text-anchor="middle" font-size="10" fill="#5F7484">2.99x</text><rect x="259.3" y="124.8" width="9.8" height="107.2" rx="8" fill="#9E4A3A"></rect><text x="264.2" y="118.8" text-anchor="middle" font-size="10" fill="#5F7484">2.00x</text><rect x="277.1" y="123.1" width="9.8" height="108.9" rx="8" fill="#4A7A5A"></rect><text x="282.1" y="117.1" text-anchor="middle" font-size="10" fill="#5F7484">2.03x</text><rect x="295.0" y="124.5" width="9.8" height="107.5" rx="8" fill="#7A9B9E"></rect><text x="299.9" y="118.5" text-anchor="middle" font-size="10" fill="#5F7484">2.01x</text><rect x="290.6" y="69.0" width="9.8" height="163.0" rx="8" fill="#16354C"></rect><text x="295.5" y="63.0" text-anchor="middle" font-size="10" fill="#5F7484">3.04x</text><rect x="308.5" y="124.0" width="9.8" height="108.0" rx="8" fill="#9E4A3A"></rect><text x="313.4" y="118.0" text-anchor="middle" font-size="10" fill="#5F7484">2.01x</text><rect x="326.3" y="117.5" width="9.8" height="114.5" rx="8" fill="#4A7A5A"></rect><text x="331.2" y="111.5" text-anchor="middle" font-size="10" fill="#5F7484">2.14x</text><rect x="344.1" y="123.9" width="9.8" height="108.1" rx="8" fill="#7A9B9E"></rect><text x="349.0" y="117.9" text-anchor="middle" font-size="10" fill="#5F7484">2.02x</text><rect x="339.8" y="70.8" width="9.8" height="161.2" rx="8" fill="#16354C"></rect><text x="344.7" y="64.8" text-anchor="middle" font-size="10" fill="#5F7484">3.01x</text><rect x="357.6" y="121.0" width="9.8" height="111.0" rx="8" fill="#9E4A3A"></rect><text x="362.5" y="115.0" text-anchor="middle" font-size="10" fill="#5F7484">2.07x</text><rect x="375.4" y="119.9" width="9.8" height="112.1" rx="8" fill="#4A7A5A"></rect><text x="380.3" y="113.9" text-anchor="middle" font-size="10" fill="#5F7484">2.09x</text><rect x="393.3" y="124.0" width="9.8" height="108.0" rx="8" fill="#7A9B9E"></rect><text x="398.2" y="118.0" text-anchor="middle" font-size="10" fill="#5F7484">2.01x</text><rect x="388.9" y="67.8" width="9.8" height="164.2" rx="8" fill="#16354C"></rect><text x="393.8" y="61.8" text-anchor="middle" font-size="10" fill="#5F7484">3.07x</text><rect x="406.7" y="122.6" width="9.8" height="109.4" rx="8" fill="#9E4A3A"></rect><text x="411.7" y="116.6" text-anchor="middle" font-size="10" fill="#5F7484">2.04x</text><rect x="424.6" y="119.1" width="9.8" height="112.9" rx="8" fill="#4A7A5A"></rect><text x="429.5" y="113.1" text-anchor="middle" font-size="10" fill="#5F7484">2.11x</text><rect x="442.4" y="125.6" width="9.8" height="106.4" rx="8" fill="#7A9B9E"></rect><text x="447.3" y="119.6" text-anchor="middle" font-size="10" fill="#5F7484">1.99x</text><rect x="438.1" y="69.4" width="9.8" height="162.6" rx="8" fill="#16354C"></rect><text x="443.0" y="63.4" text-anchor="middle" font-size="10" fill="#5F7484">3.03x</text><rect x="455.9" y="130.5" width="9.8" height="101.5" rx="8" fill="#9E4A3A"></rect><text x="460.8" y="124.5" text-anchor="middle" font-size="10" fill="#5F7484">1.89x</text><rect x="473.7" y="126.8" width="9.8" height="105.2" rx="8" fill="#4A7A5A"></rect><text x="478.6" y="120.8" text-anchor="middle" font-size="10" fill="#5F7484">1.96x</text><rect x="491.5" y="133.0" width="9.8" height="99.0" rx="8" fill="#7A9B9E"></rect><text x="496.5" y="127.0" text-anchor="middle" font-size="10" fill="#5F7484">1.85x</text><rect x="487.2" y="72.0" width="9.8" height="160.0" rx="8" fill="#16354C"></rect><text x="492.1" y="66.0" text-anchor="middle" font-size="10" fill="#5F7484">2.99x</text><rect x="505.0" y="127.8" width="9.8" height="104.2" rx="8" fill="#9E4A3A"></rect><text x="509.9" y="121.8" text-anchor="middle" font-size="10" fill="#5F7484">1.94x</text><rect x="522.9" y="124.5" width="9.8" height="107.5" rx="8" fill="#4A7A5A"></rect><text x="527.8" y="118.5" text-anchor="middle" font-size="10" fill="#5F7484">2.01x</text><rect x="540.7" y="133.2" width="9.8" height="98.8" rx="8" fill="#7A9B9E"></rect><text x="545.6" y="127.2" text-anchor="middle" font-size="10" fill="#5F7484">1.84x</text><rect x="536.3" y="72.0" width="9.8" height="160.0" rx="8" fill="#16354C"></rect><text x="541.3" y="66.0" text-anchor="middle" font-size="10" fill="#5F7484">2.99x</text><rect x="554.2" y="132.2" width="9.8" height="99.8" rx="8" fill="#9E4A3A"></rect><text x="559.1" y="126.2" text-anchor="middle" font-size="10" fill="#5F7484">1.86x</text><rect x="572.0" y="129.7" width="9.8" height="102.3" rx="8" fill="#4A7A5A"></rect><text x="576.9" y="123.7" text-anchor="middle" font-size="10" fill="#5F7484">1.91x</text><rect x="589.8" y="132.8" width="9.8" height="99.2" rx="8" fill="#7A9B9E"></rect><text x="594.7" y="126.8" text-anchor="middle" font-size="10" fill="#5F7484">1.85x</text><rect x="585.5" y="64.9" width="9.8" height="167.1" rx="8" fill="#16354C"></rect><text x="590.4" y="58.9" text-anchor="middle" font-size="10" fill="#5F7484">3.12x</text><rect x="603.3" y="130.2" width="9.8" height="101.8" rx="8" fill="#9E4A3A"></rect><text x="608.2" y="124.2" text-anchor="middle" font-size="10" fill="#5F7484">1.90x</text><rect x="621.1" y="127.0" width="9.8" height="105.0" rx="8" fill="#4A7A5A"></rect><text x="626.1" y="121.0" text-anchor="middle" font-size="10" fill="#5F7484">1.96x</text><rect x="639.0" y="134.2" width="9.8" height="97.8" rx="8" fill="#7A9B9E"></rect><text x="643.9" y="128.2" text-anchor="middle" font-size="10" fill="#5F7484">1.82x</text><rect x="634.6" y="30.7" width="9.8" height="201.3" rx="8" fill="#16354C"></rect><text x="639.5" y="24.7" text-anchor="middle" font-size="10" fill="#5F7484">3.76x</text><rect x="652.5" y="117.5" width="9.8" height="114.5" rx="8" fill="#9E4A3A"></rect><text x="657.4" y="111.5" text-anchor="middle" font-size="10" fill="#5F7484">2.14x</text><rect x="670.3" y="107.5" width="9.8" height="124.5" rx="8" fill="#4A7A5A"></rect><text x="675.2" y="101.5" text-anchor="middle" font-size="10" fill="#5F7484">2.32x</text><rect x="688.1" y="113.7" width="9.8" height="118.3" rx="8" fill="#7A9B9E"></rect><text x="693.0" y="107.7" text-anchor="middle" font-size="10" fill="#5F7484">2.21x</text><rect x="683.8" y="22.0" width="9.8" height="210.0" rx="8" fill="#16354C"></rect><text x="688.7" y="16.0" text-anchor="middle" font-size="10" fill="#5F7484">3.92x</text><rect x="701.6" y="114.6" width="9.8" height="117.4" rx="8" fill="#9E4A3A"></rect><text x="706.5" y="108.6" text-anchor="middle" font-size="10" fill="#5F7484">2.19x</text><rect x="719.4" y="102.9" width="9.8" height="129.1" rx="8" fill="#4A7A5A"></rect><text x="724.3" y="96.9" text-anchor="middle" font-size="10" fill="#5F7484">2.41x</text><rect x="737.3" y="111.7" width="9.8" height="120.3" rx="8" fill="#7A9B9E"></rect><text x="742.2" y="105.7" text-anchor="middle" font-size="10" fill="#5F7484">2.25x</text>
+      <text x="76.6" y="268" text-anchor="middle" font-size="10" fill="#5F7484">2012</text><text x="125.7" y="268" text-anchor="middle" font-size="10" fill="#5F7484">2013</text><text x="174.9" y="268" text-anchor="middle" font-size="10" fill="#5F7484">2014</text><text x="224.0" y="268" text-anchor="middle" font-size="10" fill="#5F7484">2015</text><text x="273.1" y="268" text-anchor="middle" font-size="10" fill="#5F7484">2016</text><text x="322.3" y="268" text-anchor="middle" font-size="10" fill="#5F7484">2017</text><text x="371.4" y="268" text-anchor="middle" font-size="10" fill="#5F7484">2018</text><text x="420.6" y="268" text-anchor="middle" font-size="10" fill="#5F7484">2019</text><text x="469.7" y="268" text-anchor="middle" font-size="10" fill="#5F7484">2020</text><text x="518.9" y="268" text-anchor="middle" font-size="10" fill="#5F7484">2021</text><text x="568.0" y="268" text-anchor="middle" font-size="10" fill="#5F7484">2022</text><text x="617.1" y="268" text-anchor="middle" font-size="10" fill="#5F7484">2023</text><text x="666.3" y="268" text-anchor="middle" font-size="10" fill="#5F7484">2024</text><text x="715.4" y="268" text-anchor="middle" font-size="10" fill="#5F7484">2025</text>
+      <rect x="52" y="248" width="12" height="12" rx="3" fill="#16354C"></rect><text x="70" y="258" font-size="10" fill="#5F7484">WBB</text><rect x="180" y="248" width="12" height="12" rx="3" fill="#9E4A3A"></rect><text x="198" y="258" font-size="10" fill="#5F7484">Soccer</text><rect x="308" y="248" width="12" height="12" rx="3" fill="#4A7A5A"></rect><text x="326" y="258" font-size="10" fill="#5F7484">Softball</text><rect x="436" y="248" width="12" height="12" rx="3" fill="#7A9B9E"></rect><text x="454" y="258" font-size="10" fill="#5F7484">Volleyball</text>
+    </svg>
+    
+                          </div>
+                          <div class="chart-card full">
+                            <h3 class="chart-title">How Thin The Coaching Footprint Feels To Athletes</h3>
+                            <p class="chart-subtitle">Soccer supports far more athletes per coach than the other focus sports, which changes how leadership access should be read.</p>
+                            
+    <svg viewBox="0 0 760 280" class="inline-svg" role="img">
+      <rect x="0" y="0" width="760" height="280" rx="18" fill="#FFFDF8"></rect>
+      <line x1="52" y1="232.0" x2="740" y2="232.0" stroke="#D9D0C4" stroke-width="1"></line><text x="44" y="236.0" text-anchor="end" font-size="10" fill="#5F7484">0%</text><line x1="52" y1="127.0" x2="740" y2="127.0" stroke="#D9D0C4" stroke-width="1"></line><text x="44" y="131.0" text-anchor="end" font-size="10" fill="#5F7484">17%</text><line x1="52" y1="22.0" x2="740" y2="22.0" stroke="#D9D0C4" stroke-width="1"></line><text x="44" y="26.0" text-anchor="end" font-size="10" fill="#5F7484">34%</text>
+      <rect x="44.9" y="59.2" width="9.8" height="172.8" rx="8" fill="#16354C"></rect><text x="49.8" y="53.2" text-anchor="middle" font-size="10" fill="#5F7484">28.2%</text><rect x="62.7" y="163.5" width="9.8" height="68.5" rx="8" fill="#9E4A3A"></rect><text x="67.7" y="157.5" text-anchor="middle" font-size="10" fill="#5F7484">11.2%</text><rect x="80.6" y="138.9" width="9.8" height="93.1" rx="8" fill="#4A7A5A"></rect><text x="85.5" y="132.9" text-anchor="middle" font-size="10" fill="#5F7484">15.2%</text><rect x="98.4" y="110.9" width="9.8" height="121.1" rx="8" fill="#7A9B9E"></rect><text x="103.3" y="104.9" text-anchor="middle" font-size="10" fill="#5F7484">19.8%</text><rect x="94.1" y="59.8" width="9.8" height="172.2" rx="8" fill="#16354C"></rect><text x="99.0" y="53.8" text-anchor="middle" font-size="10" fill="#5F7484">28.1%</text><rect x="111.9" y="163.4" width="9.8" height="68.6" rx="8" fill="#9E4A3A"></rect><text x="116.8" y="157.4" text-anchor="middle" font-size="10" fill="#5F7484">11.2%</text><rect x="129.7" y="139.8" width="9.8" height="92.2" rx="8" fill="#4A7A5A"></rect><text x="134.6" y="133.8" text-anchor="middle" font-size="10" fill="#5F7484">15.1%</text><rect x="147.5" y="111.9" width="9.8" height="120.1" rx="8" fill="#7A9B9E"></rect><text x="152.5" y="105.9" text-anchor="middle" font-size="10" fill="#5F7484">19.6%</text><rect x="143.2" y="59.7" width="9.8" height="172.3" rx="8" fill="#16354C"></rect><text x="148.1" y="53.7" text-anchor="middle" font-size="10" fill="#5F7484">28.1%</text><rect x="161.0" y="164.8" width="9.8" height="67.2" rx="8" fill="#9E4A3A"></rect><text x="165.9" y="158.8" text-anchor="middle" font-size="10" fill="#5F7484">11.0%</text><rect x="178.9" y="139.7" width="9.8" height="92.3" rx="8" fill="#4A7A5A"></rect><text x="183.8" y="133.7" text-anchor="middle" font-size="10" fill="#5F7484">15.1%</text><rect x="196.7" y="113.9" width="9.8" height="118.1" rx="8" fill="#7A9B9E"></rect><text x="201.6" y="107.9" text-anchor="middle" font-size="10" fill="#5F7484">19.3%</text><rect x="192.3" y="61.4" width="9.8" height="170.6" rx="8" fill="#16354C"></rect><text x="197.3" y="55.4" text-anchor="middle" font-size="10" fill="#5F7484">27.8%</text><rect x="210.2" y="165.0" width="9.8" height="67.0" rx="8" fill="#9E4A3A"></rect><text x="215.1" y="159.0" text-anchor="middle" font-size="10" fill="#5F7484">10.9%</text><rect x="228.0" y="141.5" width="9.8" height="90.5" rx="8" fill="#4A7A5A"></rect><text x="232.9" y="135.5" text-anchor="middle" font-size="10" fill="#5F7484">14.8%</text><rect x="245.8" y="113.7" width="9.8" height="118.3" rx="8" fill="#7A9B9E"></rect><text x="250.7" y="107.7" text-anchor="middle" font-size="10" fill="#5F7484">19.3%</text><rect x="241.5" y="62.7" width="9.8" height="169.3" rx="8" fill="#16354C"></rect><text x="246.4" y="56.7" text-anchor="middle" font-size="10" fill="#5F7484">27.6%</text><rect x="259.3" y="165.6" width="9.8" height="66.4" rx="8" fill="#9E4A3A"></rect><text x="264.2" y="159.6" text-anchor="middle" font-size="10" fill="#5F7484">10.8%</text><rect x="277.1" y="141.3" width="9.8" height="90.7" rx="8" fill="#4A7A5A"></rect><text x="282.1" y="135.3" text-anchor="middle" font-size="10" fill="#5F7484">14.8%</text><rect x="295.0" y="114.2" width="9.8" height="117.8" rx="8" fill="#7A9B9E"></rect><text x="299.9" y="108.2" text-anchor="middle" font-size="10" fill="#5F7484">19.2%</text><rect x="290.6" y="60.5" width="9.8" height="171.5" rx="8" fill="#16354C"></rect><text x="295.5" y="54.5" text-anchor="middle" font-size="10" fill="#5F7484">28.0%</text><rect x="308.5" y="165.1" width="9.8" height="66.9" rx="8" fill="#9E4A3A"></rect><text x="313.4" y="159.1" text-anchor="middle" font-size="10" fill="#5F7484">10.9%</text><rect x="326.3" y="140.4" width="9.8" height="91.6" rx="8" fill="#4A7A5A"></rect><text x="331.2" y="134.4" text-anchor="middle" font-size="10" fill="#5F7484">14.9%</text><rect x="344.1" y="116.8" width="9.8" height="115.2" rx="8" fill="#7A9B9E"></rect><text x="349.0" y="110.8" text-anchor="middle" font-size="10" fill="#5F7484">18.8%</text><rect x="339.8" y="61.6" width="9.8" height="170.4" rx="8" fill="#16354C"></rect><text x="344.7" y="55.6" text-anchor="middle" font-size="10" fill="#5F7484">27.8%</text><rect x="357.6" y="165.0" width="9.8" height="67.0" rx="8" fill="#9E4A3A"></rect><text x="362.5" y="159.0" text-anchor="middle" font-size="10" fill="#5F7484">10.9%</text><rect x="375.4" y="142.8" width="9.8" height="89.2" rx="8" fill="#4A7A5A"></rect><text x="380.3" y="136.8" text-anchor="middle" font-size="10" fill="#5F7484">14.6%</text><rect x="393.3" y="117.0" width="9.8" height="115.0" rx="8" fill="#7A9B9E"></rect><text x="398.2" y="111.0" text-anchor="middle" font-size="10" fill="#5F7484">18.8%</text><rect x="388.9" y="58.9" width="9.8" height="173.1" rx="8" fill="#16354C"></rect><text x="393.8" y="52.9" text-anchor="middle" font-size="10" fill="#5F7484">28.3%</text><rect x="406.7" y="164.5" width="9.8" height="67.5" rx="8" fill="#9E4A3A"></rect><text x="411.7" y="158.5" text-anchor="middle" font-size="10" fill="#5F7484">11.0%</text><rect x="424.6" y="143.8" width="9.8" height="88.2" rx="8" fill="#4A7A5A"></rect><text x="429.5" y="137.8" text-anchor="middle" font-size="10" fill="#5F7484">14.4%</text><rect x="442.4" y="119.3" width="9.8" height="112.7" rx="8" fill="#7A9B9E"></rect><text x="447.3" y="113.3" text-anchor="middle" font-size="10" fill="#5F7484">18.4%</text><rect x="438.1" y="60.7" width="9.8" height="171.3" rx="8" fill="#16354C"></rect><text x="443.0" y="54.7" text-anchor="middle" font-size="10" fill="#5F7484">27.9%</text><rect x="455.9" y="169.5" width="9.8" height="62.5" rx="8" fill="#9E4A3A"></rect><text x="460.8" y="163.5" text-anchor="middle" font-size="10" fill="#5F7484">10.2%</text><rect x="473.7" y="148.1" width="9.8" height="83.9" rx="8" fill="#4A7A5A"></rect><text x="478.6" y="142.1" text-anchor="middle" font-size="10" fill="#5F7484">13.7%</text><rect x="491.5" y="125.5" width="9.8" height="106.5" rx="8" fill="#7A9B9E"></rect><text x="496.5" y="119.5" text-anchor="middle" font-size="10" fill="#5F7484">17.4%</text><rect x="487.2" y="62.4" width="9.8" height="169.6" rx="8" fill="#16354C"></rect><text x="492.1" y="56.4" text-anchor="middle" font-size="10" fill="#5F7484">27.7%</text><rect x="505.0" y="169.0" width="9.8" height="63.0" rx="8" fill="#9E4A3A"></rect><text x="509.9" y="163.0" text-anchor="middle" font-size="10" fill="#5F7484">10.3%</text><rect x="522.9" y="152.9" width="9.8" height="79.1" rx="8" fill="#4A7A5A"></rect><text x="527.8" y="146.9" text-anchor="middle" font-size="10" fill="#5F7484">12.9%</text><rect x="540.7" y="125.7" width="9.8" height="106.3" rx="8" fill="#7A9B9E"></rect><text x="545.6" y="119.7" text-anchor="middle" font-size="10" fill="#5F7484">17.3%</text><rect x="536.3" y="68.9" width="9.8" height="163.1" rx="8" fill="#16354C"></rect><text x="541.3" y="62.9" text-anchor="middle" font-size="10" fill="#5F7484">26.6%</text><rect x="554.2" y="173.5" width="9.8" height="58.5" rx="8" fill="#9E4A3A"></rect><text x="559.1" y="167.5" text-anchor="middle" font-size="10" fill="#5F7484">9.5%</text><rect x="572.0" y="153.0" width="9.8" height="79.0" rx="8" fill="#4A7A5A"></rect><text x="576.9" y="147.0" text-anchor="middle" font-size="10" fill="#5F7484">12.9%</text><rect x="589.8" y="132.1" width="9.8" height="99.9" rx="8" fill="#7A9B9E"></rect><text x="594.7" y="126.1" text-anchor="middle" font-size="10" fill="#5F7484">16.3%</text><rect x="585.5" y="55.1" width="9.8" height="176.9" rx="8" fill="#16354C"></rect><text x="590.4" y="49.1" text-anchor="middle" font-size="10" fill="#5F7484">28.9%</text><rect x="603.3" y="172.8" width="9.8" height="59.2" rx="8" fill="#9E4A3A"></rect><text x="608.2" y="166.8" text-anchor="middle" font-size="10" fill="#5F7484">9.7%</text><rect x="621.1" y="152.1" width="9.8" height="79.9" rx="8" fill="#4A7A5A"></rect><text x="626.1" y="146.1" text-anchor="middle" font-size="10" fill="#5F7484">13.0%</text><rect x="639.0" y="129.8" width="9.8" height="102.2" rx="8" fill="#7A9B9E"></rect><text x="643.9" y="123.8" text-anchor="middle" font-size="10" fill="#5F7484">16.7%</text><rect x="634.6" y="28.2" width="9.8" height="203.8" rx="8" fill="#16354C"></rect><text x="639.5" y="22.2" text-anchor="middle" font-size="10" fill="#5F7484">33.3%</text><rect x="652.5" y="169.4" width="9.8" height="62.6" rx="8" fill="#9E4A3A"></rect><text x="657.4" y="163.4" text-anchor="middle" font-size="10" fill="#5F7484">10.2%</text><rect x="670.3" y="144.8" width="9.8" height="87.2" rx="8" fill="#4A7A5A"></rect><text x="675.2" y="138.8" text-anchor="middle" font-size="10" fill="#5F7484">14.2%</text><rect x="688.1" y="122.3" width="9.8" height="109.7" rx="8" fill="#7A9B9E"></rect><text x="693.0" y="116.3" text-anchor="middle" font-size="10" fill="#5F7484">17.9%</text><rect x="683.8" y="22.0" width="9.8" height="210.0" rx="8" fill="#16354C"></rect><text x="688.7" y="16.0" text-anchor="middle" font-size="10" fill="#5F7484">34.3%</text><rect x="701.6" y="170.8" width="9.8" height="61.2" rx="8" fill="#9E4A3A"></rect><text x="706.5" y="164.8" text-anchor="middle" font-size="10" fill="#5F7484">10.0%</text><rect x="719.4" y="140.4" width="9.8" height="91.6" rx="8" fill="#4A7A5A"></rect><text x="724.3" y="134.4" text-anchor="middle" font-size="10" fill="#5F7484">15.0%</text><rect x="737.3" y="126.6" width="9.8" height="105.4" rx="8" fill="#7A9B9E"></rect><text x="742.2" y="120.6" text-anchor="middle" font-size="10" fill="#5F7484">17.2%</text>
+      <text x="76.6" y="268" text-anchor="middle" font-size="10" fill="#5F7484">2012</text><text x="125.7" y="268" text-anchor="middle" font-size="10" fill="#5F7484">2013</text><text x="174.9" y="268" text-anchor="middle" font-size="10" fill="#5F7484">2014</text><text x="224.0" y="268" text-anchor="middle" font-size="10" fill="#5F7484">2015</text><text x="273.1" y="268" text-anchor="middle" font-size="10" fill="#5F7484">2016</text><text x="322.3" y="268" text-anchor="middle" font-size="10" fill="#5F7484">2017</text><text x="371.4" y="268" text-anchor="middle" font-size="10" fill="#5F7484">2018</text><text x="420.6" y="268" text-anchor="middle" font-size="10" fill="#5F7484">2019</text><text x="469.7" y="268" text-anchor="middle" font-size="10" fill="#5F7484">2020</text><text x="518.9" y="268" text-anchor="middle" font-size="10" fill="#5F7484">2021</text><text x="568.0" y="268" text-anchor="middle" font-size="10" fill="#5F7484">2022</text><text x="617.1" y="268" text-anchor="middle" font-size="10" fill="#5F7484">2023</text><text x="666.3" y="268" text-anchor="middle" font-size="10" fill="#5F7484">2024</text><text x="715.4" y="268" text-anchor="middle" font-size="10" fill="#5F7484">2025</text>
+      <rect x="52" y="248" width="12" height="12" rx="3" fill="#16354C"></rect><text x="70" y="258" font-size="10" fill="#5F7484">WBB</text><rect x="180" y="248" width="12" height="12" rx="3" fill="#9E4A3A"></rect><text x="198" y="258" font-size="10" fill="#5F7484">Soccer</text><rect x="308" y="248" width="12" height="12" rx="3" fill="#4A7A5A"></rect><text x="326" y="258" font-size="10" fill="#5F7484">Softball</text><rect x="436" y="248" width="12" height="12" rx="3" fill="#7A9B9E"></rect><text x="454" y="258" font-size="10" fill="#5F7484">Volleyball</text>
+    </svg>
+    
+                          </div>
+                          <div class="chart-card full">
+                            <h3 class="chart-title">From The Field To The Bench — 2025 Pipeline Width By Sport</h3>
+                            <p class="chart-subtitle">WBB has the widest assistant layer relative to head coach seats. But width alone does not guarantee equitable advancement.</p>
+                            
+    <svg viewBox="0 0 760 350" class="inline-svg" role="img" aria-label="Pipeline width by sport in 2025">
+      <rect x="0" y="0" width="760" height="350" rx="18" fill="#FFFDF8"></rect>
+      <text x="116.0" y="26" text-anchor="middle" font-size="12" fill="#16354C" font-weight="800">WBB</text><text x="50.0" y="48.0" text-anchor="start" font-size="10" fill="#5F7484">Athletes</text><rect x="50.0" y="58.0" width="62.4" height="30" rx="10" fill="#16354C" fill-opacity="0.24" stroke="#16354C" stroke-width="1.5"></rect><text x="104.4" y="77.0" text-anchor="end" font-size="10.5" fill="#fff" font-weight="800">5,153</text><text x="50.0" y="132.0" text-anchor="start" font-size="10" fill="#5F7484">Assistants</text><rect x="50.0" y="142.0" width="17.0" height="30" rx="10" fill="#16354C" fill-opacity="0.36" stroke="#16354C" stroke-width="1.5"></rect><text x="75.0" y="161.0" text-anchor="start" font-size="10.5" fill="#16354C" font-weight="800">1,407</text><text x="50.0" y="216.0" text-anchor="start" font-size="10" fill="#5F7484">Head coaches</text><rect x="50.0" y="226.0" width="4.3" height="30" rx="10" fill="#16354C" fill-opacity="0.48" stroke="#16354C" stroke-width="1.5"></rect><text x="62.3" y="245.0" text-anchor="start" font-size="10.5" fill="#16354C" font-weight="800">359</text><text x="296.0" y="26" text-anchor="middle" font-size="12" fill="#9E4A3A" font-weight="800">Soccer</text><text x="230.0" y="48.0" text-anchor="start" font-size="10" fill="#5F7484">Athletes</text><rect x="230.0" y="58.0" width="132.0" height="30" rx="10" fill="#9E4A3A" fill-opacity="0.24" stroke="#9E4A3A" stroke-width="1.5"></rect><text x="354.0" y="77.0" text-anchor="end" font-size="10.5" fill="#fff" font-weight="800">10,902</text><text x="230.0" y="132.0" text-anchor="start" font-size="10" fill="#5F7484">Assistants</text><rect x="230.0" y="142.0" width="9.0" height="30" rx="10" fill="#9E4A3A" fill-opacity="0.36" stroke="#9E4A3A" stroke-width="1.5"></rect><text x="247.0" y="161.0" text-anchor="start" font-size="10.5" fill="#9E4A3A" font-weight="800">747</text><text x="230.0" y="216.0" text-anchor="start" font-size="10" fill="#5F7484">Head coaches</text><rect x="230.0" y="226.0" width="4.1" height="30" rx="10" fill="#9E4A3A" fill-opacity="0.48" stroke="#9E4A3A" stroke-width="1.5"></rect><text x="242.1" y="245.0" text-anchor="start" font-size="10.5" fill="#9E4A3A" font-weight="800">341</text><text x="476.0" y="26" text-anchor="middle" font-size="12" fill="#4A7A5A" font-weight="800">Softball</text><text x="410.0" y="48.0" text-anchor="start" font-size="10" fill="#5F7484">Athletes</text><rect x="410.0" y="58.0" width="84.2" height="30" rx="10" fill="#4A7A5A" fill-opacity="0.24" stroke="#4A7A5A" stroke-width="1.5"></rect><text x="486.2" y="77.0" text-anchor="end" font-size="10.5" fill="#fff" font-weight="800">6,956</text><text x="410.0" y="132.0" text-anchor="start" font-size="10" fill="#5F7484">Assistants</text><rect x="410.0" y="142.0" width="8.9" height="30" rx="10" fill="#4A7A5A" fill-opacity="0.36" stroke="#4A7A5A" stroke-width="1.5"></rect><text x="426.9" y="161.0" text-anchor="start" font-size="10.5" fill="#4A7A5A" font-weight="800">735</text><text x="410.0" y="216.0" text-anchor="start" font-size="10" fill="#5F7484">Head coaches</text><rect x="410.0" y="226.0" width="3.7" height="30" rx="10" fill="#4A7A5A" fill-opacity="0.48" stroke="#4A7A5A" stroke-width="1.5"></rect><text x="421.7" y="245.0" text-anchor="start" font-size="10.5" fill="#4A7A5A" font-weight="800">305</text><text x="656.0" y="26" text-anchor="middle" font-size="12" fill="#7A9B9E" font-weight="800">Volleyball</text><text x="590.0" y="48.0" text-anchor="start" font-size="10" fill="#5F7484">Athletes</text><rect x="590.0" y="58.0" width="78.1" height="30" rx="10" fill="#7A9B9E" fill-opacity="0.24" stroke="#7A9B9E" stroke-width="1.5"></rect><text x="660.1" y="77.0" text-anchor="end" font-size="10.5" fill="#fff" font-weight="800">6,454</text><text x="590.0" y="132.0" text-anchor="start" font-size="10" fill="#5F7484">Assistants</text><rect x="590.0" y="142.0" width="9.3" height="30" rx="10" fill="#7A9B9E" fill-opacity="0.36" stroke="#7A9B9E" stroke-width="1.5"></rect><text x="607.3" y="161.0" text-anchor="start" font-size="10.5" fill="#7A9B9E" font-weight="800">768</text><text x="590.0" y="216.0" text-anchor="start" font-size="10" fill="#5F7484">Head coaches</text><rect x="590.0" y="226.0" width="4.1" height="30" rx="10" fill="#7A9B9E" fill-opacity="0.48" stroke="#7A9B9E" stroke-width="1.5"></rect><text x="602.1" y="245.0" text-anchor="start" font-size="10.5" fill="#7A9B9E" font-weight="800">342</text>
+    </svg>
+    
+                          </div>
+                        </div>
+                        </div></div>
+</section>
+<hr class="nb-divider">
+<section id="sec-women" class="nb-section">
+<div class="section-header">
+<span class="sh-badge label-story">Women In Coaching</span>
+<span class="sh-title">Women In Coaching</span>
+<div class="sh-progress"></div>
+</div>
+<div class="cell md-cell"><div class="cell-gutter">In [4]</div><div class="cell-body"><span class="section-label label-story">Women In Coaching</span><h2>46% of soccer&apos;s assistant coaches are women. The moment the title changes — the head coach seat — that number falls to 30.8%.</h2><p>Women&apos;s sports cannot be summarized with one pooled parity line once soccer is treated as a co-equal sport. Soccer&apos;s role-level collapse — from near-parity at the assistant level to a significant minority at the head coach level — is the clearest proof that access to the pipeline is not the same as access to the top job. Softball&apos;s 69.8% women head-coach share shows it does not have to be this way.</p><div class="stat-row">
+            <div class="stat-box red">
+              <div class="stat-value">46.1% / 30.8%</div>
+              <div class="stat-label">Soccer women assistant vs. women head-coach share.</div>
+            </div>
+            
+            <div class="stat-box green">
+              <div class="stat-value">73.5%</div>
+              <div class="stat-label">Softball women-coach share in 2025, the highest overall mark in the set.</div>
+            </div>
+            
+            <div class="stat-box navy">
+              <div class="stat-value">41.3%</div>
+              <div class="stat-label">Soccer women-coach share overall, the lowest mark in the set.</div>
+            </div>
+            </div></div></div>
+<div class="cell out-cell"><div class="cell-gutter">Out [4]</div><div class="cell-body">
+                        <div class="chart-grid">
+                          <div class="chart-card full">
+                            <h3 class="chart-title">The Promotion Gap For Women Coaches — Assistants vs. Head Coaches, 2025</h3>
+                            <p class="chart-subtitle">Soccer's gap is the starkest in the set. Softball sits closest to parity. WBB and volleyball live in between.</p>
+                            <div class="dumbbell-list">
+    <div class="legend-note"><strong>Women assistant coach share</strong> to <strong>Women head coach share</strong></div>
+    
+            <div class="dumbbell-row">
+              <div class="bar-label">WBB</div>
+              <div class="dumbbell-track">
+                <span class="dumbbell-axis left">0%</span><span class="dumbbell-axis right">100%</span>
+                <div class="dumbbell-line" style="left:65.2%; width:0.3%; background:#9E4A3A;"></div>
+                <div class="dumbbell-dot" style="left:65.5%; border-color:#16354C;"></div>
+                <div class="dumbbell-dot end" style="left:65.2%; background:#C88F5A; border-color:#C88F5A;"></div>
+              </div>
+              <div class="bar-value">65.5% → 65.2% (-0.3 pp)</div>
+            </div>
+            
+            <div class="dumbbell-row">
+              <div class="bar-label">Soccer</div>
+              <div class="dumbbell-track">
+                
+                <div class="dumbbell-line" style="left:30.8%; width:15.3%; background:#9E4A3A;"></div>
+                <div class="dumbbell-dot" style="left:46.1%; border-color:#16354C;"></div>
+                <div class="dumbbell-dot end" style="left:30.8%; background:#C88F5A; border-color:#C88F5A;"></div>
+              </div>
+              <div class="bar-value">46.1% → 30.8% (-15.3 pp)</div>
+            </div>
+            
+            <div class="dumbbell-row">
+              <div class="bar-label">Softball</div>
+              <div class="dumbbell-track">
+                
+                <div class="dumbbell-line" style="left:69.8%; width:5.2%; background:#9E4A3A;"></div>
+                <div class="dumbbell-dot" style="left:75.0%; border-color:#16354C;"></div>
+                <div class="dumbbell-dot end" style="left:69.8%; background:#C88F5A; border-color:#C88F5A;"></div>
+              </div>
+              <div class="bar-value">75.0% → 69.8% (-5.2 pp)</div>
+            </div>
+            
+            <div class="dumbbell-row">
+              <div class="bar-label">Volleyball</div>
+              <div class="dumbbell-track">
+                
+                <div class="dumbbell-line" style="left:46.8%; width:9.2%; background:#9E4A3A;"></div>
+                <div class="dumbbell-dot" style="left:56.0%; border-color:#16354C;"></div>
+                <div class="dumbbell-dot end" style="left:46.8%; background:#C88F5A; border-color:#C88F5A;"></div>
+              </div>
+              <div class="bar-value">56.0% → 46.8% (-9.2 pp)</div>
+            </div>
+            </div>
+                          </div>
+                          <div class="chart-card full">
+                            <h3 class="chart-title">How Overall Women-Coach Share Moved Over Time</h3>
+                            <p class="chart-subtitle">The long-run trend matters, but it is not enough on its own because overall averages hide role-level collapse.</p>
+                            
+    <svg viewBox="0 0 760 280" class="inline-svg" role="img">
+      <rect x="0" y="0" width="760" height="280" rx="18" fill="#FFFDF8"></rect>
+      <line x1="48" y1="246.0" x2="682" y2="246.0" stroke="#D9D0C4" stroke-width="1"></line><text x="40" y="250.0" text-anchor="end" font-size="10" fill="#5F7484">37%</text><line x1="48" y1="132.0" x2="682" y2="132.0" stroke="#D9D0C4" stroke-width="1"></line><text x="40" y="136.0" text-anchor="end" font-size="10" fill="#5F7484">57%</text><line x1="48" y1="18.0" x2="682" y2="18.0" stroke="#D9D0C4" stroke-width="1"></line><text x="40" y="22.0" text-anchor="end" font-size="10" fill="#5F7484">76%</text>
+      <polyline fill="none" stroke="#16354C" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" points="48.0,87.3 96.8,84.3 145.5,90.4 194.3,85.7 243.1,90.6 291.8,95.3 340.6,90.2 389.4,80.3 438.2,83.6 486.9,77.3 535.7,77.8 584.5,74.9 633.2,77.1 682.0,81.3"></polyline><circle cx="48.0" cy="87.3" r="3.8" fill="#16354C" stroke="#fff" stroke-width="1.6"></circle><circle cx="96.8" cy="84.3" r="3.8" fill="#16354C" stroke="#fff" stroke-width="1.6"></circle><circle cx="145.5" cy="90.4" r="3.8" fill="#16354C" stroke="#fff" stroke-width="1.6"></circle><circle cx="194.3" cy="85.7" r="3.8" fill="#16354C" stroke="#fff" stroke-width="1.6"></circle><circle cx="243.1" cy="90.6" r="3.8" fill="#16354C" stroke="#fff" stroke-width="1.6"></circle><circle cx="291.8" cy="95.3" r="3.8" fill="#16354C" stroke="#fff" stroke-width="1.6"></circle><circle cx="340.6" cy="90.2" r="3.8" fill="#16354C" stroke="#fff" stroke-width="1.6"></circle><circle cx="389.4" cy="80.3" r="3.8" fill="#16354C" stroke="#fff" stroke-width="1.6"></circle><circle cx="438.2" cy="83.6" r="3.8" fill="#16354C" stroke="#fff" stroke-width="1.6"></circle><circle cx="486.9" cy="77.3" r="3.8" fill="#16354C" stroke="#fff" stroke-width="1.6"></circle><circle cx="535.7" cy="77.8" r="3.8" fill="#16354C" stroke="#fff" stroke-width="1.6"></circle><circle cx="584.5" cy="74.9" r="3.8" fill="#16354C" stroke="#fff" stroke-width="1.6"></circle><circle cx="633.2" cy="77.1" r="3.8" fill="#16354C" stroke="#fff" stroke-width="1.6"></circle><circle cx="682.0" cy="81.3" r="3.8" fill="#16354C" stroke="#fff" stroke-width="1.6"></circle><polyline fill="none" stroke="#9E4A3A" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" points="48.0,218.2 96.8,217.8 145.5,216.1 194.3,213.8 243.1,216.5 291.8,225.6 340.6,223.8 389.4,218.3 438.2,226.9 486.9,230.3 535.7,229.0 584.5,228.5 633.2,213.6 682.0,223.7"></polyline><circle cx="48.0" cy="218.2" r="3.8" fill="#9E4A3A" stroke="#fff" stroke-width="1.6"></circle><circle cx="96.8" cy="217.8" r="3.8" fill="#9E4A3A" stroke="#fff" stroke-width="1.6"></circle><circle cx="145.5" cy="216.1" r="3.8" fill="#9E4A3A" stroke="#fff" stroke-width="1.6"></circle><circle cx="194.3" cy="213.8" r="3.8" fill="#9E4A3A" stroke="#fff" stroke-width="1.6"></circle><circle cx="243.1" cy="216.5" r="3.8" fill="#9E4A3A" stroke="#fff" stroke-width="1.6"></circle><circle cx="291.8" cy="225.6" r="3.8" fill="#9E4A3A" stroke="#fff" stroke-width="1.6"></circle><circle cx="340.6" cy="223.8" r="3.8" fill="#9E4A3A" stroke="#fff" stroke-width="1.6"></circle><circle cx="389.4" cy="218.3" r="3.8" fill="#9E4A3A" stroke="#fff" stroke-width="1.6"></circle><circle cx="438.2" cy="226.9" r="3.8" fill="#9E4A3A" stroke="#fff" stroke-width="1.6"></circle><circle cx="486.9" cy="230.3" r="3.8" fill="#9E4A3A" stroke="#fff" stroke-width="1.6"></circle><circle cx="535.7" cy="229.0" r="3.8" fill="#9E4A3A" stroke="#fff" stroke-width="1.6"></circle><circle cx="584.5" cy="228.5" r="3.8" fill="#9E4A3A" stroke="#fff" stroke-width="1.6"></circle><circle cx="633.2" cy="213.6" r="3.8" fill="#9E4A3A" stroke="#fff" stroke-width="1.6"></circle><circle cx="682.0" cy="223.7" r="3.8" fill="#9E4A3A" stroke="#fff" stroke-width="1.6"></circle><polyline fill="none" stroke="#4A7A5A" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" points="48.0,45.5 96.8,43.2 145.5,49.2 194.3,43.8 243.1,34.2 291.8,44.0 340.6,38.7 389.4,45.5 438.2,39.7 486.9,44.2 535.7,43.8 584.5,36.9 633.2,43.3 682.0,33.7"></polyline><circle cx="48.0" cy="45.5" r="3.8" fill="#4A7A5A" stroke="#fff" stroke-width="1.6"></circle><circle cx="96.8" cy="43.2" r="3.8" fill="#4A7A5A" stroke="#fff" stroke-width="1.6"></circle><circle cx="145.5" cy="49.2" r="3.8" fill="#4A7A5A" stroke="#fff" stroke-width="1.6"></circle><circle cx="194.3" cy="43.8" r="3.8" fill="#4A7A5A" stroke="#fff" stroke-width="1.6"></circle><circle cx="243.1" cy="34.2" r="3.8" fill="#4A7A5A" stroke="#fff" stroke-width="1.6"></circle><circle cx="291.8" cy="44.0" r="3.8" fill="#4A7A5A" stroke="#fff" stroke-width="1.6"></circle><circle cx="340.6" cy="38.7" r="3.8" fill="#4A7A5A" stroke="#fff" stroke-width="1.6"></circle><circle cx="389.4" cy="45.5" r="3.8" fill="#4A7A5A" stroke="#fff" stroke-width="1.6"></circle><circle cx="438.2" cy="39.7" r="3.8" fill="#4A7A5A" stroke="#fff" stroke-width="1.6"></circle><circle cx="486.9" cy="44.2" r="3.8" fill="#4A7A5A" stroke="#fff" stroke-width="1.6"></circle><circle cx="535.7" cy="43.8" r="3.8" fill="#4A7A5A" stroke="#fff" stroke-width="1.6"></circle><circle cx="584.5" cy="36.9" r="3.8" fill="#4A7A5A" stroke="#fff" stroke-width="1.6"></circle><circle cx="633.2" cy="43.3" r="3.8" fill="#4A7A5A" stroke="#fff" stroke-width="1.6"></circle><circle cx="682.0" cy="33.7" r="3.8" fill="#4A7A5A" stroke="#fff" stroke-width="1.6"></circle><polyline fill="none" stroke="#7A9B9E" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" points="48.0,176.1 96.8,174.3 145.5,171.9 194.3,173.1 243.1,171.6 291.8,186.7 340.6,185.7 389.4,180.3 438.2,165.5 486.9,168.0 535.7,172.8 584.5,167.3 633.2,155.5 682.0,153.6"></polyline><circle cx="48.0" cy="176.1" r="3.8" fill="#7A9B9E" stroke="#fff" stroke-width="1.6"></circle><circle cx="96.8" cy="174.3" r="3.8" fill="#7A9B9E" stroke="#fff" stroke-width="1.6"></circle><circle cx="145.5" cy="171.9" r="3.8" fill="#7A9B9E" stroke="#fff" stroke-width="1.6"></circle><circle cx="194.3" cy="173.1" r="3.8" fill="#7A9B9E" stroke="#fff" stroke-width="1.6"></circle><circle cx="243.1" cy="171.6" r="3.8" fill="#7A9B9E" stroke="#fff" stroke-width="1.6"></circle><circle cx="291.8" cy="186.7" r="3.8" fill="#7A9B9E" stroke="#fff" stroke-width="1.6"></circle><circle cx="340.6" cy="185.7" r="3.8" fill="#7A9B9E" stroke="#fff" stroke-width="1.6"></circle><circle cx="389.4" cy="180.3" r="3.8" fill="#7A9B9E" stroke="#fff" stroke-width="1.6"></circle><circle cx="438.2" cy="165.5" r="3.8" fill="#7A9B9E" stroke="#fff" stroke-width="1.6"></circle><circle cx="486.9" cy="168.0" r="3.8" fill="#7A9B9E" stroke="#fff" stroke-width="1.6"></circle><circle cx="535.7" cy="172.8" r="3.8" fill="#7A9B9E" stroke="#fff" stroke-width="1.6"></circle><circle cx="584.5" cy="167.3" r="3.8" fill="#7A9B9E" stroke="#fff" stroke-width="1.6"></circle><circle cx="633.2" cy="155.5" r="3.8" fill="#7A9B9E" stroke="#fff" stroke-width="1.6"></circle><circle cx="682.0" cy="153.6" r="3.8" fill="#7A9B9E" stroke="#fff" stroke-width="1.6"></circle>
+      <text x="692.0" y="85.3" font-size="10" fill="#16354C">WBB 65.4%</text><text x="692.0" y="227.7" font-size="10" fill="#9E4A3A">Soccer 41.3%</text><text x="692.0" y="37.7" font-size="10" fill="#4A7A5A">Softball 73.5%</text><text x="692.0" y="157.6" font-size="10" fill="#7A9B9E">Volleyball 53.2%</text>
+      <text x="48.0" y="270" text-anchor="middle" font-size="10" fill="#5F7484">2012</text>
+<text x="96.8" y="270" text-anchor="middle" font-size="10" fill="#5F7484">2013</text>
+<text x="145.5" y="270" text-anchor="middle" font-size="10" fill="#5F7484">2014</text>
+<text x="194.3" y="270" text-anchor="middle" font-size="10" fill="#5F7484">2015</text>
+<text x="243.1" y="270" text-anchor="middle" font-size="10" fill="#5F7484">2016</text>
+<text x="291.8" y="270" text-anchor="middle" font-size="10" fill="#5F7484">2017</text>
+<text x="340.6" y="270" text-anchor="middle" font-size="10" fill="#5F7484">2018</text>
+<text x="389.4" y="270" text-anchor="middle" font-size="10" fill="#5F7484">2019</text>
+<text x="438.2" y="270" text-anchor="middle" font-size="10" fill="#5F7484">2020</text>
+<text x="486.9" y="270" text-anchor="middle" font-size="10" fill="#5F7484">2021</text>
+<text x="535.7" y="270" text-anchor="middle" font-size="10" fill="#5F7484">2022</text>
+<text x="584.5" y="270" text-anchor="middle" font-size="10" fill="#5F7484">2023</text>
+<text x="633.2" y="270" text-anchor="middle" font-size="10" fill="#5F7484">2024</text>
+<text x="682.0" y="270" text-anchor="middle" font-size="10" fill="#5F7484">2025</text>
+    </svg>
+    
+                          </div>
+                        </div>
+                        </div></div>
+</section>
+<hr class="nb-divider">
+<section id="sec-woc" class="nb-section">
+<div class="section-header">
+<span class="sh-badge label-dev">Women Of Color</span>
+<span class="sh-title">Women Of Color</span>
+<div class="sh-progress"></div>
+</div>
+<div class="cell md-cell"><div class="cell-gutter">In [5]</div><div class="cell-body"><span class="section-label label-dev">Women Of Color</span><h2>More than half the athletes on a women's basketball court are women of color. Walk to the head coach's seat — and that majority shrinks by more than half.</h2><p>Pipeline compression is the structural mechanism behind this story. At every transition — from athlete to assistant coach to head coach — women of color lose representation. The notebook keeps this tracking explicit because representation loss does not happen evenly, and because pooled averages hide it entirely.</p><div class="mini-callout">
+            <div class="mini">
+              <div class="mini-value">55.5%</div>
+              <div class="mini-label">WBB women-of-color athlete share</div>
+            </div>
+            
+            <div class="mini">
+              <div class="mini-value">26.2%</div>
+              <div class="mini-label">WBB women-of-color head-coach share</div>
+            </div>
+            
+            <div class="mini">
+              <div class="mini-value">3.2%</div>
+              <div class="mini-label">Soccer women-of-color head-coach share</div>
+            </div>
+            </div><div class="insight red"><strong>What this means in real numbers:</strong> WBB has 1,766 coaches. If head-coach representation matched the athlete share (55.5%), there would be roughly 105 additional women-of-color head coaches in WBB alone. In 2025, 26.2% of WBB head coaches are women of color.</div></div></div>
+<div class="cell out-cell"><div class="cell-gutter">Out [5]</div><div class="cell-body">
+                        <div class="chart-grid">
+                          <div class="chart-card">
+                            <h3 class="chart-title">Where Representation Is Lost</h3>
+                            <p class="chart-subtitle">Each line tracks women-of-color share from the athlete pool through the assistant layer to the head coach seat. Every sport loses representation at every transition.</p>
+                            
+    <svg viewBox="0 0 580 280" class="inline-svg" role="img">
+      <rect x="0" y="0" width="580" height="280" rx="18" fill="#FFFDF8"></rect>
+      <line x1="58" y1="234.0" x2="540" y2="234.0" stroke="#D9D0C4" stroke-width="1"></line><text x="50" y="238.0" text-anchor="end" font-size="10" fill="#5F7484">0%</text><line x1="58" y1="163.3" x2="540" y2="163.3" stroke="#D9D0C4" stroke-width="1"></line><text x="50" y="167.3" text-anchor="end" font-size="10" fill="#5F7484">20%</text><line x1="58" y1="92.7" x2="540" y2="92.7" stroke="#D9D0C4" stroke-width="1"></line><text x="50" y="96.7" text-anchor="end" font-size="10" fill="#5F7484">40%</text><line x1="58" y1="22.0" x2="540" y2="22.0" stroke="#D9D0C4" stroke-width="1"></line><text x="50" y="26.0" text-anchor="end" font-size="10" fill="#5F7484">60%</text>
+      <polyline fill="none" stroke="#16354C" stroke-width="3.2" points="90.0,38.0 300.0,105.7 510.0,141.5" stroke-linecap="round" stroke-linejoin="round"></polyline><circle cx="90.0" cy="38.0" r="4.6" fill="#16354C" stroke="#fff" stroke-width="2"></circle><circle cx="300.0" cy="105.7" r="4.6" fill="#16354C" stroke="#fff" stroke-width="2"></circle><circle cx="510.0" cy="141.5" r="4.6" fill="#16354C" stroke="#fff" stroke-width="2"></circle><polyline fill="none" stroke="#9E4A3A" stroke-width="3.2" points="90.0,138.0 300.0,211.3 510.0,222.6" stroke-linecap="round" stroke-linejoin="round"></polyline><circle cx="90.0" cy="138.0" r="4.6" fill="#9E4A3A" stroke="#fff" stroke-width="2"></circle><circle cx="300.0" cy="211.3" r="4.6" fill="#9E4A3A" stroke="#fff" stroke-width="2"></circle><circle cx="510.0" cy="222.6" r="4.6" fill="#9E4A3A" stroke="#fff" stroke-width="2"></circle><polyline fill="none" stroke="#4A7A5A" stroke-width="3.2" points="90.0,115.8 300.0,174.9 510.0,186.5" stroke-linecap="round" stroke-linejoin="round"></polyline><circle cx="90.0" cy="115.8" r="4.6" fill="#4A7A5A" stroke="#fff" stroke-width="2"></circle><circle cx="300.0" cy="174.9" r="4.6" fill="#4A7A5A" stroke="#fff" stroke-width="2"></circle><circle cx="510.0" cy="186.5" r="4.6" fill="#4A7A5A" stroke="#fff" stroke-width="2"></circle><polyline fill="none" stroke="#7A9B9E" stroke-width="3.2" points="90.0,114.4 300.0,185.7 510.0,187.5" stroke-linecap="round" stroke-linejoin="round"></polyline><circle cx="90.0" cy="114.4" r="4.6" fill="#7A9B9E" stroke="#fff" stroke-width="2"></circle><circle cx="300.0" cy="185.7" r="4.6" fill="#7A9B9E" stroke="#fff" stroke-width="2"></circle><circle cx="510.0" cy="187.5" r="4.6" fill="#7A9B9E" stroke="#fff" stroke-width="2"></circle>
+      <text x="18" y="42.0" font-size="10" fill="#16354C" font-weight="800">WBB</text><text x="524.0" y="145.5" font-size="10" fill="#9E4A3A" font-weight="800">-29.3 pp</text><text x="18" y="142.0" font-size="10" fill="#9E4A3A" font-weight="800">Soccer</text><text x="524.0" y="226.6" font-size="10" fill="#9E4A3A" font-weight="800">-24.0 pp</text><text x="18" y="119.8" font-size="10" fill="#4A7A5A" font-weight="800">Softball</text><text x="524.0" y="190.5" font-size="10" fill="#9E4A3A" font-weight="800">-20.0 pp</text><text x="18" y="118.4" font-size="10" fill="#7A9B9E" font-weight="800">Volleyball</text><text x="524.0" y="191.5" font-size="10" fill="#9E4A3A" font-weight="800">-20.7 pp</text>
+      <text x="90" y="262" text-anchor="middle" font-size="11" fill="#5F7484">Athletes</text><text x="300" y="262" text-anchor="middle" font-size="11" fill="#5F7484">Assistant Coaches</text><text x="510" y="262" text-anchor="middle" font-size="11" fill="#5F7484">Head Coaches</text>
+    </svg>
+    
+                          </div>
+                          <div class="chart-card">
+                            <h3 class="chart-title">The Same Story, Read As A Grid</h3>
+                            <p class="legend-note"><strong>Darker cell = higher women-of-color share at that pipeline stage.</strong> Read each row left to right to see where representation drops.</p>
+                            
+    <div class="table-wrap">
+      <table class="data-table">
+        <thead>
+          <tr><th>Sport</th><th>Athletes</th><th>Assistant Coaches</th><th>Head Coaches</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>WBB</td><td style="background: rgba(22,53,76,0.88); color:#FFFDF8; font-weight:800; text-align:center;">55.5%</td><td style="background: rgba(122,155,158,0.60); color:#FFFDF8; font-weight:800; text-align:center;">36.3%</td><td style="background: rgba(158,74,58,0.46); color:#17354B; font-weight:800; text-align:center;">26.2%</td></tr><tr><td>Soccer</td><td style="background: rgba(22,53,76,0.47); color:#FFFDF8; font-weight:800; text-align:center;">27.2%</td><td style="background: rgba(122,155,158,0.17); color:#17354B; font-weight:800; text-align:center;">6.4%</td><td style="background: rgba(158,74,58,0.13); color:#17354B; font-weight:800; text-align:center;">3.2%</td></tr><tr><td>Softball</td><td style="background: rgba(22,53,76,0.56); color:#FFFDF8; font-weight:800; text-align:center;">33.4%</td><td style="background: rgba(122,155,158,0.32); color:#17354B; font-weight:800; text-align:center;">16.7%</td><td style="background: rgba(158,74,58,0.27); color:#17354B; font-weight:800; text-align:center;">13.4%</td></tr><tr><td>Volleyball</td><td style="background: rgba(22,53,76,0.57); color:#FFFDF8; font-weight:800; text-align:center;">33.8%</td><td style="background: rgba(122,155,158,0.28); color:#17354B; font-weight:800; text-align:center;">13.7%</td><td style="background: rgba(158,74,58,0.27); color:#17354B; font-weight:800; text-align:center;">13.2%</td></tr>
+        </tbody>
+      </table>
+    </div>
+    
+                          </div>
+                        </div>
+                        </div></div>
+</section>
+<hr class="nb-divider">
+<section id="sec-promotion" class="nb-section">
+<div class="section-header">
+<span class="sh-badge label-trans">Race Gaps</span>
+<span class="sh-title">Race Gaps / Promotion Ladder</span>
+<div class="sh-progress"></div>
+</div>
+<div class="cell md-cell"><div class="cell-gutter">In [6]</div><div class="cell-body"><span class="section-label label-trans">Race Gaps</span><h2>Which sport has the worst racial promotion gap?</h2><p>In women&apos;s basketball, the answer is clear: Black coaches face the sharpest assistant-to-head-coach bottleneck in the dataset — a -13.3 percentage point gap in 2025, down from a peak of -21.7 pp in 2017. WBB is the clearest structural warning in the notebook.</p><p>But here is what the WBB-only story obscures: in three of the four focus sports, the dominant promotion gap belongs to a different group entirely. Hispanic and Latino coaches face the sharpest bottleneck in soccer, softball, and volleyball. The mechanism is consistent — the sport changes, and so does the group carrying the weight of it.</p><div class="pull-quote">The strongest negative assistant-to-head gap is the most actionable pressure point for each sport&apos;s leadership pipeline. The sport determines the group. The group determines the intervention.</div></div></div>
+<div class="cell out-cell"><div class="cell-gutter">Out [6]</div><div class="cell-body">
+                        <div class="chart-grid">
+                          <div class="chart-card full">
+                            <h3 class="chart-title">Promotion Gap By Sport And Race/Ethnicity — 2025</h3>
+                            <p class="chart-subtitle">Red cells indicate groups where assistant representation exceeds head-coach representation — a structural promotion bottleneck. The sharpest gap changes by sport.</p>
+                            
+    <div class="table-wrap">
+      <table class="data-table">
+        <thead>
+          <tr><th>Sport</th><th>Black</th><th>Hispanic</th><th>White</th><th>Asian</th><th>AIAN</th><th>Two+</th><th>Intl.</th><th>NHPI</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>WBB</td><td style="background:rgba(158,74,58,0.57); border:2px solid #C88F5A; font-weight:800; text-align:center;">-13.3</td><td style="background:rgba(158,74,58,0.17); border:1px solid rgba(22,53,76,.08); font-weight:800; text-align:center;">-1.9</td><td style="background:rgba(122,155,158,0.72); border:1px solid rgba(22,53,76,.08); font-weight:800; text-align:center;">17.6</td><td style="background:rgba(158,74,58,0.14); border:1px solid rgba(22,53,76,.08); font-weight:800; text-align:center;">-1.1</td><td style="background:rgba(158,74,58,0.10); border:1px solid rgba(22,53,76,.08); font-weight:800; text-align:center;">-0.1</td><td style="background:rgba(158,74,58,0.13); border:1px solid rgba(22,53,76,.08); font-weight:800; text-align:center;">-0.9</td><td style="background:rgba(158,74,58,0.13); border:1px solid rgba(22,53,76,.08); font-weight:800; text-align:center;">-0.9</td><td style="background:rgba(122,155,158,0.11); border:1px solid rgba(22,53,76,.08); font-weight:800; text-align:center;">0.4</td></tr><tr><td>Soccer</td><td style="background:rgba(158,74,58,0.15); border:1px solid rgba(22,53,76,.08); font-weight:800; text-align:center;">-1.4</td><td style="background:rgba(158,74,58,0.15); border:2px solid #C88F5A; font-weight:800; text-align:center;">-1.5</td><td style="background:rgba(122,155,158,0.28); border:1px solid rgba(22,53,76,.08); font-weight:800; text-align:center;">5.1</td><td style="background:rgba(158,74,58,0.11); border:1px solid rgba(22,53,76,.08); font-weight:800; text-align:center;">-0.2</td><td style="background:rgba(217,208,196,.55); border:1px solid rgba(22,53,76,.08); font-weight:800; text-align:center;">0.0</td><td style="background:rgba(158,74,58,0.15); border:1px solid rgba(22,53,76,.08); font-weight:800; text-align:center;">-1.5</td><td style="background:rgba(122,155,158,0.11); border:1px solid rgba(22,53,76,.08); font-weight:800; text-align:center;">0.3</td><td style="background:rgba(122,155,158,0.11); border:1px solid rgba(22,53,76,.08); font-weight:800; text-align:center;">0.3</td></tr><tr><td>Softball</td><td style="background:rgba(122,155,158,0.15); border:1px solid rgba(22,53,76,.08); font-weight:800; text-align:center;">1.5</td><td style="background:rgba(158,74,58,0.20); border:2px solid #C88F5A; font-weight:800; text-align:center;">-2.8</td><td style="background:rgba(122,155,158,0.28); border:1px solid rgba(22,53,76,.08); font-weight:800; text-align:center;">5.1</td><td style="background:rgba(158,74,58,0.12); border:1px solid rgba(22,53,76,.08); font-weight:800; text-align:center;">-0.6</td><td style="background:rgba(158,74,58,0.10); border:1px solid rgba(22,53,76,.08); font-weight:800; text-align:center;">-0.1</td><td style="background:rgba(158,74,58,0.15); border:1px solid rgba(22,53,76,.08); font-weight:800; text-align:center;">-1.4</td><td style="background:rgba(158,74,58,0.13); border:1px solid rgba(22,53,76,.08); font-weight:800; text-align:center;">-0.8</td><td style="background:rgba(158,74,58,0.11); border:1px solid rgba(22,53,76,.08); font-weight:800; text-align:center;">-0.3</td></tr><tr><td>Volleyball</td><td style="background:rgba(158,74,58,0.14); border:1px solid rgba(22,53,76,.08); font-weight:800; text-align:center;">-1.2</td><td style="background:rgba(158,74,58,0.16); border:2px solid #C88F5A; font-weight:800; text-align:center;">-1.8</td><td style="background:rgba(122,155,158,0.22); border:1px solid rgba(22,53,76,.08); font-weight:800; text-align:center;">3.4</td><td style="background:rgba(158,74,58,0.15); border:1px solid rgba(22,53,76,.08); font-weight:800; text-align:center;">-1.3</td><td style="background:rgba(158,74,58,0.10); border:1px solid rgba(22,53,76,.08); font-weight:800; text-align:center;">-0.1</td><td style="background:rgba(122,155,158,0.17); border:1px solid rgba(22,53,76,.08); font-weight:800; text-align:center;">1.9</td><td style="background:rgba(122,155,158,0.12); border:1px solid rgba(22,53,76,.08); font-weight:800; text-align:center;">0.5</td><td style="background:rgba(158,74,58,0.11); border:1px solid rgba(22,53,76,.08); font-weight:800; text-align:center;">-0.3</td></tr>
+        </tbody>
+      </table>
+    </div>
+    
+                          </div>
+                          <div class="chart-card full">
+                            <h3 class="chart-title">Sharpest Latest-Year Promotion Gap By Sport</h3>
+                            <p class="chart-subtitle">The summary table stays in place because it is still the fastest diagnostic scan in the notebook.</p>
+                            
+    <div class="table-wrap">
+      <table class="data-table">
+        <thead>
+          <tr><th>Sport</th><th>Sharpest Gap</th><th>Assistant Share</th><th>Head Share</th><th>Gap</th></tr>
+        </thead>
+        <tbody>
+          
+            <tr>
+              <td>WBB</td>
+              <td>Black or African American</td>
+              <td class="num">46.1%</td>
+              <td class="num">32.9%</td>
+              <td class="num">-13.3 pp</td>
+            </tr>
+            
+            <tr>
+              <td>Soccer</td>
+              <td>Hispanic or Latino</td>
+              <td class="num">6.2%</td>
+              <td class="num">4.7%</td>
+              <td class="num">-1.5 pp</td>
+            </tr>
+            
+            <tr>
+              <td>Softball</td>
+              <td>Hispanic or Latino</td>
+              <td class="num">8.0%</td>
+              <td class="num">5.2%</td>
+              <td class="num">-2.8 pp</td>
+            </tr>
+            
+            <tr>
+              <td>Volleyball</td>
+              <td>Hispanic or Latino</td>
+              <td class="num">6.5%</td>
+              <td class="num">4.7%</td>
+              <td class="num">-1.8 pp</td>
+            </tr>
+            
+        </tbody>
+      </table>
+    </div>
+    
+                          </div>
+                          
+            <div class="chart-card">
+              <h3 class="chart-title">WBB detail</h3>
+              <p class="chart-subtitle">Assistant versus head-coach race shares in the latest year.</p>
+              
+    <svg viewBox="0 0 600 270" class="inline-svg" role="img">
+      <rect x="0" y="0" width="600" height="270" rx="18" fill="#FFFDF8"></rect>
+      <line x1="44" y1="216.0" x2="582" y2="216.0" stroke="#D9D0C4" stroke-width="1"></line><text x="36" y="220.0" text-anchor="end" font-size="10" fill="#5F7484">0%</text><line x1="44" y1="117.0" x2="582" y2="117.0" stroke="#D9D0C4" stroke-width="1"></line><text x="36" y="121.0" text-anchor="end" font-size="10" fill="#5F7484">30%</text><line x1="44" y1="18.0" x2="582" y2="18.0" stroke="#D9D0C4" stroke-width="1"></line><text x="36" y="22.0" text-anchor="end" font-size="10" fill="#5F7484">61%</text>
+      <rect x="55.6" y="66.4" width="18.0" height="149.6" rx="8" fill="#C88F5A"></rect><text x="64.6" y="58.4" text-anchor="middle" font-size="10" fill="#5F7484">46.1%</text><rect x="81.6" y="109.2" width="18.0" height="106.8" rx="8" fill="#16354C"></rect><text x="90.6" y="101.2" text-anchor="middle" font-size="10" fill="#5F7484">32.9%</text><rect x="122.9" y="207.2" width="18.0" height="8.8" rx="8" fill="#C88F5A"></rect><text x="131.9" y="199.2" text-anchor="middle" font-size="10" fill="#5F7484">2.7%</text><rect x="148.9" y="213.4" width="18.0" height="2.6" rx="8" fill="#16354C"></rect><text x="157.9" y="205.4" text-anchor="middle" font-size="10" fill="#5F7484">0.8%</text><rect x="190.1" y="75.1" width="18.0" height="140.9" rx="8" fill="#C88F5A"></rect><text x="199.1" y="67.1" text-anchor="middle" font-size="10" fill="#5F7484">43.4%</text><rect x="216.1" y="18.0" width="18.0" height="198.0" rx="8" fill="#16354C"></rect><text x="225.1" y="10.0" text-anchor="middle" font-size="10" fill="#5F7484">61.0%</text><rect x="257.4" y="210.8" width="18.0" height="5.2" rx="8" fill="#C88F5A"></rect><text x="266.4" y="202.8" text-anchor="middle" font-size="10" fill="#5F7484">1.6%</text><rect x="283.4" y="214.1" width="18.0" height="1.9" rx="8" fill="#16354C"></rect><text x="292.4" y="206.1" text-anchor="middle" font-size="10" fill="#5F7484">0.6%</text><rect x="324.6" y="206.9" width="18.0" height="9.1" rx="8" fill="#C88F5A"></rect><text x="333.6" y="198.9" text-anchor="middle" font-size="10" fill="#5F7484">2.8%</text><rect x="350.6" y="209.8" width="18.0" height="6.2" rx="8" fill="#16354C"></rect><text x="359.6" y="201.8" text-anchor="middle" font-size="10" fill="#5F7484">1.9%</text><rect x="391.9" y="213.1" width="18.0" height="2.9" rx="8" fill="#C88F5A"></rect><text x="400.9" y="205.1" text-anchor="middle" font-size="10" fill="#5F7484">0.9%</text><rect x="417.9" y="216.0" width="18.0" height="0.0" rx="8" fill="#16354C"></rect><text x="426.9" y="208.0" text-anchor="middle" font-size="10" fill="#5F7484">0.0%</text><rect x="459.1" y="214.7" width="18.0" height="1.3" rx="8" fill="#C88F5A"></rect><text x="468.1" y="206.7" text-anchor="middle" font-size="10" fill="#5F7484">0.4%</text><rect x="485.1" y="215.0" width="18.0" height="1.0" rx="8" fill="#16354C"></rect><text x="494.1" y="207.0" text-anchor="middle" font-size="10" fill="#5F7484">0.3%</text><rect x="526.4" y="215.7" width="18.0" height="0.3" rx="8" fill="#C88F5A"></rect><text x="535.4" y="207.7" text-anchor="middle" font-size="10" fill="#5F7484">0.1%</text><rect x="552.4" y="214.1" width="18.0" height="1.9" rx="8" fill="#16354C"></rect><text x="561.4" y="206.1" text-anchor="middle" font-size="10" fill="#5F7484">0.6%</text>
+      <text x="77.6" y="254" text-anchor="middle" font-size="10" fill="#5F7484">Black</text><text x="144.9" y="254" text-anchor="middle" font-size="10" fill="#5F7484">Hispanic</text><text x="212.1" y="254" text-anchor="middle" font-size="10" fill="#5F7484">White</text><text x="279.4" y="254" text-anchor="middle" font-size="10" fill="#5F7484">Asian</text><text x="346.6" y="254" text-anchor="middle" font-size="10" fill="#5F7484">Two+</text><text x="413.9" y="254" text-anchor="middle" font-size="10" fill="#5F7484">Intl.</text><text x="481.1" y="254" text-anchor="middle" font-size="10" fill="#5F7484">AIAN</text><text x="548.4" y="254" text-anchor="middle" font-size="10" fill="#5F7484">NHPI</text>
+      <rect x="44" y="230" width="12" height="12" rx="3" fill="#C88F5A"></rect><text x="62" y="240" font-size="10" fill="#5F7484">Assistant</text><rect x="152" y="230" width="12" height="12" rx="3" fill="#16354C"></rect><text x="170" y="240" font-size="10" fill="#5F7484">Head</text>
+      <text x="80.0" y="36.0" font-size="13" fill="#9E4A3A" style="font-family: 'Permanent Marker', 'Marker Felt', 'Bradley Hand', 'Comic Sans MS', cursive;">Black women</text><text x="80.0" y="54.0" font-size="13" fill="#9E4A3A" style="font-family: 'Permanent Marker', 'Marker Felt', 'Bradley Hand', 'Comic Sans MS', cursive;">-13.3 pp gap</text><line x1="150.0" y1="44.0" x2="79.6" y2="84.4" stroke="#9E4A3A" stroke-width="1.8"></line>
+    </svg>
+    
+            </div>
+            
+            <div class="chart-card">
+              <h3 class="chart-title">Soccer detail</h3>
+              <p class="chart-subtitle">Assistant versus head-coach race shares in the latest year.</p>
+              
+    <svg viewBox="0 0 600 270" class="inline-svg" role="img">
+      <rect x="0" y="0" width="600" height="270" rx="18" fill="#FFFDF8"></rect>
+      <line x1="44" y1="216.0" x2="582" y2="216.0" stroke="#D9D0C4" stroke-width="1"></line><text x="36" y="220.0" text-anchor="end" font-size="10" fill="#5F7484">0%</text><line x1="44" y1="117.0" x2="582" y2="117.0" stroke="#D9D0C4" stroke-width="1"></line><text x="36" y="121.0" text-anchor="end" font-size="10" fill="#5F7484">40%</text><line x1="44" y1="18.0" x2="582" y2="18.0" stroke="#D9D0C4" stroke-width="1"></line><text x="36" y="22.0" text-anchor="end" font-size="10" fill="#5F7484">80%</text>
+      <rect x="55.6" y="200.1" width="18.0" height="15.9" rx="8" fill="#C88F5A"></rect><text x="64.6" y="192.1" text-anchor="middle" font-size="10" fill="#5F7484">6.4%</text><rect x="81.6" y="203.6" width="18.0" height="12.4" rx="8" fill="#16354C"></rect><text x="90.6" y="195.6" text-anchor="middle" font-size="10" fill="#5F7484">5.0%</text><rect x="122.9" y="200.6" width="18.0" height="15.4" rx="8" fill="#C88F5A"></rect><text x="131.9" y="192.6" text-anchor="middle" font-size="10" fill="#5F7484">6.2%</text><rect x="148.9" y="204.3" width="18.0" height="11.7" rx="8" fill="#16354C"></rect><text x="157.9" y="196.3" text-anchor="middle" font-size="10" fill="#5F7484">4.7%</text><rect x="190.1" y="30.7" width="18.0" height="185.3" rx="8" fill="#C88F5A"></rect><text x="199.1" y="22.7" text-anchor="middle" font-size="10" fill="#5F7484">74.7%</text><rect x="216.1" y="18.0" width="18.0" height="198.0" rx="8" fill="#16354C"></rect><text x="225.1" y="10.0" text-anchor="middle" font-size="10" fill="#5F7484">79.8%</text><rect x="257.4" y="212.8" width="18.0" height="3.2" rx="8" fill="#C88F5A"></rect><text x="266.4" y="204.8" text-anchor="middle" font-size="10" fill="#5F7484">1.3%</text><rect x="283.4" y="213.0" width="18.0" height="3.0" rx="8" fill="#16354C"></rect><text x="292.4" y="205.0" text-anchor="middle" font-size="10" fill="#5F7484">1.2%</text><rect x="324.6" y="208.1" width="18.0" height="7.9" rx="8" fill="#C88F5A"></rect><text x="333.6" y="200.1" text-anchor="middle" font-size="10" fill="#5F7484">3.2%</text><rect x="350.6" y="211.5" width="18.0" height="4.5" rx="8" fill="#16354C"></rect><text x="359.6" y="203.5" text-anchor="middle" font-size="10" fill="#5F7484">1.8%</text><rect x="391.9" y="204.3" width="18.0" height="11.7" rx="8" fill="#C88F5A"></rect><text x="400.9" y="196.3" text-anchor="middle" font-size="10" fill="#5F7484">4.7%</text><rect x="417.9" y="203.6" width="18.0" height="12.4" rx="8" fill="#16354C"></rect><text x="426.9" y="195.6" text-anchor="middle" font-size="10" fill="#5F7484">5.0%</text><rect x="459.1" y="216.0" width="18.0" height="0.0" rx="8" fill="#C88F5A"></rect><text x="468.1" y="208.0" text-anchor="middle" font-size="10" fill="#5F7484">0.0%</text><rect x="485.1" y="216.0" width="18.0" height="0.0" rx="8" fill="#16354C"></rect><text x="494.1" y="208.0" text-anchor="middle" font-size="10" fill="#5F7484">0.0%</text><rect x="526.4" y="215.3" width="18.0" height="0.7" rx="8" fill="#C88F5A"></rect><text x="535.4" y="207.3" text-anchor="middle" font-size="10" fill="#5F7484">0.3%</text><rect x="552.4" y="214.5" width="18.0" height="1.5" rx="8" fill="#16354C"></rect><text x="561.4" y="206.5" text-anchor="middle" font-size="10" fill="#5F7484">0.6%</text>
+      <text x="77.6" y="254" text-anchor="middle" font-size="10" fill="#5F7484">Black</text><text x="144.9" y="254" text-anchor="middle" font-size="10" fill="#5F7484">Hispanic</text><text x="212.1" y="254" text-anchor="middle" font-size="10" fill="#5F7484">White</text><text x="279.4" y="254" text-anchor="middle" font-size="10" fill="#5F7484">Asian</text><text x="346.6" y="254" text-anchor="middle" font-size="10" fill="#5F7484">Two+</text><text x="413.9" y="254" text-anchor="middle" font-size="10" fill="#5F7484">Intl.</text><text x="481.1" y="254" text-anchor="middle" font-size="10" fill="#5F7484">AIAN</text><text x="548.4" y="254" text-anchor="middle" font-size="10" fill="#5F7484">NHPI</text>
+      <rect x="44" y="230" width="12" height="12" rx="3" fill="#C88F5A"></rect><text x="62" y="240" font-size="10" fill="#5F7484">Assistant</text><rect x="152" y="230" width="12" height="12" rx="3" fill="#16354C"></rect><text x="170" y="240" font-size="10" fill="#5F7484">Head</text>
+      
+    </svg>
+    
+            </div>
+            
+            <div class="chart-card">
+              <h3 class="chart-title">Softball detail</h3>
+              <p class="chart-subtitle">Assistant versus head-coach race shares in the latest year.</p>
+              
+    <svg viewBox="0 0 600 270" class="inline-svg" role="img">
+      <rect x="0" y="0" width="600" height="270" rx="18" fill="#FFFDF8"></rect>
+      <line x1="44" y1="216.0" x2="582" y2="216.0" stroke="#D9D0C4" stroke-width="1"></line><text x="36" y="220.0" text-anchor="end" font-size="10" fill="#5F7484">0%</text><line x1="44" y1="117.0" x2="582" y2="117.0" stroke="#D9D0C4" stroke-width="1"></line><text x="36" y="121.0" text-anchor="end" font-size="10" fill="#5F7484">40%</text><line x1="44" y1="18.0" x2="582" y2="18.0" stroke="#D9D0C4" stroke-width="1"></line><text x="36" y="22.0" text-anchor="end" font-size="10" fill="#5F7484">80%</text>
+      <rect x="55.6" y="198.0" width="18.0" height="18.0" rx="8" fill="#C88F5A"></rect><text x="64.6" y="190.0" text-anchor="middle" font-size="10" fill="#5F7484">7.3%</text><rect x="81.6" y="194.1" width="18.0" height="21.9" rx="8" fill="#16354C"></rect><text x="90.6" y="186.1" text-anchor="middle" font-size="10" fill="#5F7484">8.9%</text><rect x="122.9" y="196.3" width="18.0" height="19.7" rx="8" fill="#C88F5A"></rect><text x="131.9" y="188.3" text-anchor="middle" font-size="10" fill="#5F7484">8.0%</text><rect x="148.9" y="203.2" width="18.0" height="12.8" rx="8" fill="#16354C"></rect><text x="157.9" y="195.2" text-anchor="middle" font-size="10" fill="#5F7484">5.2%</text><rect x="190.1" y="30.6" width="18.0" height="185.4" rx="8" fill="#C88F5A"></rect><text x="199.1" y="22.6" text-anchor="middle" font-size="10" fill="#5F7484">75.2%</text><rect x="216.1" y="18.0" width="18.0" height="198.0" rx="8" fill="#16354C"></rect><text x="225.1" y="10.0" text-anchor="middle" font-size="10" fill="#5F7484">80.3%</text><rect x="257.4" y="213.0" width="18.0" height="3.0" rx="8" fill="#C88F5A"></rect><text x="266.4" y="205.0" text-anchor="middle" font-size="10" fill="#5F7484">1.2%</text><rect x="283.4" y="214.3" width="18.0" height="1.7" rx="8" fill="#16354C"></rect><text x="292.4" y="206.3" text-anchor="middle" font-size="10" fill="#5F7484">0.7%</text><rect x="324.6" y="207.6" width="18.0" height="8.4" rx="8" fill="#C88F5A"></rect><text x="333.6" y="199.6" text-anchor="middle" font-size="10" fill="#5F7484">3.4%</text><rect x="350.6" y="211.1" width="18.0" height="4.9" rx="8" fill="#16354C"></rect><text x="359.6" y="203.1" text-anchor="middle" font-size="10" fill="#5F7484">2.0%</text><rect x="391.9" y="214.0" width="18.0" height="2.0" rx="8" fill="#C88F5A"></rect><text x="400.9" y="206.0" text-anchor="middle" font-size="10" fill="#5F7484">0.8%</text><rect x="417.9" y="216.0" width="18.0" height="0.0" rx="8" fill="#16354C"></rect><text x="426.9" y="208.0" text-anchor="middle" font-size="10" fill="#5F7484">0.0%</text><rect x="459.1" y="215.0" width="18.0" height="1.0" rx="8" fill="#C88F5A"></rect><text x="468.1" y="207.0" text-anchor="middle" font-size="10" fill="#5F7484">0.4%</text><rect x="485.1" y="215.3" width="18.0" height="0.7" rx="8" fill="#16354C"></rect><text x="494.1" y="207.3" text-anchor="middle" font-size="10" fill="#5F7484">0.3%</text><rect x="526.4" y="213.5" width="18.0" height="2.5" rx="8" fill="#C88F5A"></rect><text x="535.4" y="205.5" text-anchor="middle" font-size="10" fill="#5F7484">1.0%</text><rect x="552.4" y="214.3" width="18.0" height="1.7" rx="8" fill="#16354C"></rect><text x="561.4" y="206.3" text-anchor="middle" font-size="10" fill="#5F7484">0.7%</text>
+      <text x="77.6" y="254" text-anchor="middle" font-size="10" fill="#5F7484">Black</text><text x="144.9" y="254" text-anchor="middle" font-size="10" fill="#5F7484">Hispanic</text><text x="212.1" y="254" text-anchor="middle" font-size="10" fill="#5F7484">White</text><text x="279.4" y="254" text-anchor="middle" font-size="10" fill="#5F7484">Asian</text><text x="346.6" y="254" text-anchor="middle" font-size="10" fill="#5F7484">Two+</text><text x="413.9" y="254" text-anchor="middle" font-size="10" fill="#5F7484">Intl.</text><text x="481.1" y="254" text-anchor="middle" font-size="10" fill="#5F7484">AIAN</text><text x="548.4" y="254" text-anchor="middle" font-size="10" fill="#5F7484">NHPI</text>
+      <rect x="44" y="230" width="12" height="12" rx="3" fill="#C88F5A"></rect><text x="62" y="240" font-size="10" fill="#5F7484">Assistant</text><rect x="152" y="230" width="12" height="12" rx="3" fill="#16354C"></rect><text x="170" y="240" font-size="10" fill="#5F7484">Head</text>
+      
+    </svg>
+    
+            </div>
+            
+            <div class="chart-card">
+              <h3 class="chart-title">Volleyball detail</h3>
+              <p class="chart-subtitle">Assistant versus head-coach race shares in the latest year.</p>
+              
+    <svg viewBox="0 0 600 270" class="inline-svg" role="img">
+      <rect x="0" y="0" width="600" height="270" rx="18" fill="#FFFDF8"></rect>
+      <line x1="44" y1="216.0" x2="582" y2="216.0" stroke="#D9D0C4" stroke-width="1"></line><text x="36" y="220.0" text-anchor="end" font-size="10" fill="#5F7484">0%</text><line x1="44" y1="117.0" x2="582" y2="117.0" stroke="#D9D0C4" stroke-width="1"></line><text x="36" y="121.0" text-anchor="end" font-size="10" fill="#5F7484">37%</text><line x1="44" y1="18.0" x2="582" y2="18.0" stroke="#D9D0C4" stroke-width="1"></line><text x="36" y="22.0" text-anchor="end" font-size="10" fill="#5F7484">74%</text>
+      <rect x="55.6" y="191.0" width="18.0" height="25.0" rx="8" fill="#C88F5A"></rect><text x="64.6" y="183.0" text-anchor="middle" font-size="10" fill="#5F7484">9.4%</text><rect x="81.6" y="194.1" width="18.0" height="21.9" rx="8" fill="#16354C"></rect><text x="90.6" y="186.1" text-anchor="middle" font-size="10" fill="#5F7484">8.2%</text><rect x="122.9" y="198.7" width="18.0" height="17.3" rx="8" fill="#C88F5A"></rect><text x="131.9" y="190.7" text-anchor="middle" font-size="10" fill="#5F7484">6.5%</text><rect x="148.9" y="203.5" width="18.0" height="12.5" rx="8" fill="#16354C"></rect><text x="157.9" y="195.5" text-anchor="middle" font-size="10" fill="#5F7484">4.7%</text><rect x="190.1" y="27.3" width="18.0" height="188.7" rx="8" fill="#C88F5A"></rect><text x="199.1" y="19.3" text-anchor="middle" font-size="10" fill="#5F7484">70.8%</text><rect x="216.1" y="18.0" width="18.0" height="198.0" rx="8" fill="#16354C"></rect><text x="225.1" y="10.0" text-anchor="middle" font-size="10" fill="#5F7484">74.3%</text><rect x="257.4" y="206.9" width="18.0" height="9.1" rx="8" fill="#C88F5A"></rect><text x="266.4" y="198.9" text-anchor="middle" font-size="10" fill="#5F7484">3.4%</text><rect x="283.4" y="210.7" width="18.0" height="5.3" rx="8" fill="#16354C"></rect><text x="292.4" y="202.7" text-anchor="middle" font-size="10" fill="#5F7484">2.0%</text><rect x="324.6" y="208.8" width="18.0" height="7.2" rx="8" fill="#C88F5A"></rect><text x="333.6" y="200.8" text-anchor="middle" font-size="10" fill="#5F7484">2.7%</text><rect x="350.6" y="203.5" width="18.0" height="12.5" rx="8" fill="#16354C"></rect><text x="359.6" y="195.5" text-anchor="middle" font-size="10" fill="#5F7484">4.7%</text><rect x="391.9" y="212.5" width="18.0" height="3.5" rx="8" fill="#C88F5A"></rect><text x="400.9" y="204.5" text-anchor="middle" font-size="10" fill="#5F7484">1.3%</text><rect x="417.9" y="211.2" width="18.0" height="4.8" rx="8" fill="#16354C"></rect><text x="426.9" y="203.2" text-anchor="middle" font-size="10" fill="#5F7484">1.8%</text><rect x="459.1" y="214.9" width="18.0" height="1.1" rx="8" fill="#C88F5A"></rect><text x="468.1" y="206.9" text-anchor="middle" font-size="10" fill="#5F7484">0.4%</text><rect x="485.1" y="215.2" width="18.0" height="0.8" rx="8" fill="#16354C"></rect><text x="494.1" y="207.2" text-anchor="middle" font-size="10" fill="#5F7484">0.3%</text><rect x="526.4" y="209.9" width="18.0" height="6.1" rx="8" fill="#C88F5A"></rect><text x="535.4" y="201.9" text-anchor="middle" font-size="10" fill="#5F7484">2.3%</text><rect x="552.4" y="210.7" width="18.0" height="5.3" rx="8" fill="#16354C"></rect><text x="561.4" y="202.7" text-anchor="middle" font-size="10" fill="#5F7484">2.0%</text>
+      <text x="77.6" y="254" text-anchor="middle" font-size="10" fill="#5F7484">Black</text><text x="144.9" y="254" text-anchor="middle" font-size="10" fill="#5F7484">Hispanic</text><text x="212.1" y="254" text-anchor="middle" font-size="10" fill="#5F7484">White</text><text x="279.4" y="254" text-anchor="middle" font-size="10" fill="#5F7484">Asian</text><text x="346.6" y="254" text-anchor="middle" font-size="10" fill="#5F7484">Two+</text><text x="413.9" y="254" text-anchor="middle" font-size="10" fill="#5F7484">Intl.</text><text x="481.1" y="254" text-anchor="middle" font-size="10" fill="#5F7484">AIAN</text><text x="548.4" y="254" text-anchor="middle" font-size="10" fill="#5F7484">NHPI</text>
+      <rect x="44" y="230" width="12" height="12" rx="3" fill="#C88F5A"></rect><text x="62" y="240" font-size="10" fill="#5F7484">Assistant</text><rect x="152" y="230" width="12" height="12" rx="3" fill="#16354C"></rect><text x="170" y="240" font-size="10" fill="#5F7484">Head</text>
+      
+    </svg>
+    
+            </div>
+            
+                        </div>
+                        </div></div>
+</section>
+<hr class="nb-divider">
+<section id="sec-soccer" class="nb-section">
+<div class="section-header">
+<span class="sh-badge label-trans">Soccer</span>
+<span class="sh-title">The Sport That Changes Everything</span>
+<div class="sh-progress"></div>
+</div>
+<div class="cell md-cell"><div class="cell-gutter">In [7]</div><div class="cell-body"><span class="section-label label-trans">Soccer</span><h2>Soccer is not a footnote. It is the structural exception that lowers the entire women-in-leadership picture.</h2><p>Soccer has the largest athlete base in this notebook — 10,902 athletes in 2025. It also has the lowest women-head-coach share of any focus sport at 30.8%. When soccer is added as a full peer sport, the cross-sport women-in-coaching headline does not just change — it becomes misleading if left pooled.</p><div class="pull-quote">If these four sports are collapsed into one pooled women&apos;s-coach average, soccer&apos;s leadership problem becomes much harder to see — and much easier to explain away.</div></div></div>
+<div class="cell out-cell"><div class="cell-gutter">Out [7]</div><div class="cell-body">
+                        <div class="chart-grid">
+                          <div class="chart-card full">
+                            <h3 class="chart-title">Pooled vs. Disaggregated: Women Head Coach Share, 2025</h3>
+                            <p class="chart-subtitle">A single pooled average conceals soccer's structural gap. Disaggregation is not optional — it is the only way to see the problem.</p>
+                            
+    <div class="split">
+      <div class="list-card">
+        <h4>Pooled four-sport head coach average</h4>
+        <div class="bar-list">
+            <div class="bar-row">
+              <div class="bar-label">Pooled</div>
+              <div class="bar-track"><div class="bar-fill navy" style="width:52.9%;"></div></div>
+              <div class="bar-value">52.9%</div>
+            </div>
+            </div>
+      </div>
+      <div class="list-card">
+        <h4>Disaggregated head coach view</h4>
+        <div class="bar-list">
+            <div class="bar-row">
+              <div class="bar-label">WBB</div>
+              <div class="bar-track"><div class="bar-fill navy" style="width:65.2%;"></div></div>
+              <div class="bar-value">65.2%</div>
+            </div>
+            
+            <div class="bar-row">
+              <div class="bar-label">Soccer</div>
+              <div class="bar-track"><div class="bar-fill red" style="width:30.8%;"></div></div>
+              <div class="bar-value">30.8%</div>
+            </div>
+            
+            <div class="bar-row">
+              <div class="bar-label">Softball</div>
+              <div class="bar-track"><div class="bar-fill green" style="width:69.8%;"></div></div>
+              <div class="bar-value">69.8%</div>
+            </div>
+            
+            <div class="bar-row">
+              <div class="bar-label">Volleyball</div>
+              <div class="bar-track"><div class="bar-fill teal" style="width:46.8%;"></div></div>
+              <div class="bar-value">46.8%</div>
+            </div>
+            </div>
+      </div>
+    </div>
+    
+                          </div>
+                          <div class="chart-card">
+                            <h3 class="chart-title">Soccer Role Spotlight</h3>
+                            <p class="chart-subtitle">Soccer's women-coach story weakens materially as the role gets more senior.</p>
+                            <div class="bar-list">
+            <div class="bar-row compact">
+              <div class="bar-label">All coaches</div>
+              <div class="bar-track"><div class="bar-fill navy" style="width:41.3%;"></div></div>
+              <div class="bar-value">41.3% women</div>
+            </div>
+            
+            <div class="bar-row compact">
+              <div class="bar-label">Assistants</div>
+              <div class="bar-track"><div class="bar-fill gold" style="width:46.1%;"></div></div>
+              <div class="bar-value">46.1% women</div>
+            </div>
+            
+            <div class="bar-row compact">
+              <div class="bar-label">Head coaches</div>
+              <div class="bar-track"><div class="bar-fill red" style="width:30.8%;"></div></div>
+              <div class="bar-value">30.8% women</div>
+            </div>
+            </div>
+                          </div>
+                          <div class="chart-card">
+                            <h3 class="chart-title">Head-Coach Women Share Across Sports</h3>
+                            <p class="chart-subtitle">Soccer sits well below the rest of the focus set on the most leadership-relevant cut.</p>
+                            
+    <svg viewBox="0 0 620 240" class="inline-svg" role="img">
+      <rect x="0" y="0" width="620" height="240" rx="18" fill="#FFFDF8"></rect>
+      <line x1="52" y1="192.0" x2="600" y2="192.0" stroke="#D9D0C4" stroke-width="1"></line><text x="44" y="196.0" text-anchor="end" font-size="10" fill="#5F7484">0%</text><line x1="52" y1="107.0" x2="600" y2="107.0" stroke="#D9D0C4" stroke-width="1"></line><text x="44" y="111.0" text-anchor="end" font-size="10" fill="#5F7484">35%</text><line x1="52" y1="22.0" x2="600" y2="22.0" stroke="#D9D0C4" stroke-width="1"></line><text x="44" y="26.0" text-anchor="end" font-size="10" fill="#5F7484">70%</text>
+      <rect x="108.5" y="33.2" width="24.0" height="158.8" rx="8" fill="#9E4A3A"></rect><text x="120.5" y="27.2" text-anchor="middle" font-size="10" fill="#5F7484">65.2%</text><rect x="245.5" y="117.0" width="24.0" height="75.0" rx="8" fill="#9E4A3A"></rect><text x="257.5" y="111.0" text-anchor="middle" font-size="10" fill="#5F7484">30.8%</text><rect x="382.5" y="22.0" width="24.0" height="170.0" rx="8" fill="#9E4A3A"></rect><text x="394.5" y="16.0" text-anchor="middle" font-size="10" fill="#5F7484">69.8%</text><rect x="519.5" y="78.0" width="24.0" height="114.0" rx="8" fill="#9E4A3A"></rect><text x="531.5" y="72.0" text-anchor="middle" font-size="10" fill="#5F7484">46.8%</text>
+      <text x="120.5" y="228" text-anchor="middle" font-size="10" fill="#5F7484">WBB</text><text x="257.5" y="228" text-anchor="middle" font-size="10" fill="#5F7484">Soccer</text><text x="394.5" y="228" text-anchor="middle" font-size="10" fill="#5F7484">Softball</text><text x="531.5" y="228" text-anchor="middle" font-size="10" fill="#5F7484">Volleyball</text>
+      <rect x="52" y="208" width="12" height="12" rx="3" fill="#9E4A3A"></rect><text x="70" y="218" font-size="10" fill="#5F7484">Head coach women share</text>
+    </svg>
+    
+                          </div>
+                        </div>
+                        </div></div>
+</section>
+<hr class="nb-divider">
+<section id="sec-wbb" class="nb-section">
+<div class="section-header">
+<span class="sh-badge label-dev">WBB</span>
+<span class="sh-title">WBB Deep Dive</span>
+<div class="sh-progress"></div>
+</div>
+<div class="cell md-cell"><div class="cell-gutter">In [8]</div><div class="cell-body"><span class="section-label label-dev">WBB</span><h2>In 2017, the Black promotion gap in WBB reached -21.7 percentage points. That is the widest structural coaching bottleneck documented in this 14-year record.</h2><p>Progress has been made. By 2025, that gap had narrowed to -13.3 pp. But narrowing is not closing — and the WBB Black promotion gap remains the sharpest race-specific leadership bottleneck in the four-sport set. WBB also carries a second structural warning: international athletes make up 10.1% of its player pool, but hold 0.0% of head coaching seats.</p><div class="stat-row">
+            <div class="stat-box gold">
+              <div class="stat-value">-21.7 pp</div>
+              <div class="stat-label">THE LOW POINT — worst point in the WBB Black promotion-gap trajectory (2017).</div>
+            </div>
+            
+            <div class="stat-box red">
+              <div class="stat-value">-13.3 pp</div>
+              <div class="stat-label">TODAY — WBB Black promotion gap in 2025.</div>
+            </div>
+            
+            <div class="stat-box navy">
+              <div class="stat-value">-9.4 pp</div>
+              <div class="stat-label">International athlete-to-coach representation gap in WBB.</div>
+            </div>
+            </div></div></div>
+<div class="cell out-cell"><div class="cell-gutter">Out [8]</div><div class="cell-body">
+                        <div class="chart-grid">
+                          <div class="chart-card">
+                            <h3 class="chart-title">WBB Black Promotion Gap Trajectory</h3>
+                            <p class="chart-subtitle">Progress, but unresolved. The Black promotion gap in WBB has narrowed by 8.4 pp since its peak — but remains the largest race-specific bottleneck in the notebook.</p>
+                            
+    <svg viewBox="0 0 620 250" class="inline-svg" role="img">
+      <rect x="0" y="0" width="620" height="250" rx="18" fill="#FFFDF8"></rect>
+      <line x1="50" y1="31.7" x2="552" y2="31.7" stroke="#B8956A" stroke-width="1"></line><text x="42" y="35.7" text-anchor="end" font-size="10" fill="#5F7484">0 pp</text><line x1="50" y1="108.5" x2="552" y2="108.5" stroke="#D9D0C4" stroke-width="1"></line><text x="42" y="112.5" text-anchor="end" font-size="10" fill="#5F7484">-10 pp</text><line x1="50" y1="185.3" x2="552" y2="185.3" stroke="#D9D0C4" stroke-width="1"></line><text x="42" y="189.3" text-anchor="end" font-size="10" fill="#5F7484">-20 pp</text>
+      <line x1="50" y1="31.7" x2="552" y2="31.7" stroke="#B8956A" stroke-dasharray="4 4"></line>
+      <polyline fill="none" stroke="#9E4A3A" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" points="50.0,173.0 88.6,182.2 127.2,193.0 165.8,196.0 204.5,180.7 243.1,198.3 281.7,197.6 320.3,192.2 358.9,194.5 397.5,176.8 436.2,170.7 474.8,184.5 513.4,148.4 552.0,133.8"></polyline>
+      <circle cx="50.0" cy="173.0" r="4.2" fill="#9E4A3A" stroke="#fff" stroke-width="1.8"></circle>
+<circle cx="88.6" cy="182.2" r="4.2" fill="#9E4A3A" stroke="#fff" stroke-width="1.8"></circle>
+<circle cx="127.2" cy="193.0" r="4.2" fill="#9E4A3A" stroke="#fff" stroke-width="1.8"></circle>
+<circle cx="165.8" cy="196.0" r="4.2" fill="#9E4A3A" stroke="#fff" stroke-width="1.8"></circle>
+<circle cx="204.5" cy="180.7" r="4.2" fill="#9E4A3A" stroke="#fff" stroke-width="1.8"></circle>
+<circle cx="243.1" cy="198.3" r="8.4" fill="#9E4A3A" stroke="#fff" stroke-width="1.8"></circle>
+<circle cx="281.7" cy="197.6" r="4.2" fill="#9E4A3A" stroke="#fff" stroke-width="1.8"></circle>
+<circle cx="320.3" cy="192.2" r="4.2" fill="#9E4A3A" stroke="#fff" stroke-width="1.8"></circle>
+<circle cx="358.9" cy="194.5" r="4.2" fill="#9E4A3A" stroke="#fff" stroke-width="1.8"></circle>
+<circle cx="397.5" cy="176.8" r="4.2" fill="#9E4A3A" stroke="#fff" stroke-width="1.8"></circle>
+<circle cx="436.2" cy="170.7" r="4.2" fill="#9E4A3A" stroke="#fff" stroke-width="1.8"></circle>
+<circle cx="474.8" cy="184.5" r="4.2" fill="#9E4A3A" stroke="#fff" stroke-width="1.8"></circle>
+<circle cx="513.4" cy="148.4" r="4.2" fill="#9E4A3A" stroke="#fff" stroke-width="1.8"></circle>
+<circle cx="552.0" cy="133.8" r="4.2" fill="#9E4A3A" stroke="#fff" stroke-width="1.8"></circle>
+      <line x1="243.1" y1="24.0" x2="243.1" y2="216.0" stroke="#D9D0C4" stroke-width="1.1" stroke-dasharray="5 4" opacity=".6"></line><line x1="243.1" y1="160.3" x2="243.1" y2="187.3" stroke="#9E4A3A" stroke-width="1.2"></line><text x="243.1" y="154.3" text-anchor="middle" font-size="10" fill="#9E4A3A" font-weight="800">Peak gap: -21.7 pp (2017)</text><text x="562.0" y="121.8" text-anchor="end" font-size="10" fill="#16354C" font-weight="800">Current: -13.3 pp (2025)</text>
+      <text x="50.0" y="240" text-anchor="middle" font-size="10" fill="#5F7484">2012</text>
+<text x="88.6" y="240" text-anchor="middle" font-size="10" fill="#5F7484">2013</text>
+<text x="127.2" y="240" text-anchor="middle" font-size="10" fill="#5F7484">2014</text>
+<text x="165.8" y="240" text-anchor="middle" font-size="10" fill="#5F7484">2015</text>
+<text x="204.5" y="240" text-anchor="middle" font-size="10" fill="#5F7484">2016</text>
+<text x="243.1" y="240" text-anchor="middle" font-size="10" fill="#5F7484">2017</text>
+<text x="281.7" y="240" text-anchor="middle" font-size="10" fill="#5F7484">2018</text>
+<text x="320.3" y="240" text-anchor="middle" font-size="10" fill="#5F7484">2019</text>
+<text x="358.9" y="240" text-anchor="middle" font-size="10" fill="#5F7484">2020</text>
+<text x="397.5" y="240" text-anchor="middle" font-size="10" fill="#5F7484">2021</text>
+<text x="436.2" y="240" text-anchor="middle" font-size="10" fill="#5F7484">2022</text>
+<text x="474.8" y="240" text-anchor="middle" font-size="10" fill="#5F7484">2023</text>
+<text x="513.4" y="240" text-anchor="middle" font-size="10" fill="#5F7484">2024</text>
+<text x="552.0" y="240" text-anchor="middle" font-size="10" fill="#5F7484">2025</text>
+    </svg>
+    
+                          </div>
+                          <div class="chart-card">
+                            <h3 class="chart-title">International Athletes, Invisible In Coaching — WBB 2025</h3>
+                            <p class="chart-subtitle">International athletes represent 1 in 10 WBB players. They hold zero head coaching seats.</p>
+                            <div class="bar-list">
+            <div class="bar-row compact">
+              <div class="bar-label">Athletes</div>
+              <div class="bar-track"><div class="bar-fill gold" style="width:10.1%;"></div></div>
+              <div class="bar-value">10.1%</div>
+            </div>
+            
+            <div class="bar-row compact">
+              <div class="bar-label">All coaches</div>
+              <div class="bar-track"><div class="bar-fill navy" style="width:0.7%;"></div></div>
+              <div class="bar-value">0.7%</div>
+            </div>
+            
+            <div class="bar-row compact">
+              <div class="bar-label">Assistants</div>
+              <div class="bar-track"><div class="bar-fill teal" style="width:0.9%;"></div></div>
+              <div class="bar-value">0.9%</div>
+            </div>
+            
+            <div class="bar-row compact">
+              <div class="bar-label">Head coaches</div>
+              <div class="bar-track"><div class="bar-fill red" style="width:0.0%;"></div></div>
+              <div class="bar-value">0.0%</div>
+            </div>
+            </div>
+                          </div>
+                        </div>
+                        </div></div>
+</section>
+<hr class="nb-divider">
+<section id="sec-close" class="nb-section">
+<div class="section-header">
+<span class="sh-badge label-story">Close</span>
+<span class="sh-title">Implications / Close</span>
+<div class="sh-progress"></div>
+</div>
+<div class="cell md-cell"><div class="cell-gutter">In [9]</div><div class="cell-body"><span class="section-label label-story">Close</span><h2 class="display-headline full close-display">The court diversified. The sideline did not.</h2><p class="display-subhead close-subhead">Not at the same pace. Not in the same sports. Not for the same groups.</p><p>This notebook closes on an operational conclusion: a wider feeder layer is not the same thing as equitable promotion. More assistant coaches does not automatically produce more representative head coaches. The interventions differ by sport — but the structural logic is consistent.</p>
+                            <div class="split">
+                              <div class="list-card">
+                                <h4>What athletic leaders should do with this file</h4>
+                                <ul>
+                                  <li>Treat soccer as a separate leadership problem rather than letting it disappear inside a pooled women’s-sports average.</li>
+                                  <li>Use role-split reporting for women coaches, not just all-coach averages.</li>
+                                  <li>Track women-of-color advancement explicitly at athlete, assistant, and head-coach stages.</li>
+                                  <li>Preserve a named WBB Black promotion-gap metric in future refreshes because the long-run trend is improving but unresolved.</li>
+                                </ul>
+                              </div>
+                              <div class="list-card">
+                                <h4>What Changes Next</h4>
+                                <ul>
+                                  <li>A repeatable four-sport refresh path using the filtered parquet and support tables.</li>
+                                  <li>A single-file brief that can open locally or be moved into a broader report workflow later.</li>
+                                  <li>A clearer separation between athlete diversification and leadership conversion.</li>
+                                </ul>
+                              </div>
+                            </div>
+                            </div></div>
+<div class="cell out-cell"><div class="cell-gutter">Out [9]</div><div class="cell-body">
+                        <div class="chart-grid">
+                          <div class="chart-card full">
+                            <h3 class="chart-title">The Full Picture — Women Of Color Across Four Sports And Three Pipeline Stages, 2025</h3>
+                            <p class="chart-subtitle">This is the story in one frame. Every column drops from top to bottom. Some columns drop further than others.</p>
+                            
+    <div class="table-wrap">
+      <table class="data-table">
+        <thead>
+          <tr><th>Stage</th><th>WBB</th><th>Soccer</th><th>Softball</th><th>Volleyball</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Athletes</td><td style="background: rgba(22,53,76,0.80); color:#17354B; font-weight:800; text-align:center;">55.5%</td><td style="background: rgba(22,53,76,0.47); color:#17354B; font-weight:800; text-align:center;">27.2%</td><td style="background: rgba(22,53,76,0.54); color:#17354B; font-weight:800; text-align:center;">33.4%</td><td style="background: rgba(22,53,76,0.55); color:#17354B; font-weight:800; text-align:center;">33.8%</td></tr><tr><td>Assistant Coaches</td><td style="background: rgba(22,53,76,0.58); color:#17354B; font-weight:800; text-align:center;">36.3%</td><td style="background: rgba(22,53,76,0.23); color:#17354B; font-weight:800; text-align:center;">6.4%</td><td style="background: rgba(22,53,76,0.35); color:#17354B; font-weight:800; text-align:center;">16.7%</td><td style="background: rgba(22,53,76,0.31); color:#17354B; font-weight:800; text-align:center;">13.7%</td></tr><tr><td>Head Coaches</td><td style="background: rgba(22,53,76,0.46); color:#17354B; font-weight:800; text-align:center;">26.2%</td><td style="background: rgba(22,53,76,0.19); color:#17354B; font-weight:800; text-align:center;">3.2%</td><td style="background: rgba(22,53,76,0.31); color:#17354B; font-weight:800; text-align:center;">13.4%</td><td style="background: rgba(22,53,76,0.30); color:#17354B; font-weight:800; text-align:center;">13.2%</td></tr>
+        </tbody>
+      </table>
+    </div>
+    
+                          </div>
+                        </div>
+                        </div></div>
+</section>
+<hr class="nb-divider">
+<section id="sec-methods" class="nb-section">
+<div class="section-header">
+<span class="sh-badge label-sec">Appendix</span>
+<span class="sh-title">Methods / Panel Structure</span>
+<div class="sh-progress"></div>
+</div>
+<div class="cell md-cell"><div class="cell-gutter">In [10]</div><div class="cell-body"><p class="appendix-summary">Panel: 3,024 rows · 52 columns · 14 seasons (2012–2025) · Four sports. Full definitions below.</p><details class="accordion"><summary>View methodology and metric definitions ▾</summary><div class="accordion-body"><div class="stat-row">
+            <div class="stat-box navy">
+              <div class="stat-value">3,024</div>
+              <div class="stat-label">Rows in the filtered four-sport parquet</div>
+            </div>
+            
+            <div class="stat-box gold">
+              <div class="stat-value">52</div>
+              <div class="stat-label">Columns retained from the source summary table</div>
+            </div>
+            
+            <div class="stat-box teal">
+              <div class="stat-value">216</div>
+              <div class="stat-label">Rows per season across the 14-year panel</div>
+            </div>
+            </div>
+        <div class="split">
+          <div class="list-card">
+            <h4>Definitions used in the notebook</h4>
+            <ul>
+              <li><strong>Assistant:Head ratio</strong> measures the size of the feeder layer beneath each head-coach seat.</li>
+              <li><strong>Women coach share</strong> is reported for all coaches, assistant coaches, and head coaches separately.</li>
+              <li><strong>Women of color</strong> includes non-White, non-Unknown domestic race groups; International remains a separate thread.</li>
+              <li><strong>Promotion gap</strong> compares assistant race share to head-coach race share within a sport.</li>
+            </ul>
+          </div>
+          <div class="list-card">
+            <h4>Why this refresh changes the brief</h4>
+            <ul>
+              <li>Soccer adds a large athlete base but a much thinner women-head-coach footprint.</li>
+              <li>The old “women are still the majority of coaches” framing needs sport-level qualification now.</li>
+              <li>The four-sport set reveals that the sharpest negative promotion gap is not the same race group in every sport.</li>
+            </ul>
+          </div>
+        </div>
+        </div></details></div></div>
+</section>
+
+    <footer class="footer">
+      <div class="author">Krystal Beasley - Sports Analytics Portfolio - krystalbcreative.com</div>
+      <div class="source">Source parquet: <strong>ncaa_d1_womens_sports.parquet</strong><br/>Filtered run folder: <strong>2026-05-05T123712Z</strong><br/>This HTML notebook is self-contained and rendered through the workspace notebook generator so it can open as a single-file deliverable with sticky navigation, sticky section headers, and embedded chart-style visuals.</div>
+    </footer>
+  </main>
+
+  <script>
+(function () {
+  const params = new URLSearchParams(window.location.search);
+  if (params.get('viewport') === 'mobile') {
+    document.body.classList.add('force-mobile');
+  }
+  const NAV_H = 56;
+  const sections = Array.from(document.querySelectorAll('section[id]'));
+  const links = Array.from(document.querySelectorAll('.nav-link[data-sec]'));
+
+  function setActive(id) {
+    links.forEach((link) => {
+      link.classList.toggle('active', link.dataset.sec === id);
+    });
+  }
+
+  function currentSectionId() {
+    let best = null;
+    let bestTop = Infinity;
+
+    sections.forEach((section) => {
+      const rect = section.getBoundingClientRect();
+      if (rect.top <= NAV_H + 6 && rect.bottom > NAV_H + 6 && rect.top < bestTop) {
+        bestTop = rect.top;
+        best = section.id;
+      }
+    });
+
+    return best;
+  }
+
+  if ('IntersectionObserver' in window) {
+    const observer = new IntersectionObserver((entries) => {
+      const visible = [];
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) visible.push(entry.target.id);
+      });
+      sections.forEach((section) => {
+        const rect = section.getBoundingClientRect();
+        if (rect.top <= NAV_H + 2 && rect.bottom > NAV_H + 2 && !visible.includes(section.id)) {
+          visible.push(section.id);
+        }
+      });
+      if (visible.length) setActive(visible[0]);
+    }, {
+      rootMargin: '-' + NAV_H + 'px 0px -50% 0px',
+      threshold: 0
+    });
+
+    sections.forEach((section) => observer.observe(section));
+  } else {
+    window.addEventListener('scroll', () => {
+      const id = currentSectionId();
+      if (id) setActive(id);
+    }, { passive: true });
+  }
+
+  const initial = currentSectionId();
+  if (initial) setActive(initial);
+
+  function updateProgressBars() {
+    sections.forEach((section) => {
+      const bar = section.querySelector('.sh-progress');
+      if (!bar) return;
+      const rect = section.getBoundingClientRect();
+      const total = section.offsetHeight - NAV_H - 40;
+      const scrolled = Math.max(0, NAV_H + 40 - rect.top);
+      const pct = total > 0 ? Math.min(100, Math.max(0, (scrolled / total) * 100)) : 100;
+      bar.style.width = pct + '%';
+    });
+  }
+
+  window.addEventListener('scroll', updateProgressBars, { passive: true });
+  window.addEventListener('resize', updateProgressBars);
+  updateProgressBars();
+})();
+</script>
 </body>
 </html>
