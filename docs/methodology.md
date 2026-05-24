@@ -23,17 +23,6 @@
 - URL: 
 - Notes: WBB-specific slice retained so the project can keep a direct basketball lens alongside the four-sport framing.
 
-## Evidence Precedence
-
-The multi-year panel is the base evidence layer for this repo. It carries the year-by-year athlete, assistant-coach, and head-coach representation fields that support the full leadership story.
-
-The other shipped CSVs are review-first slices of that base:
-
-- `coaching_pipeline_focus_trends.csv` keeps the notebook's primary four-sport trend framing compact.
-- `coaching_pipeline_intervention_table.csv` surfaces the most decision-relevant gap cases in a short table.
-- `coaching_pipeline_comparison_focus_sports.csv` keeps the broad all-coach and women-only comparison in one file.
-- `coaching_pipeline_wbb_trends.csv` preserves a direct women's basketball lens for basketball-first readers.
-
 ## Cleaning Steps
 
 - Kept the public repo scoped to the notebook-facing evidence tables rather than the full workspace pipeline and raw source files.
@@ -46,16 +35,6 @@ The other shipped CSVs are review-first slices of that base:
 - Tracked athlete, assistant-coach, and head-coach representation percentages by year, sport, and race group.
 - Used promotion-gap and coach-athlete representation gap fields to quantify where leadership access lags the athlete pipeline.
 - Included pipeline-strength and hiring-flag fields to support decision-oriented framing rather than descriptive counts alone.
-
-## Selection Logic
-
-This public repo intentionally does not ship the entire WBB Coaching workspace or raw NCAA source archive. The published bundle keeps only the evidence tables that are needed to audit the notebook's core claims:
-
-- the long panel for year-over-year representation context
-- the focus-sport trend slice for the main four-sport narrative
-- the intervention table for action-oriented summary review
-- the comparison table for all-coach versus women-only framing
-- the women's basketball trend slice for a direct WBB read
 
 ## Metrics
 
@@ -89,10 +68,6 @@ Not applicable. This project is a descriptive leadership and representation anal
 - Missing value check
 - Duplicate check
 - Schema check
-
-## Limitations In The Published Slice
-
-The validation warnings in this repo are driven mostly by sparse promotion-gap and pipeline-strength fields in the source tables, not by failed file generation. Those fields are preserved because the sparsity itself is part of the analytical context, especially in cases where the underlying leadership counts are thin.
 
 ## Reproducibility Notes
 

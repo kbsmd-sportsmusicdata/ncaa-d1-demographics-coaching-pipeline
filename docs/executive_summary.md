@@ -18,13 +18,13 @@ This project packages a notebook-style leadership brief on the NCAA Division I w
 
 ## Decision-Support Value
 
-This project turns a broad representation dataset into a leadership decision brief. It helps athletic leaders and hiring stakeholders distinguish between a healthy athlete pipeline and a healthy leadership pipeline, identify where assistant-to-head-coach promotion pressure is most severe, and compare women's basketball against adjacent peer sports rather than reading one sport in isolation.
+Add short explanation of how this project supports decisions.
 
 ## Top Findings
 
-1. Athlete diversification improved across all four focus sports faster than leadership diversification did, which makes the current gap a systems problem rather than a supply problem.
-2. The steepest bottlenecks appear when representation is tracked from assistant-coach roles to head-coach roles, not just from athlete pool to coaching staff overall.
-3. Women's basketball and softball look materially different from soccer in the women-in-coaching story, which is why the four-sport comparison matters more than a single-sport read.
+1. Add finding.
+2. Add finding.
+3. Add finding.
 
 ## Recommended Use Cases
 

@@ -2,7 +2,7 @@
 
 ## Current Status
 
-in-progress
+published
 
 ## Project Purpose
 
@@ -33,9 +33,9 @@ This project packages a notebook-style leadership brief on the NCAA Division I w
 
 ## Next Steps
 
-- Publish the notebook through GitHub Pages and backfill the live URL into this config.
 - Decide whether the public repo should remain notebook-first or add a lighter dashboard companion later.
-- Reuse the same project structure for another leadership or representation brief once this repo is live.
+- Reuse the same project structure for another leadership or representation brief.
+- Consider branch protection on main once the repo wording and links settle.
 
 ## Deployment Notes
 
